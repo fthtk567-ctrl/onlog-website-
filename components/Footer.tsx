@@ -9,10 +9,32 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold text-green-400 mb-4">OnLog</h3>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm mb-4">
               Şehir içi hızlı kurye teslimat hizmetleri ile gün içinde adresinde!
             </p>
-            <div className="flex space-x-4 mt-4">
+            
+            {/* Contact Info */}
+            <div className="space-y-2 mb-4">
+              <p className="text-gray-400 text-sm">
+                <span className="font-semibold text-white">Müşteri Danışmanı:</span><br />
+                <a href="tel:+905342447504" className="hover:text-green-400 transition">
+                  +90 534 244 7504
+                </a>
+              </p>
+              <p className="text-gray-400 text-sm">
+                <span className="font-semibold text-white">Muhasebe:</span><br />
+                <a href="tel:+905301398395" className="hover:text-green-400 transition">
+                  +90 530 139 8395
+                </a>
+              </p>
+              <p className="text-gray-400 text-sm">
+                <a href="mailto:destek@onlog.com.tr" className="hover:text-green-400 transition">
+                  destek@onlog.com.tr
+                </a>
+              </p>
+            </div>
+
+            <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition">
                 <Facebook className="w-5 h-5" />
               </a>
@@ -127,6 +149,15 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
+            
+            {/* Address */}
+            <div className="mt-6">
+              <h5 className="font-semibold mb-2">Adres</h5>
+              <p className="text-gray-400 text-sm">
+                Bakkalbaşı Mah. Mustafa Kemal Cad.<br />
+                No: 10/A Çumra / KONYA
+              </p>
+            </div>
           </div>
         </div>
 
