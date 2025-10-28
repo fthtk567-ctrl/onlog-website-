@@ -16,13 +16,15 @@ export default function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link 
-                href="/kurye-cagir"
+              <a 
+                href="https://panel.onlog.com.tr/#/login"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition group"
               >
                 Kurye Çağır
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition" />
-              </Link>
+              </a>
               <div className="text-center sm:text-left">
                 <p className="text-3xl font-bold text-green-600">136.90 ₺</p>
                 <p className="text-sm text-gray-600">&apos;den başlayan fiyatlarla</p>

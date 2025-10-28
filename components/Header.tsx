@@ -2,11 +2,10 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X, MapPin } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [city, setCity] = useState('Istanbul')
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -36,21 +35,6 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* City Selector */}
-          <div className="hidden md:flex items-center space-x-2 text-sm">
-            <MapPin className="w-4 h-4 text-green-600" />
-            <span className="text-gray-600">Şehir:</span>
-            <select 
-              value={city} 
-              onChange={(e) => setCity(e.target.value)}
-              className="border rounded px-2 py-1 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500"
-            >
-              <option value="Istanbul">Istanbul</option>
-              <option value="Ankara">Ankara</option>
-              <option value="Izmir">Izmir</option>
-            </select>
-          </div>
-
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <Link 
@@ -59,12 +43,14 @@ export default function Header() {
             >
               Müşteri ol
             </Link>
-            <Link 
-              href="/kurye-cagir" 
+            <a 
+              href="https://panel.onlog.com.tr/#/login" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition font-medium"
             >
               Kurye Çağır
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -101,12 +87,14 @@ export default function Header() {
               >
                 Müşteri ol
               </Link>
-              <Link 
-                href="/kurye-cagir" 
+              <a 
+                href="https://panel.onlog.com.tr/#/login" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block text-center bg-green-600 text-white px-6 py-2 rounded-lg font-medium"
               >
                 Kurye Çağır
-              </Link>
+              </a>
             </div>
           </nav>
         )}
