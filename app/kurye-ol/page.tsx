@@ -4,8 +4,8 @@ export default function KuryeOlPage() {
   const earnings = [
     {
       icon: Wallet,
-      title: '15.000 - 30.000 TL/Ay',
-      description: 'Yaptığınız teslimat sayısına göre aylık kazancınız',
+      title: 'Yüksek Kazanç',
+      description: 'Yaptığınız teslimat sayısına göre cazip aylık kazanç',
       highlight: true
     },
     {
@@ -88,7 +88,7 @@ export default function KuryeOlPage() {
               Kendi İşinizin Patronu Olun!
             </h1>
             <p className="text-2xl text-primary-50 mb-4">
-              Ayda 15.000 - 30.000 TL Kazanın
+              Yüksek Kazanç Fırsatı
             </p>
             <p className="text-xl text-primary-100 mb-8">
               Esnek çalışma saatleri, haftalık ödeme, sınırsız kazanç fırsatı
@@ -377,7 +377,7 @@ export default function KuryeOlPage() {
                 {
                   name: 'Ahmet Y.',
                   role: 'OnLog Kuryesi - 8 Ay',
-                  text: 'Aylık ortalama 25.000 TL kazanıyorum. Esnek çalışma saatleri sayesinde ailemle daha çok vakit geçirebiliyorum.',
+                  text: 'Aylık ortalama çok iyi kazanıyorum. Esnek çalışma saatleri sayesinde ailemle daha çok vakit geçirebiliyorum.',
                   city: 'İstanbul'
                 },
                 {
@@ -389,7 +389,7 @@ export default function KuryeOlPage() {
                 {
                   name: 'Emre D.',
                   role: 'OnLog Kuryesi - 6 Ay',
-                  text: 'Öğrenciyim ve part-time çalışarak ayda 15.000 TL civarı kazanıyorum. Hem okuyor hem kazanıyorum.',
+                  text: 'Öğrenciyim ve part-time çalışarak iyi para kazanıyorum. Hem okuyor hem kazanıyorum.',
                   city: 'İzmir'
                 }
               ].map((testimonial, index) => (
