@@ -25,7 +25,7 @@ export default function Hero() {
               </Link>
               <div className="text-center sm:text-left">
                 <p className="text-3xl font-bold text-green-600">136.90 ₺</p>
-                <p className="text-sm text-gray-600">'den başlayan fiyatlarla</p>
+                <p className="text-sm text-gray-600">&apos;den başlayan fiyatlarla</p>
               </div>
             </div>
 
