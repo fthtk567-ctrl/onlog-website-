@@ -84,6 +84,7 @@ export default function SellerPanel() {
             <Link
               href="https://panel.onlog.com.tr"
               target="_blank"
+              rel="noopener noreferrer"
               className="block w-full bg-green-600 text-white text-center py-4 rounded-lg font-semibold hover:bg-green-700 transition"
             >
               Hemen Başla →
