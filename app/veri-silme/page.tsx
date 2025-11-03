@@ -70,15 +70,18 @@ export default function VeriSilmePage() {
       <section className="bg-gradient-to-r from-primary-600 to-primary-500 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <Trash2 className="w-16 h-16 mx-auto mb-6" />
+            <Shield className="w-16 h-16 mx-auto mb-6" />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              OnLog Kurye Uygulaması
+              OnLog Uygulamaları
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">
               Veri Silme Talebi
             </h2>
             <p className="text-xl text-primary-50">
-              Kişisel verilerinizin silinmesini talep etmek için bu sayfayı kullanabilirsiniz
+              Kişisel verilerinizin silinmesini talep edebilirsiniz
+            </p>
+            <p className="text-sm text-primary-100 mt-2">
+              (OnLog Kurye Uygulaması ve Satıcı Paneli için)
             </p>
           </div>
         </div>
@@ -95,7 +98,7 @@ export default function VeriSilmePage() {
                   Önemli Uyarı
                 </h3>
                 <p className="text-gray-700">
-                  Verilerinizin silinmesi durumunda OnLog Kurye uygulamasını kullanmaya devam edemezsiniz. 
+                  Verilerinizin silinmesi durumunda OnLog uygulamalarını kullanmaya devam edemezsiniz. 
                   Hesabınız kalıcı olarak kapatılacaktır. Bekleyen ödemeleriniz varsa, önce bunların 
                   tamamlanmasını beklemeniz gerekmektedir.
                 </p>
@@ -111,10 +114,10 @@ export default function VeriSilmePage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose max-w-none">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, OnLog Kurye 
-                uygulamasını kullanan kuryelerimiz, kişisel verilerinin silinmesini talep etme 
-                hakkına sahiptir. Bu sayfa, veri silme talebinde bulunma sürecini ve hangi verilerin 
-                nasıl işleneceğini açıklamaktadır.
+                6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, OnLog uygulamalarını 
+                (OnLog Kurye Uygulaması ve Satıcı Paneli) kullanan tüm kullanıcılarımız, kişisel 
+                verilerinin silinmesini talep etme hakkına sahiptir. Bu sayfa, veri silme talebinde 
+                bulunma sürecini ve hangi verilerin nasıl işleneceğini açıklamaktadır.
               </p>
             </div>
           </div>
@@ -241,10 +244,10 @@ export default function VeriSilmePage() {
                     type="tel"
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition"
-                    placeholder="Kayıtlı telefon numaranız"
+                    placeholder="Kayıtlı telefon numaranız (05XX XXX XX XX)"
                   />
                   <p className="text-sm text-gray-500 mt-1">
-                    OnLog Kurye uygulamasında kayıtlı telefon numaranızı giriniz
+                    OnLog uygulamalarında giriş yaptığınız telefon numaranızı giriniz
                   </p>
                 </div>
 
@@ -292,7 +295,7 @@ export default function VeriSilmePage() {
                     <div className="text-sm text-yellow-800">
                       <p className="font-semibold mb-1">Onaylıyorum:</p>
                       <ul className="list-disc list-inside space-y-1">
-                        <li>Verilerimin silinmesi sonrası OnLog Kurye uygulamasını kullanamayacağımı</li>
+                        <li>Verilerimin silinmesi sonrası OnLog uygulamalarını kullanamayacağımı</li>
                         <li>Hesabımın kalıcı olarak kapatılacağını</li>
                         <li>Yasal zorunluluklar nedeniyle bazı verilerin 10 yıl saklanacağını</li>
                         <li>Bu işlemin geri alınamaz olduğunu</li>

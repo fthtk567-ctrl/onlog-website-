@@ -95,13 +95,16 @@ export default function HesapSilmePage() {
           <div className="max-w-3xl mx-auto text-center">
             <UserX className="w-16 h-16 mx-auto mb-6" />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              OnLog Kurye Uygulaması
+              OnLog Uygulamaları
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">
               Hesap Silme Talebi
             </h2>
             <p className="text-xl text-red-50">
               Hesabınızın ve tüm ilişkili verilerinizin kalıcı olarak silinmesini talep edebilirsiniz
+            </p>
+            <p className="text-sm text-red-100 mt-2">
+              (OnLog Kurye Uygulaması ve Satıcı Paneli için)
             </p>
           </div>
         </div>
@@ -122,10 +125,10 @@ export default function HesapSilmePage() {
                     Hesabınızı silerseniz:
                   </p>
                   <ul className="list-disc list-inside space-y-1 ml-4">
-                    <li>OnLog Kurye uygulamasını bir daha kullanamazsınız</li>
+                    <li>OnLog uygulamalarını bir daha kullanamazsınız</li>
                     <li>Hesabınız kalıcı olarak kapatılır ve geri açılamaz</li>
                     <li>Tüm kişisel verileriniz silinir</li>
-                    <li>Teslimat geçmişinize erişemezsiniz</li>
+                    <li>İşlem geçmişinize erişemezsiniz</li>
                     <li>Bekleyen ödemeleriniz tamamlandıktan sonra işlem yapılır</li>
                     <li>Bu işlem GERİ ALINAMAZ!</li>
                   </ul>
@@ -146,9 +149,9 @@ export default function HesapSilmePage() {
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, OnLog Kurye 
-                  uygulamasını kullanan kuryelerimiz, hesaplarının ve kişisel verilerinin tamamen 
-                  silinmesini talep etme hakkına sahiptir.
+                  6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, OnLog uygulamalarını 
+                  (OnLog Kurye Uygulaması ve Satıcı Paneli) kullanan tüm kullanıcılarımız, hesaplarının 
+                  ve kişisel verilerinin tamamen silinmesini talep etme hakkına sahiptir.
                 </p>
                 <p>
                   Hesap silme işlemi, sadece verilerinizi değil, aynı zamanda uygulama üzerindeki 
@@ -313,7 +316,7 @@ export default function HesapSilmePage() {
                     placeholder="Kayıtlı telefon numaranız (05XX XXX XX XX)"
                   />
                   <p className="text-sm text-gray-500 mt-1">
-                    OnLog Kurye uygulamasında giriş yaptığınız telefon numaranızı giriniz
+                    OnLog uygulamalarında giriş yaptığınız telefon numaranızı giriniz
                   </p>
                 </div>
 
@@ -330,6 +333,21 @@ export default function HesapSilmePage() {
                   <p className="text-sm text-gray-500 mt-1">
                     Onay ve bilgilendirme için kullanılacaktır
                   </p>
+                </div>
+
+                <div>
+                  <label className="block text-gray-700 font-medium mb-2">
+                    Kullandığınız Uygulama *
+                  </label>
+                  <select
+                    required
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition"
+                  >
+                    <option value="">Seçiniz</option>
+                    <option value="kurye">OnLog Kurye Uygulaması</option>
+                    <option value="satici">OnLog Satıcı Paneli</option>
+                    <option value="web">OnLog Web Paneli</option>
+                  </select>
                 </div>
 
                 <div>
@@ -383,8 +401,8 @@ export default function HesapSilmePage() {
                       <ul className="list-disc list-inside space-y-2">
                         <li>Hesabımın ve tüm verilerimin <strong>kalıcı olarak silineceğini</strong></li>
                         <li>Bu işlemin <strong>geri alınamaz</strong> olduğunu</li>
-                        <li>OnLog Kurye uygulamasını bir daha <strong>kullanamayacağımı</strong></li>
-                        <li>Teslimat geçmişime ve kazanç bilgilerime <strong>erişemeyeceğimi</strong></li>
+                        <li>OnLog uygulamalarını bir daha <strong>kullanamayacağımı</strong></li>
+                        <li>İşlem geçmişime ve bilgilerime <strong>erişemeyeceğimi</strong></li>
                         <li>Bekleyen ödemelerimin tamamlandıktan sonra işlemin yapılacağını</li>
                         <li>Yasal zorunluluklar nedeniyle bazı verilerin 10 yıl <strong>anonim olarak saklanacağını</strong></li>
                         <li>Yeni hesap açmak istediğimde sıfırdan başlayacağımı</li>
