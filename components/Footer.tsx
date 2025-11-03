@@ -153,6 +153,11 @@ export default function Footer() {
                   Veri Silme Talebi
                 </Link>
               </li>
+              <li>
+                <Link href="/hesap-silme" className="text-gray-400 hover:text-white transition">
+                  Hesap Silme
+                </Link>
+              </li>
             </ul>
             
             {/* Address */}
