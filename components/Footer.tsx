@@ -148,6 +148,11 @@ export default function Footer() {
                   Çerez Politikası
                 </Link>
               </li>
+              <li>
+                <Link href="/veri-silme" className="text-gray-400 hover:text-white transition">
+                  Veri Silme Talebi
+                </Link>
+              </li>
             </ul>
             
             {/* Address */}
