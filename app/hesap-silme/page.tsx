@@ -125,7 +125,7 @@ export default function HesapSilmePage() {
                     Hesabınızı silerseniz:
                   </p>
                   <ul className="list-disc list-inside space-y-1 ml-4">
-                    <li>On'la Gelsin uygulamalarını bir daha kullanamazsınız</li>
+                    <li>(On&apos;la Gelsin) uygulamalarını bir daha kullanamazsınız</li>
                     <li>Hesabınız kalıcı olarak kapatılır ve geri açılamaz</li>
                     <li>Tüm kişisel verileriniz silinir</li>
                     <li>İşlem geçmişinize erişemezsiniz</li>
@@ -344,9 +344,9 @@ export default function HesapSilmePage() {
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition"
                   >
                     <option value="">Seçiniz</option>
-                    <option value="kurye">On'la Gelsin Kurye Uygulaması</option>
-                    <option value="satici">On'la Gelsin Satıcı Paneli</option>
-                    <option value="web">On'la Gelsin Web Paneli</option>
+                    <option value="kurye">(On&apos;la Gelsin) Kurye Uygulaması</option>
+                    <option value="satici">(On&apos;la Gelsin) Satıcı Paneli</option>
+                    <option value="web">(On&apos;la Gelsin) Web Paneli</option>
                   </select>
                 </div>
 
@@ -401,7 +401,7 @@ export default function HesapSilmePage() {
                       <ul className="list-disc list-inside space-y-2">
                         <li>Hesabımın ve tüm verilerimin <strong>kalıcı olarak silineceğini</strong></li>
                         <li>Bu işlemin <strong>geri alınamaz</strong> olduğunu</li>
-                        <li>On'la Gelsin uygulamalarını bir daha <strong>kullanamayacağımı</strong></li>
+                        <li>(On&apos;la Gelsin) uygulamalarını bir daha <strong>kullanamayacağımı</strong></li>
                         <li>İşlem geçmişime ve bilgilerime <strong>erişemeyeceğimi</strong></li>
                         <li>Bekleyen ödemelerimin tamamlandıktan sonra işlemin yapılacağını</li>
                         <li>Yasal zorunluluklar nedeniyle bazı verilerin 10 yıl <strong>anonim olarak saklanacağını</strong></li>

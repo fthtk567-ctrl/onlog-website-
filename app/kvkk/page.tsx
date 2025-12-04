@@ -69,7 +69,7 @@ export default function KVKKPage() {
                   </h2>
                 </div>
                 <div className="ml-15 text-gray-700 space-y-3">
-                  <p>On'la Gelsin olarak, hizmetlerimizi sunabilmek için aşağıdaki kişisel verilerinizi işlemekteyiz:</p>
+                  <p>(On&apos;la Gelsin) olarak, hizmetlerimizi sunabilmek için aşağıdaki kişisel verilerinizi işlemekteyiz:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li><strong>Kimlik Bilgileri:</strong> Ad, soyad, T.C. kimlik numarası</li>
                     <li><strong>İletişim Bilgileri:</strong> Telefon numarası, e-posta adresi, adres</li>
