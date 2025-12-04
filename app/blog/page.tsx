@@ -1,5 +1,10 @@
 import { Calendar, User, ArrowRight } from 'lucide-react';
 
+export const metadata = {
+  title: "On'la Gelsin - Blog | Kurye ve Teslimat Haberleri",
+  description: 'E-ticaret, kurye teslimat ve lojistik sektörü hakkında güncel haberler, ipuçları ve rehberler.',
+}
+
 export default function BlogPage() {
   const blogPosts = [
     {
