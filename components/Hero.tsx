@@ -8,8 +8,8 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-              On'la Gelsin ile gün içinde adresinde!
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              On&apos;la Gelsin ile gün içinde adresinde!
             </h1>
             <p className="text-xl text-gray-600">
               İster bireysel ister kurumsal gönderileriniz için şehir içi hızlı kurye teslimat hizmetimizle tanışın!

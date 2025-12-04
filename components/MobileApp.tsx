@@ -8,7 +8,7 @@ export default function MobileApp() {
           {/* Left Content */}
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-gray-900">
-              On'la Gelsin uygulamasıyla mobilken de teslimatlarınızı yönetebilirsiniz
+              On&apos;la Gelsin uygulamasıyla mobilken de teslimatlarınızı yönetebilirsiniz
             </h2>
             <p className="text-xl text-gray-600">
               Uygulamayı indirmek için QR kodunu tarayın
@@ -99,7 +99,7 @@ export default function MobileApp() {
             <div className="relative mx-auto w-full max-w-sm">
               <img 
                 src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=800&fit=crop" 
-                alt="On'la Gelsin mobil uygulama" 
+                alt="On&apos;la Gelsin mobil uygulama" 
                 className="w-full h-auto rounded-3xl shadow-2xl"
               />
             </div>
