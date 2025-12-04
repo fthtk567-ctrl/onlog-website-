@@ -6,8 +6,8 @@ export default function SSS() {
       category: "Genel Sorular",
       questions: [
         {
-          q: "OnLog nedir?",
-          a: "OnLog, şehir içi hızlı kurye teslimat hizmetleri sunan bir platformdur. Bireysel ve kurumsal müşterilere gün içinde teslimat garantisi sağlıyoruz."
+          q: "On'la Gelsin nedir?",
+          a: "On'la Gelsin, şehir içi hızlı kurye teslimat hizmetleri sunan bir platformdur. Bireysel ve kurumsal müşterilere gün içinde teslimat garantisi sağlıyoruz."
         },
         {
           q: "Hangi şehirlerde hizmet veriyorsunuz?",
@@ -75,10 +75,10 @@ export default function SSS() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="bg-gradient-to-r from-green-600 to-green-700 text-white py-16">
+      <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Sık Sorulan Sorular</h1>
-          <p className="text-xl text-green-100">
+          <p className="text-xl text-primary-100">
             Merak ettiklerinizin cevaplarını burada bulabilirsiniz
           </p>
         </div>
@@ -89,7 +89,7 @@ export default function SSS() {
         <div className="container mx-auto px-4 max-w-4xl">
           {faqs.map((category, idx) => (
             <div key={idx} className="mb-12">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-green-500 pb-2">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-500 pb-2">
                 {category.category}
               </h2>
               <div className="space-y-6">
@@ -108,7 +108,7 @@ export default function SSS() {
           ))}
 
           {/* Contact CTA */}
-          <div className="bg-green-50 rounded-xl p-8 text-center mt-12">
+          <div className="bg-primary-50 rounded-xl p-8 text-center mt-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Sorunuza cevap bulamadınız mı?
             </h3>
@@ -118,13 +118,13 @@ export default function SSS() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/iletisim"
-                className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition"
+                className="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition"
               >
                 Bize Ulaşın
               </Link>
               <a
                 href="tel:+905342447504"
-                className="bg-white text-green-600 border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 transition"
+                className="bg-white text-primary-600 border-2 border-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition"
               >
                 Hemen Ara
               </a>

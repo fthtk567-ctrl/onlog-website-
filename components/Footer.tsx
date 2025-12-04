@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold text-green-400 mb-4">OnLog</h3>
+            <h3 className="text-2xl font-bold text-primary-400 mb-4">On'la Gelsin</h3>
             <p className="text-gray-400 text-sm mb-4">
               Şehir içi hızlı kurye teslimat hizmetleri ile gün içinde adresinde!
             </p>
@@ -17,19 +17,19 @@ export default function Footer() {
             <div className="space-y-2 mb-4">
               <p className="text-gray-400 text-sm">
                 <span className="font-semibold text-white">Müşteri Danışmanı:</span><br />
-                <a href="tel:+905342447504" className="hover:text-green-400 transition">
+                <a href="tel:+905342447504" className="hover:text-primary-400 transition">
                   +90 534 244 7504
                 </a>
               </p>
               <p className="text-gray-400 text-sm">
                 <span className="font-semibold text-white">Muhasebe:</span><br />
-                <a href="tel:+905301398395" className="hover:text-green-400 transition">
+                <a href="tel:+905301398395" className="hover:text-primary-400 transition">
                   +90 530 139 8395
                 </a>
               </p>
               <p className="text-gray-400 text-sm">
-                <a href="mailto:destek@onlog.com.tr" className="hover:text-green-400 transition">
-                  destek@onlog.com.tr
+                <a href="mailto:destek@onlagelsin.com" className="hover:text-primary-400 transition">
+                  destek@onlagelsin.com
                 </a>
               </p>
             </div>
@@ -175,7 +175,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 OnLog. Tüm hakları saklıdır.
+              © 2025 On'la Gelsin. Tüm hakları saklıdır.
             </p>
             <div className="flex space-x-4">
               <a 

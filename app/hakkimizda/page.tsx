@@ -35,10 +35,10 @@ export default function HakkimizdaPage() {
   ];
 
   const stats = [
-    { number: '10,000+', label: 'Mutlu Müşteri' },
-    { number: '50,000+', label: 'Başarılı Teslimat' },
-    { number: '500+', label: 'Aktif Kurye' },
-    { number: '24/7', label: 'Destek Hizmeti' }
+    { number: '2024', label: 'Kuruluş Yılı' },
+    { number: 'Türkiye', label: 'Hizmet Alanı' },
+    { number: 'Büyüyor', label: 'Her Gün' },
+    { number: '7/24', label: 'Destek Hizmeti' }
   ];
 
   return (
@@ -48,7 +48,7 @@ export default function HakkimizdaPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              OnLog Hakkında
+              On'la Gelsin Hakkında
             </h1>
             <p className="text-xl text-primary-50">
               Türkiye&apos;nin en hızlı ve güvenilir kurye hizmeti
@@ -67,19 +67,19 @@ export default function HakkimizdaPage() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  OnLog, modern şehir hayatının getirdiği hızlı teslimat ihtiyacına çözüm olmak amacıyla kuruldu. 
-                  Teknoloji ve lojistik alanındaki deneyimlerimizi birleştirerek, müşterilerimize en kaliteli 
-                  hizmeti sunmayı hedefliyoruz.
+                  On'la Gelsin, modern şehir hayatının getirdiği hızlı teslimat ve yemek sipariş ihtiyacına 
+                  yenilikçi çözümler sunmak amacıyla hayata geçirildi. Genç ve dinamik ekibimizle, 
+                  teknoloji odaklı lojistik hizmetleri geliştiriyoruz.
                 </p>
                 <p>
-                  Kuruluşumuzdan bu yana binlerce teslimat gerçekleştirdik ve her gün büyüyen müşteri ailemize 
-                  hizmet vermenin gururunu yaşıyoruz. Amacımız, Türkiye&apos;nin her noktasında güvenilir ve hızlı 
-                  kurye hizmeti sunarak, insanların hayatını kolaylaştırmak.
+                  Yeni bir girişim olarak yola çıktık ve hedefimiz büyük: Türkiye&apos;nin dört bir yanında 
+                  güvenilir kurye hizmeti ve restoran teslimat çözümleri sunarak, hem bireysel kullanıcıların 
+                  hem de işletmelerin hayatını kolaylaştırmak.
                 </p>
                 <p>
-                  Gelişmiş teknolojimiz ve deneyimli kurye ekibimizle, her türlü gönderinizi aynı gün içinde 
-                  güvenle teslim ediyoruz. Müşteri memnuniyeti odaklı yaklaşımımız ve sürekli gelişen hizmet 
-                  kalitemizle sektörde fark yaratıyoruz.
+                  Şeffaflık ve dürüstlük temel değerlerimizdir. Müşterilerimize gerçekçi vaatler verip, 
+                  bunları yerine getirerek güven kazanmayı hedefliyoruz. Her gün öğreniyor, gelişiyor ve 
+                  hizmet kalitemizi artırıyoruz.
                 </p>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function HakkimizdaPage() {
               Değerlerimiz
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              OnLog olarak, her gün yaptığımız işin temelinde yatan değerlerimiz
+              On'la Gelsin olarak, her gün yaptığımız işin temelinde yatan değerlerimiz
             </p>
           </div>
 
@@ -148,9 +148,9 @@ export default function HakkimizdaPage() {
                   Misyonumuz
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Türkiye&apos;nin her noktasına, en hızlı ve güvenilir şekilde teslimat yaparak, 
-                  insanların hayatını kolaylaştırmak ve e-ticaret ekosisteminin vazgeçilmez 
-                  lojistik partneri olmak.
+                  Türkiye&apos;de yemek siparişi ve kurye teslimat sektöründe yenilikçi, 
+                  şeffaf ve güvenilir bir platform olmak. Müşterilerimize dürüst hizmet, 
+                  işletmelere ise adil koşullar sunarak sürdürülebilir büyüme sağlamak.
                 </p>
               </div>
               <div className="bg-white rounded-2xl shadow-lg p-8">
@@ -158,8 +158,9 @@ export default function HakkimizdaPage() {
                   Vizyonumuz
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Teknoloji destekli lojistik çözümlerimizle, Türkiye&apos;nin en tercih edilen 
-                  kurye şirketi olmak ve müşterilerimize her zaman en iyi hizmeti sunmak.
+                  Teknoloji ve insan odaklı yaklaşımımızla, Türkiye&apos;nin her yerinde 
+                  erişilebilir, güvenilir ve kullanıcı dostu bir teslimat ekosistemi kurmak. 
+                  Sadece bir platform değil, bir topluluk oluşturmak.
                 </p>
               </div>
             </div>
@@ -171,10 +172,10 @@ export default function HakkimizdaPage() {
       <section className="py-16 bg-gradient-to-r from-primary-600 to-primary-500">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            OnLog Ailesine Katılın
+            On'la Gelsin Ailesine Katılın
           </h2>
           <p className="text-primary-50 mb-8 max-w-2xl mx-auto">
-            Binlerce mutlu müşterimizin arasına siz de katılın ve hızlı teslimatın keyfini çıkarın
+            Yeni kurulan ailemize katılın, birlikte büyüyelim ve gelişelim
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

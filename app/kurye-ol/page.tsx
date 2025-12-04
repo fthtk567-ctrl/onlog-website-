@@ -1,5 +1,10 @@
 import { TrendingUp, Clock, Wallet, Shield, MapPin, Users, CheckCircle, Phone } from 'lucide-react';
 
+export const metadata = {
+  title: "On'la Gelsin - Kurye Ol | Esnek Çalışma İmkanı",
+  description: 'Kuryemiz olun! Esnek saatlerde çalışın, yüksek kazanç elde edin. Haftalık ödeme, sigorta güvencesi ve kariyer fırsatları.',
+}
+
 export default function KuryeOlPage() {
   const earnings = [
     {
@@ -51,7 +56,7 @@ export default function KuryeOlPage() {
     },
     {
       title: 'Akıllı Telefon',
-      description: 'OnLog uygulamasını çalıştırabilen Android veya iOS cihaz'
+      description: "On'la Gelsin uygulamasını çalıştırabilen Android veya iOS cihaz"
     }
   ];
 
@@ -108,7 +113,7 @@ export default function KuryeOlPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-              Neden OnLog Kuryesi Olmalısınız?
+              Neden On'la Gelsin Kuryesi Olmalısınız?
             </h2>
             <p className="text-center text-gray-600 mb-12 text-lg">
               Türkiye&apos;nin en avantajlı kurye sisteminde yerinizi alın
@@ -186,7 +191,7 @@ export default function KuryeOlPage() {
               Gereksinimler
             </h2>
             <p className="text-center text-gray-600 mb-12">
-              OnLog kuryesi olmak için ihtiyacınız olanlar
+              On'la Gelsin kuryesi olmak için ihtiyacınız olanlar
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {requirements.map((req, index) => (
@@ -376,19 +381,19 @@ export default function KuryeOlPage() {
               {[
                 {
                   name: 'Ahmet Y.',
-                  role: 'OnLog Kuryesi - 8 Ay',
+                  role: "On'la Gelsin Kuryesi - 8 Ay",
                   text: 'Aylık ortalama çok iyi kazanıyorum. Esnek çalışma saatleri sayesinde ailemle daha çok vakit geçirebiliyorum.',
                   city: 'İstanbul'
                 },
                 {
                   name: 'Mehmet K.',
-                  role: 'OnLog Kuryesi - 1 Yıl',
+                  role: "On'la Gelsin Kuryesi - 1 Yıl",
                   text: 'Haftalık ödeme sistemi çok işime yarıyor. Performans primleri sayesinde gelirimi artırabiliyorum.',
                   city: 'Ankara'
                 },
                 {
                   name: 'Emre D.',
-                  role: 'OnLog Kuryesi - 6 Ay',
+                  role: "On'la Gelsin Kuryesi - 6 Ay",
                   text: 'Öğrenciyim ve part-time çalışarak iyi para kazanıyorum. Hem okuyor hem kazanıyorum.',
                   city: 'İzmir'
                 }

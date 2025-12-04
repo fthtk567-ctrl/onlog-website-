@@ -72,7 +72,7 @@ export default function VeriSilmePage() {
           <div className="max-w-3xl mx-auto text-center">
             <Shield className="w-16 h-16 mx-auto mb-6" />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              OnLog Uygulamaları
+              On'la Gelsin Uygulamaları
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">
               Veri Silme Talebi
@@ -81,7 +81,7 @@ export default function VeriSilmePage() {
               Kişisel verilerinizin silinmesini talep edebilirsiniz
             </p>
             <p className="text-sm text-primary-100 mt-2">
-              (OnLog Kurye Uygulaması ve Satıcı Paneli için)
+              (On'la Gelsin Kurye Uygulaması ve Satıcı Paneli için)
             </p>
           </div>
         </div>
@@ -98,7 +98,7 @@ export default function VeriSilmePage() {
                   Önemli Uyarı
                 </h3>
                 <p className="text-gray-700">
-                  Verilerinizin silinmesi durumunda OnLog uygulamalarını kullanmaya devam edemezsiniz. 
+                  Verilerinizin silinmesi durumunda On'la Gelsin uygulamalarını kullanmaya devam edemezsiniz. 
                   Hesabınız kalıcı olarak kapatılacaktır. Bekleyen ödemeleriniz varsa, önce bunların 
                   tamamlanmasını beklemeniz gerekmektedir.
                 </p>
@@ -114,8 +114,8 @@ export default function VeriSilmePage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose max-w-none">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, OnLog uygulamalarını 
-                (OnLog Kurye Uygulaması ve Satıcı Paneli) kullanan tüm kullanıcılarımız, kişisel 
+                6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, On'la Gelsin uygulamalarını 
+                (On'la Gelsin Kurye Uygulaması ve Satıcı Paneli) kullanan tüm kullanıcılarımız, kişisel 
                 verilerinin silinmesini talep etme hakkına sahiptir. Bu sayfa, veri silme talebinde 
                 bulunma sürecini ve hangi verilerin nasıl işleneceğini açıklamaktadır.
               </p>
@@ -247,7 +247,7 @@ export default function VeriSilmePage() {
                     placeholder="Kayıtlı telefon numaranız (05XX XXX XX XX)"
                   />
                   <p className="text-sm text-gray-500 mt-1">
-                    OnLog uygulamalarında giriş yaptığınız telefon numaranızı giriniz
+                    On'la Gelsin uygulamalarında giriş yaptığınız telefon numaranızı giriniz
                   </p>
                 </div>
 
@@ -295,7 +295,7 @@ export default function VeriSilmePage() {
                     <div className="text-sm text-yellow-800">
                       <p className="font-semibold mb-1">Onaylıyorum:</p>
                       <ul className="list-disc list-inside space-y-1">
-                        <li>Verilerimin silinmesi sonrası OnLog uygulamalarını kullanamayacağımı</li>
+                        <li>Verilerimin silinmesi sonrası On'la Gelsin uygulamalarını kullanamayacağımı</li>
                         <li>Hesabımın kalıcı olarak kapatılacağını</li>
                         <li>Yasal zorunluluklar nedeniyle bazı verilerin 10 yıl saklanacağını</li>
                         <li>Bu işlemin geri alınamaz olduğunu</li>
@@ -333,10 +333,10 @@ export default function VeriSilmePage() {
                     <Mail className="w-6 h-6 mx-auto mb-2 text-primary-600" />
                     <p className="text-sm text-gray-600 mb-1">E-posta</p>
                     <a
-                      href="mailto:destek@onlog.com.tr"
+                      href="mailto:destek@onlagelsin.com"
                       className="text-primary-600 font-semibold hover:text-primary-700"
                     >
-                      destek@onlog.com.tr
+                      destek@onlagelsin.com
                     </a>
                   </div>
                   <div className="text-center">

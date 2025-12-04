@@ -6,7 +6,7 @@ export default function BlogPage() {
       id: 1,
       title: 'E-Ticaret Siteniz İçin Hızlı Kargo Çözümleri',
       excerpt: 'E-ticaret işletmeniz için en uygun kargo çözümlerini ve müşteri memnuniyetini artırma yöntemlerini keşfedin.',
-      author: 'OnLog Editör',
+      author: 'On'la Gelsin Editör',
       date: '15 Ekim 2024',
       readTime: '5 dk'
     },
@@ -14,15 +14,15 @@ export default function BlogPage() {
       id: 2,
       title: 'Aynı Gün Teslimat Neden Bu Kadar Önemli?',
       excerpt: 'Günümüz tüketicilerinin beklentileri ve aynı gün teslimatın müşteri sadakatine etkisi hakkında bilmeniz gerekenler.',
-      author: 'OnLog Editör',
+      author: 'On'la Gelsin Editör',
       date: '10 Ekim 2024',
       readTime: '4 dk'
     },
     {
       id: 3,
-      title: 'OnLog Mobil Uygulaması Güncellendi',
+      title: 'On'la Gelsin Mobil Uygulaması Güncellendi',
       excerpt: 'Yeni özellikler ve kullanıcı dostu arayüz ile mobil uygulamamız daha da gelişti. Hemen güncelleyin!',
-      author: 'OnLog Editör',
+      author: 'On'la Gelsin Editör',
       date: '5 Ekim 2024',
       readTime: '3 dk'
     },
@@ -30,23 +30,23 @@ export default function BlogPage() {
       id: 4,
       title: 'Kuryelerin Güvenli Teslimat İçin İpuçları',
       excerpt: 'Kuryelerimiz için hazırladığımız güvenli teslimat rehberi. Teslimat sürecinde dikkat edilmesi gerekenler.',
-      author: 'OnLog Editör',
+      author: 'On'la Gelsin Editör',
       date: '1 Ekim 2024',
       readTime: '6 dk'
     },
     {
       id: 5,
-      title: 'OnLog API Entegrasyonu Nasıl Yapılır?',
-      excerpt: 'E-ticaret sitenize OnLog API entegrasyonu yaparak otomatik kurye atama sistemini aktif hale getirin.',
-      author: 'OnLog Editör',
+      title: 'On'la Gelsin API Entegrasyonu Nasıl Yapılır?',
+      excerpt: 'E-ticaret sitenize On'la Gelsin API entegrasyonu yaparak otomatik kurye atama sistemini aktif hale getirin.',
+      author: 'On'la Gelsin Editör',
       date: '25 Eylül 2024',
       readTime: '8 dk'
     },
     {
       id: 6,
       title: 'Market Teslimatlarında Yeni Dönem',
-      excerpt: 'OnLog ile market teslimatları artık daha hızlı ve güvenilir. Marketlere özel çözümlerimizi keşfedin.',
-      author: 'OnLog Editör',
+      excerpt: 'On'la Gelsin ile market teslimatları artık daha hızlı ve güvenilir. Marketlere özel çözümlerimizi keşfedin.',
+      author: 'On'la Gelsin Editör',
       date: '20 Eylül 2024',
       readTime: '5 dk'
     }
@@ -61,7 +61,7 @@ export default function BlogPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              OnLog Blog
+              On'la Gelsin Blog
             </h1>
             <p className="text-xl text-primary-50">
               Lojistik, e-ticaret ve teslimat dünyasından haberler, ipuçları ve daha fazlası

@@ -5,10 +5,10 @@ export default function Iletisim() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="bg-gradient-to-r from-green-600 to-green-700 text-white py-16">
+      <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Bize Ulaşın</h1>
-          <p className="text-xl text-green-100">
+          <p className="text-xl text-primary-100">
             Size yardımcı olmaktan mutluluk duyarız!
           </p>
         </div>
@@ -32,17 +32,17 @@ export default function Iletisim() {
               <div className="space-y-4">
                 {/* Phone */}
                 <div className="bg-white rounded-lg shadow-md p-6 flex items-start space-x-4">
-                  <div className="bg-green-100 rounded-full p-3">
-                    <Phone className="w-6 h-6 text-green-600" />
+                  <div className="bg-primary-100 rounded-full p-3">
+                    <Phone className="w-6 h-6 text-primary-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Telefon</h3>
                     <p className="text-gray-600 text-sm mb-1">Müşteri Danışmanı:</p>
-                    <a href="tel:+905342447504" className="text-green-600 hover:underline font-medium">
+                    <a href="tel:+905342447504" className="text-primary-600 hover:underline font-medium">
                       +90 534 244 7504
                     </a>
                     <p className="text-gray-600 text-sm mt-2 mb-1">Muhasebe:</p>
-                    <a href="tel:+905301398395" className="text-green-600 hover:underline font-medium">
+                    <a href="tel:+905301398395" className="text-primary-600 hover:underline font-medium">
                       +90 530 139 8395
                     </a>
                   </div>
@@ -50,26 +50,26 @@ export default function Iletisim() {
 
                 {/* Email */}
                 <div className="bg-white rounded-lg shadow-md p-6 flex items-start space-x-4">
-                  <div className="bg-green-100 rounded-full p-3">
-                    <Mail className="w-6 h-6 text-green-600" />
+                  <div className="bg-primary-100 rounded-full p-3">
+                    <Mail className="w-6 h-6 text-primary-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">E-posta</h3>
                     <p className="text-gray-600 text-sm mb-1">Destek:</p>
-                    <a href="mailto:destek@onlog.com.tr" className="text-green-600 hover:underline font-medium block">
-                      destek@onlog.com.tr
+                    <a href="mailto:destek@onlagelsin.com" className="text-primary-600 hover:underline font-medium block">
+                      destek@onlagelsin.com
                     </a>
                     <p className="text-gray-600 text-sm mt-2 mb-1">Muhasebe:</p>
-                    <a href="mailto:muhasebe@onlog.com.tr" className="text-green-600 hover:underline font-medium block">
-                      muhasebe@onlog.com.tr
+                    <a href="mailto:muhasebe@onlagelsin.com" className="text-primary-600 hover:underline font-medium block">
+                      muhasebe@onlagelsin.com
                     </a>
                   </div>
                 </div>
 
                 {/* Address */}
                 <div className="bg-white rounded-lg shadow-md p-6 flex items-start space-x-4">
-                  <div className="bg-green-100 rounded-full p-3">
-                    <MapPin className="w-6 h-6 text-green-600" />
+                  <div className="bg-primary-100 rounded-full p-3">
+                    <MapPin className="w-6 h-6 text-primary-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Adres</h3>
@@ -82,8 +82,8 @@ export default function Iletisim() {
 
                 {/* Working Hours */}
                 <div className="bg-white rounded-lg shadow-md p-6 flex items-start space-x-4">
-                  <div className="bg-green-100 rounded-full p-3">
-                    <Clock className="w-6 h-6 text-green-600" />
+                  <div className="bg-primary-100 rounded-full p-3">
+                    <Clock className="w-6 h-6 text-primary-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Çalışma Saatleri</h3>
@@ -105,7 +105,7 @@ export default function Iletisim() {
                     <label className="block text-gray-700 font-medium mb-2">Ad Soyad *</label>
                     <input 
                       type="text" 
-                      className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+                      className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500"
                       placeholder="Adınız Soyadınız"
                       required
                     />
@@ -114,7 +114,7 @@ export default function Iletisim() {
                     <label className="block text-gray-700 font-medium mb-2">Telefon *</label>
                     <input 
                       type="tel" 
-                      className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+                      className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500"
                       placeholder="+90 5XX XXX XX XX"
                       required
                     />
@@ -125,7 +125,7 @@ export default function Iletisim() {
                   <label className="block text-gray-700 font-medium mb-2">E-posta *</label>
                   <input 
                     type="email" 
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500"
                     placeholder="ornek@email.com"
                     required
                   />
@@ -133,7 +133,7 @@ export default function Iletisim() {
 
                 <div>
                   <label className="block text-gray-700 font-medium mb-2">Konu *</label>
-                  <select className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500">
+                  <select className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500">
                     <option>Genel Bilgi</option>
                     <option>Kurumsal İşbirliği</option>
                     <option>Teknik Destek</option>
@@ -146,7 +146,7 @@ export default function Iletisim() {
                   <label className="block text-gray-700 font-medium mb-2">Mesajınız *</label>
                   <textarea 
                     rows={6}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500"
                     placeholder="Mesajınızı buraya yazın..."
                     required
                   ></textarea>
@@ -154,7 +154,7 @@ export default function Iletisim() {
 
                 <button 
                   type="submit"
-                  className="w-full bg-green-600 text-white py-4 rounded-lg font-semibold hover:bg-green-700 transition"
+                  className="w-full bg-primary-600 text-white py-4 rounded-lg font-semibold hover:bg-primary-700 transition"
                 >
                   Gönder
                 </button>
@@ -176,15 +176,15 @@ export default function Iletisim() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-green-600 text-white">
+      <section className="py-16 bg-primary-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Hemen Teslimat Başlatın!</h2>
-          <p className="text-xl text-green-100 mb-8">
+          <p className="text-xl text-primary-100 mb-8">
             Kurye çağırmak veya fiyat teklifi almak için hemen iletişime geçin
           </p>
           <Link 
             href="/kurye-cagir"
-            className="inline-block bg-white text-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-green-50 transition"
+            className="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition"
           >
             Kurye Çağır
           </Link>

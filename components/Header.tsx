@@ -12,25 +12,33 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="text-3xl font-bold text-green-600">OnLog</div>
+          <Link href="/" className="flex items-center">
+            <img src="/logo.svg" alt="On'la Gelsin" className="h-12" />
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/hizmetlerimiz" className="text-gray-700 hover:text-green-600 transition">
+            <Link href="/hizmetlerimiz" className="text-gray-700 hover:text-primary-600 transition">
               Hizmetlerimiz
             </Link>
-            <Link href="/entegrasyonlar" className="text-gray-700 hover:text-green-600 transition">
+            <a 
+              href="https://restoran.onlagelsin.com" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 hover:text-primary-600 transition"
+            >
+              Restoran Paneli
+            </a>
+            <Link href="/entegrasyonlar" className="text-gray-700 hover:text-primary-600 transition">
               Entegrasyon ve API
             </Link>
-            <Link href="/kurye-ol" className="text-gray-700 hover:text-green-600 transition">
+            <Link href="/kurye-ol" className="text-gray-700 hover:text-primary-600 transition">
               Kurye Ol
             </Link>
-            <Link href="/sss" className="text-gray-700 hover:text-green-600 transition">
+            <Link href="/sss" className="text-gray-700 hover:text-primary-600 transition">
               SSS
             </Link>
-            <Link href="/iletisim" className="text-gray-700 hover:text-green-600 transition">
+            <Link href="/iletisim" className="text-gray-700 hover:text-primary-600 transition">
               İletişim
             </Link>
           </nav>
@@ -39,15 +47,15 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <Link 
               href="/giris" 
-              className="text-green-600 hover:text-green-700 transition font-medium"
+              className="text-primary-600 hover:text-primary-700 transition font-medium"
             >
               Müşteri ol
             </Link>
             <a 
-              href="https://panel.onlog.com.tr/#/login" 
+              href="https://panel.onlagelsin.com/#/login" 
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition font-medium"
+              className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition font-medium"
             >
               Kurye Çağır
             </a>
@@ -65,33 +73,41 @@ export default function Header() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <nav className="md:hidden pb-4 space-y-2">
-            <Link href="/hizmetlerimiz" className="block py-2 text-gray-700 hover:text-green-600">
+            <Link href="/hizmetlerimiz" className="block py-2 text-gray-700 hover:text-primary-600">
               Hizmetlerimiz
             </Link>
-            <Link href="/entegrasyonlar" className="block py-2 text-gray-700 hover:text-green-600">
+            <a 
+              href="https://restoran.onlagelsin.com" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block py-2 text-gray-700 hover:text-primary-600"
+            >
+              Restoran Paneli
+            </a>
+            <Link href="/entegrasyonlar" className="block py-2 text-gray-700 hover:text-primary-600">
               Entegrasyon ve API
             </Link>
-            <Link href="/kurye-ol" className="block py-2 text-gray-700 hover:text-green-600">
+            <Link href="/kurye-ol" className="block py-2 text-gray-700 hover:text-primary-600">
               Kurye Ol
             </Link>
-            <Link href="/sss" className="block py-2 text-gray-700 hover:text-green-600">
+            <Link href="/sss" className="block py-2 text-gray-700 hover:text-primary-600">
               SSS
             </Link>
-            <Link href="/iletisim" className="block py-2 text-gray-700 hover:text-green-600">
+            <Link href="/iletisim" className="block py-2 text-gray-700 hover:text-primary-600">
               İletişim
             </Link>
             <div className="pt-4 space-y-2">
               <Link 
                 href="/giris" 
-                className="block text-center text-green-600 font-medium py-2"
+                className="block text-center text-primary-600 font-medium py-2"
               >
                 Müşteri ol
               </Link>
               <a 
-                href="https://panel.onlog.com.tr/#/login" 
+                href="https://panel.onlagelsin.com/#/login" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-center bg-green-600 text-white px-6 py-2 rounded-lg font-medium"
+                className="block text-center bg-primary-600 text-white px-6 py-2 rounded-lg font-medium"
               >
                 Kurye Çağır
               </a>

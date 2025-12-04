@@ -5,11 +5,13 @@ import MobileApp from '@/components/MobileApp'
 import CourierApplication from '@/components/CourierApplication'
 import PromoBar from '@/components/PromoBar'
 import SellerPanel from '@/components/SellerPanel'
+import RestoranPanel from '@/components/RestoranPanel'
 
 export default function Home() {
   return (
     <main>
       <PromoBar />
+      <RestoranPanel />
       <Hero />
       <Services />
       <SellerPanel />

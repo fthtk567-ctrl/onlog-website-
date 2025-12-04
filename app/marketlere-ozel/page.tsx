@@ -108,7 +108,7 @@ export default function MarketlerePage() {
               Marketinizi Dijitale Taşıyın
             </h1>
             <p className="text-xl md:text-2xl text-primary-50 mb-8">
-              OnLog entegrasyonu ile online sipariş alın, otomatik kurye atansın
+              On'la Gelsin entegrasyonu ile online sipariş alın, otomatik kurye atansın
             </p>
             <a
               href="#iletisim"
@@ -130,7 +130,7 @@ export default function MarketlerePage() {
                   Marketiniz Var Mı?
                 </h2>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  Fiziksel mağazanız veya online market siteniz varsa, OnLog ile iletişime geçerek 
+                  Fiziksel mağazanız veya online market siteniz varsa, On'la Gelsin ile iletişime geçerek 
                   <span className="font-bold text-primary-600"> gelen siparişlere otomatik olarak kurye atanacak</span>
                   {' '}şekilde sisteminizi bize entegre ettirebilirsiniz.
                 </p>
@@ -210,7 +210,7 @@ export default function MarketlerePage() {
               Marketler İçin Özel Özellikler
             </h2>
             <p className="text-center text-gray-600 mb-12 text-lg">
-              OnLog ile marketinizi dijital çağa taşıyın
+              On'la Gelsin ile marketinizi dijital çağa taşıyın
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -321,22 +321,22 @@ export default function MarketlerePage() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  name: 'Yeşil Market',
+                  name: 'Örnek Market',
                   location: 'Ankara',
-                  result: '%350 Satış Artışı',
-                  quote: 'OnLog entegrasyonu ile online sipariş sistemimiz çok verimli çalışıyor. Satışlarımız 3 katına çıktı.'
+                  result: 'Dijital Satış Kanalı',
+                  quote: 'Yeni başladık ama online sipariş sistemi çok kullanışlı. İşimizi kolaylaştırıyor.'
                 },
                 {
-                  name: 'Mahalle Bakkalı',
+                  name: 'Semt Bakkalı',
                   location: 'İstanbul',
-                  result: '500+ Günlük Sipariş',
-                  quote: 'Artık sadece mağazadan değil, online siparişlerle de kazanıyoruz. Müşterilerimiz çok memnun.'
+                  result: 'Online Varlık',
+                  quote: 'Artık sadece mağazadan değil, online siparişlerle de satış yapabiliyoruz.'
                 },
                 {
-                  name: 'Fresh Market',
+                  name: 'Market Zinciri',
                   location: 'İzmir',
-                  result: '%280 Müşteri Artışı',
-                  quote: 'Teslimat hızı müşterilerimizi çok mutlu ediyor. Yeni müşteriler sürekli artıyor.'
+                  result: 'Müşteri Erişimi',
+                  quote: 'Teslimat hızı iyi, sistemleri sade ve anlaşılır. Yeni müşteriler eklemeye devam ediyoruz.'
                 }
               ].map((story, index) => (
                 <div
@@ -509,10 +509,10 @@ export default function MarketlerePage() {
                   <div>
                     <p className="text-gray-600 mb-2">E-posta Gönderin</p>
                     <a
-                      href="mailto:destek@onlog.com.tr"
+                      href="mailto:destek@onlagelsin.com"
                       className="text-primary-600 font-bold text-lg hover:text-primary-700"
                     >
-                      destek@onlog.com.tr
+                      destek@onlagelsin.com
                     </a>
                   </div>
                 </div>

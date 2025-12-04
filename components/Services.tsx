@@ -91,7 +91,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 text-sm">

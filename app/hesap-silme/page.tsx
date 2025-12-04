@@ -95,7 +95,7 @@ export default function HesapSilmePage() {
           <div className="max-w-3xl mx-auto text-center">
             <UserX className="w-16 h-16 mx-auto mb-6" />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              OnLog Uygulamaları
+              On'la Gelsin Uygulamaları
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">
               Hesap Silme Talebi
@@ -104,7 +104,7 @@ export default function HesapSilmePage() {
               Hesabınızın ve tüm ilişkili verilerinizin kalıcı olarak silinmesini talep edebilirsiniz
             </p>
             <p className="text-sm text-red-100 mt-2">
-              (OnLog Kurye Uygulaması ve Satıcı Paneli için)
+              (On'la Gelsin Kurye Uygulaması ve Satıcı Paneli için)
             </p>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function HesapSilmePage() {
                     Hesabınızı silerseniz:
                   </p>
                   <ul className="list-disc list-inside space-y-1 ml-4">
-                    <li>OnLog uygulamalarını bir daha kullanamazsınız</li>
+                    <li>On'la Gelsin uygulamalarını bir daha kullanamazsınız</li>
                     <li>Hesabınız kalıcı olarak kapatılır ve geri açılamaz</li>
                     <li>Tüm kişisel verileriniz silinir</li>
                     <li>İşlem geçmişinize erişemezsiniz</li>
@@ -149,8 +149,8 @@ export default function HesapSilmePage() {
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, OnLog uygulamalarını 
-                  (OnLog Kurye Uygulaması ve Satıcı Paneli) kullanan tüm kullanıcılarımız, hesaplarının 
+                  6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, On'la Gelsin uygulamalarını 
+                  (On'la Gelsin Kurye Uygulaması ve Satıcı Paneli) kullanan tüm kullanıcılarımız, hesaplarının 
                   ve kişisel verilerinin tamamen silinmesini talep etme hakkına sahiptir.
                 </p>
                 <p>
@@ -253,12 +253,12 @@ export default function HesapSilmePage() {
                 </p>
               </div>
 
-              <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
-                <h4 className="font-bold text-green-900 mb-2 flex items-center gap-2">
+              <div className="bg-primary-50 rounded-lg p-6 border-l-4 border-primary-500">
+                <h4 className="font-bold text-primary-900 mb-2 flex items-center gap-2">
                   <CheckCircle className="w-5 h-5" />
                   Silinen Veriler
                 </h4>
-                <p className="text-green-800 text-sm">
+                <p className="text-primary-800 text-sm">
                   Kişisel bilgileriniz, hesap bilgileriniz, konum verileri ve iletişim geçmişiniz 
                   talep sonrası 30 gün içinde kalıcı olarak silinir ve geri getirilemez.
                 </p>
@@ -301,7 +301,7 @@ export default function HesapSilmePage() {
                     type="text"
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition"
-                    placeholder="OnLog Kurye hesabınızda kayıtlı ad ve soyadınız"
+                    placeholder="On'la Gelsin Kurye hesabınızda kayıtlı ad ve soyadınız"
                   />
                 </div>
 
@@ -316,7 +316,7 @@ export default function HesapSilmePage() {
                     placeholder="Kayıtlı telefon numaranız (05XX XXX XX XX)"
                   />
                   <p className="text-sm text-gray-500 mt-1">
-                    OnLog uygulamalarında giriş yaptığınız telefon numaranızı giriniz
+                    On'la Gelsin uygulamalarında giriş yaptığınız telefon numaranızı giriniz
                   </p>
                 </div>
 
@@ -344,9 +344,9 @@ export default function HesapSilmePage() {
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition"
                   >
                     <option value="">Seçiniz</option>
-                    <option value="kurye">OnLog Kurye Uygulaması</option>
-                    <option value="satici">OnLog Satıcı Paneli</option>
-                    <option value="web">OnLog Web Paneli</option>
+                    <option value="kurye">On'la Gelsin Kurye Uygulaması</option>
+                    <option value="satici">On'la Gelsin Satıcı Paneli</option>
+                    <option value="web">On'la Gelsin Web Paneli</option>
                   </select>
                 </div>
 
@@ -401,7 +401,7 @@ export default function HesapSilmePage() {
                       <ul className="list-disc list-inside space-y-2">
                         <li>Hesabımın ve tüm verilerimin <strong>kalıcı olarak silineceğini</strong></li>
                         <li>Bu işlemin <strong>geri alınamaz</strong> olduğunu</li>
-                        <li>OnLog uygulamalarını bir daha <strong>kullanamayacağımı</strong></li>
+                        <li>On'la Gelsin uygulamalarını bir daha <strong>kullanamayacağımı</strong></li>
                         <li>İşlem geçmişime ve bilgilerime <strong>erişemeyeceğimi</strong></li>
                         <li>Bekleyen ödemelerimin tamamlandıktan sonra işlemin yapılacağını</li>
                         <li>Yasal zorunluluklar nedeniyle bazı verilerin 10 yıl <strong>anonim olarak saklanacağını</strong></li>
@@ -448,10 +448,10 @@ export default function HesapSilmePage() {
                     <Mail className="w-6 h-6 mx-auto mb-2 text-primary-600" />
                     <p className="text-xs text-gray-600 mb-1">E-posta</p>
                     <a
-                      href="mailto:destek@onlog.com.tr"
+                      href="mailto:destek@onlagelsin.com"
                       className="text-primary-600 font-semibold hover:text-primary-700 text-sm"
                     >
-                      destek@onlog.com.tr
+                      destek@onlagelsin.com
                     </a>
                   </div>
                   <div className="text-center p-4 bg-gray-50 rounded-lg">

@@ -1,4 +1,4 @@
-# OnLog - Şehir İçi Hızlı Kurye Teslimat Hizmeti
+# On'la Gelsin - Şehir İçi Hızlı Kurye Teslimat Hizmeti
 
 Modern ve profesyonel kurye teslimat hizmeti web sitesi.
 
@@ -27,7 +27,7 @@ Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açın.
 ## 🏗️ Proje Yapısı
 
 ```
-onlog-website/
+On'la Gelsin-website/
 ├── app/
 │   ├── layout.tsx       # Ana layout
 │   ├── page.tsx         # Ana sayfa
@@ -108,7 +108,7 @@ npm run lint
 
 ## 📄 Lisans
 
-Bu proje OnLog için özel olarak geliştirilmiştir.
+Bu proje On'la Gelsin için özel olarak geliştirilmiştir.
 
 ## 🤝 Destek
 

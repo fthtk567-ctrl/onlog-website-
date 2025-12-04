@@ -3,13 +3,13 @@ import { ArrowRight, Package, Clock, Shield } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-green-50 to-white py-20">
+    <section className="relative bg-gradient-to-br from-primary-50 to-white py-20">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-              OnLog ile gün içinde adresinde!
+              On'la Gelsin ile gün içinde adresinde!
             </h1>
             <p className="text-xl text-gray-600">
               İster bireysel ister kurumsal gönderileriniz için şehir içi hızlı kurye teslimat hizmetimizle tanışın!
@@ -17,16 +17,16 @@ export default function Hero() {
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a 
-                href="https://panel.onlog.com.tr/#/login"
+                href="https://panel.onlagelsin.com/#/login"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition group"
+                className="inline-flex items-center justify-center bg-primary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-700 transition group"
               >
                 Kurye Çağır
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition" />
               </a>
               <div className="text-center sm:text-left">
-                <p className="text-3xl font-bold text-green-600">136.90 ₺</p>
+                <p className="text-3xl font-bold text-primary-600">136.90 ₺</p>
                 <p className="text-sm text-gray-600">&apos;den başlayan fiyatlarla</p>
               </div>
             </div>
@@ -34,20 +34,20 @@ export default function Hero() {
             {/* Features */}
             <div className="grid grid-cols-3 gap-4 pt-8">
               <div className="text-center">
-                <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
-                  <Package className="w-8 h-8 text-green-600" />
+                <div className="bg-primary-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
+                  <Package className="w-8 h-8 text-primary-600" />
                 </div>
                 <p className="text-sm font-medium text-gray-700">Güvenli Teslimat</p>
               </div>
               <div className="text-center">
-                <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
-                  <Clock className="w-8 h-8 text-green-600" />
+                <div className="bg-primary-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
+                  <Clock className="w-8 h-8 text-primary-600" />
                 </div>
                 <p className="text-sm font-medium text-gray-700">Hızlı Servis</p>
               </div>
               <div className="text-center">
-                <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
-                  <Shield className="w-8 h-8 text-green-600" />
+                <div className="bg-primary-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
+                  <Shield className="w-8 h-8 text-primary-600" />
                 </div>
                 <p className="text-sm font-medium text-gray-700">Sigortalı Gönderim</p>
               </div>
@@ -66,8 +66,8 @@ export default function Hero() {
             {/* Floating Card */}
             <div className="absolute -bottom-6 -left-6 bg-white rounded-lg shadow-lg p-4 max-w-xs">
               <div className="flex items-center space-x-3">
-                <div className="bg-green-100 rounded-full p-3">
-                  <Package className="w-6 h-6 text-green-600" />
+                <div className="bg-primary-100 rounded-full p-3">
+                  <Package className="w-6 h-6 text-primary-600" />
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Teslimat Tamamlandı</p>

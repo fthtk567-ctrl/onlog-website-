@@ -27,7 +27,7 @@ export default function KVKKPage() {
               {/* Introduction */}
               <div className="mb-12">
                 <p className="text-gray-700 leading-relaxed">
-                  OnLog olarak, 6698 sayılı Kişisel Verilerin Korunması Kanunu (&quot;KVKK&quot;) kapsamında, 
+                  On'la Gelsin olarak, 6698 sayılı Kişisel Verilerin Korunması Kanunu (&quot;KVKK&quot;) kapsamında, 
                   kişisel verilerinizin güvenliğini en üst düzeyde tutmayı ve gizliliğinizi korumayı taahhüt ediyoruz. 
                   Bu aydınlatma metni, kişisel verilerinizin nasıl toplandığı, işlendiği ve korunduğu hakkında sizi 
                   bilgilendirmek amacıyla hazırlanmıştır.
@@ -46,13 +46,13 @@ export default function KVKKPage() {
                 </div>
                 <div className="ml-15 text-gray-700 space-y-3">
                   <p>
-                    KVKK kapsamında veri sorumlusu olarak OnLog, kişisel verilerinizin işleme amaçlarını ve 
+                    KVKK kapsamında veri sorumlusu olarak On'la Gelsin, kişisel verilerinizin işleme amaçlarını ve 
                     vasıtalarını belirler, veri kayıt sisteminin kurulmasından ve yönetilmesinden sorumludur.
                   </p>
                   <div className="bg-gray-50 rounded-lg p-4 mt-4">
                     <p className="font-semibold text-gray-900 mb-2">İletişim Bilgileri:</p>
                     <p><strong>Adres:</strong> Bakkalbaşı Mah. Mustafa Kemal Cad. No: 10/A Çumra / KONYA</p>
-                    <p><strong>E-posta:</strong> destek@onlog.com.tr</p>
+                    <p><strong>E-posta:</strong> destek@onlagelsin.com</p>
                     <p><strong>Telefon:</strong> +90 534 244 75 04</p>
                   </div>
                 </div>
@@ -69,7 +69,7 @@ export default function KVKKPage() {
                   </h2>
                 </div>
                 <div className="ml-15 text-gray-700 space-y-3">
-                  <p>OnLog olarak, hizmetlerimizi sunabilmek için aşağıdaki kişisel verilerinizi işlemekteyiz:</p>
+                  <p>On'la Gelsin olarak, hizmetlerimizi sunabilmek için aşağıdaki kişisel verilerinizi işlemekteyiz:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li><strong>Kimlik Bilgileri:</strong> Ad, soyad, T.C. kimlik numarası</li>
                     <li><strong>İletişim Bilgileri:</strong> Telefon numarası, e-posta adresi, adres</li>
@@ -199,7 +199,7 @@ export default function KVKKPage() {
                   <div className="bg-primary-50 rounded-lg p-6 mt-4">
                     <p className="font-semibold text-primary-900 mb-3">Başvuru Kanalları:</p>
                     <ul className="space-y-2">
-                      <li><strong>E-posta:</strong> destek@onlog.com.tr</li>
+                      <li><strong>E-posta:</strong> destek@onlagelsin.com</li>
                       <li><strong>Posta Adresi:</strong> Bakkalbaşı Mah. Mustafa Kemal Cad. No: 10/A Çumra / KONYA</li>
                       <li><strong>Telefon:</strong> +90 534 244 75 04</li>
                     </ul>
@@ -224,7 +224,7 @@ export default function KVKKPage() {
                 </div>
                 <div className="ml-15 text-gray-700 space-y-3">
                   <p>
-                    OnLog olarak, kişisel verilerinizin güvenliğini sağlamak için gerekli tüm teknik ve 
+                    On'la Gelsin olarak, kişisel verilerinizin güvenliğini sağlamak için gerekli tüm teknik ve 
                     idari tedbirleri almaktayız. Verileriniz, yetkisiz erişime, kaybolmaya, değiştirilmeye 
                     veya ifşa edilmeye karşı korunmaktadır.
                   </p>
@@ -265,7 +265,7 @@ export default function KVKKPage() {
               İletişime Geç
             </a>
             <a
-              href="mailto:destek@onlog.com.tr"
+              href="mailto:destek@onlagelsin.com"
               className="inline-block bg-gray-100 text-gray-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors"
             >
               E-posta Gönder

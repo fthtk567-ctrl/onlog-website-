@@ -4,10 +4,10 @@ export default function CerezPolitikasi() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="bg-gradient-to-r from-green-600 to-green-700 text-white py-16">
+      <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Çerez Politikası</h1>
-          <p className="text-xl text-green-100">
+          <p className="text-xl text-primary-100">
             Son Güncelleme: 28 Ekim 2025
           </p>
         </div>
@@ -60,7 +60,7 @@ export default function CerezPolitikasi() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">3. OnLog&apos;un Kullandığı Çerezler</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">3. On'la Gelsin&apos;un Kullandığı Çerezler</h2>
               
               <div className="overflow-x-auto">
                 <table className="min-w-full bg-white border border-gray-300">
@@ -149,16 +149,16 @@ export default function CerezPolitikasi() {
 
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">8. İletişim</h2>
-              <div className="bg-green-50 rounded-lg p-6">
+              <div className="bg-primary-50 rounded-lg p-6">
                 <p className="text-gray-700 mb-4">
                   Çerez politikamız hakkında sorularınız için:
                 </p>
                 <div className="space-y-2">
                   <p className="text-gray-700">
-                    <strong>E-posta:</strong> <a href="mailto:destek@onlog.com.tr" className="text-green-600 hover:underline">destek@onlog.com.tr</a>
+                    <strong>E-posta:</strong> <a href="mailto:destek@onlagelsin.com" className="text-primary-600 hover:underline">destek@onlagelsin.com</a>
                   </p>
                   <p className="text-gray-700">
-                    <strong>Telefon:</strong> <a href="tel:+905342447504" className="text-green-600 hover:underline">+90 534 244 7504</a>
+                    <strong>Telefon:</strong> <a href="tel:+905342447504" className="text-primary-600 hover:underline">+90 534 244 7504</a>
                   </p>
                   <p className="text-gray-700">
                     <strong>Adres:</strong> Bakkalbaşı Mah. Mustafa Kemal Cad. No: 10/A Çumra / KONYA
@@ -171,7 +171,7 @@ export default function CerezPolitikasi() {
 
           {/* Back to Home */}
           <div className="text-center mt-8">
-            <Link href="/" className="text-green-600 hover:underline font-semibold">
+            <Link href="/" className="text-primary-600 hover:underline font-semibold">
               ← Ana Sayfaya Dön
             </Link>
           </div>

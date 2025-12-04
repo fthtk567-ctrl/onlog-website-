@@ -76,9 +76,9 @@ export default function HizmetlerimizPage() {
   ];
 
   const stats = [
-    { number: '50.000+', label: 'Teslimat' },
-    { number: '10.000+', label: 'Mutlu Müşteri' },
-    { number: '500+', label: 'Aktif Kurye' },
+    { number: 'Yeni', label: 'Girişim' },
+    { number: 'Büyüyor', label: 'Her Gün' },
+    { number: 'Türkiye', label: 'Genelinde' },
     { number: '24/7', label: 'Destek Hizmeti' }
   ];
 
@@ -103,7 +103,7 @@ export default function HizmetlerimizPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-              OnLog Kurye Hizmetleri
+              On'la Gelsin Kurye Hizmetleri
             </h2>
             <p className="text-center text-gray-600 mb-12 text-lg">
               Bireysel ve kurumsal tüm teslimat ihtiyaçlarınız için yanınızdayız
@@ -144,7 +144,7 @@ export default function HizmetlerimizPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-              Neden OnLog?
+              Neden On'la Gelsin?
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {advantages.map((advantage, index) => (
@@ -173,7 +173,7 @@ export default function HizmetlerimizPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">
-              OnLog Rakamlarla
+              On'la Gelsin Rakamlarla
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
@@ -314,7 +314,7 @@ export default function HizmetlerimizPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://panel.onlog.com.tr/#/login"
+              href="https://panel.onlagelsin.com/#/login"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors"

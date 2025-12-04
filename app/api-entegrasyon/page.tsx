@@ -65,10 +65,10 @@ export default function EntegrasyonAPIPage() {
           <div className="max-w-4xl mx-auto text-center">
             <Code className="w-16 h-16 mx-auto mb-6" />
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              OnLog API ve Entegrasyon
+              On'la Gelsin API ve Entegrasyon
             </h1>
             <p className="text-xl md:text-2xl text-primary-50 mb-8">
-              Sisteminizi OnLog API ile entegre edin, otomatik kurye atama sisteminden yararlanın
+              Sisteminizi On'la Gelsin API ile entegre edin, otomatik kurye atama sisteminden yararlanın
             </p>
           </div>
         </div>
@@ -79,18 +79,18 @@ export default function EntegrasyonAPIPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-              OnLog API Nedir?
+              On'la Gelsin API Nedir?
             </h2>
             <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8 md:p-12">
               <p className="text-lg text-gray-800 leading-relaxed mb-6">
-                OnLog API, web siteniz, mobil uygulamanız veya herhangi bir yazılımınızdan kurye hizmeti 
+                On'la Gelsin API, web siteniz, mobil uygulamanız veya herhangi bir yazılımınızdan kurye hizmeti 
                 talep edebilmenizi sağlayan gelişmiş bir entegrasyon çözümüdür. API&apos;miz sayesinde 
                 sisteminizden otomatik olarak kurye atayabilir, teslimat durumunu takip edebilir ve 
                 müşterilerinize gerçek zamanlı bilgi sağlayabilirsiniz.
               </p>
               <p className="text-lg text-gray-800 leading-relaxed">
                 Modern RESTful API yapımız, tüm popüler programlama dilleri ve platformlarla uyumludur. 
-                JSON formatında veri alışverişi yaparak, güvenli ve hızlı bir şekilde OnLog sistemine 
+                JSON formatında veri alışverişi yaparak, güvenli ve hızlı bir şekilde On'la Gelsin sistemine 
                 bağlanabilirsiniz.
               </p>
             </div>
@@ -106,7 +106,7 @@ export default function EntegrasyonAPIPage() {
               API Özellikleri
             </h2>
             <p className="text-center text-gray-600 mb-12 text-lg">
-              OnLog API&apos;nin sunduğu güçlü özellikler
+              On'la Gelsin API&apos;nin sunduğu güçlü özellikler
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -300,13 +300,13 @@ export default function EntegrasyonAPIPage() {
                 Entegrasyon Desteği
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                OnLog API entegrasyonu için teknik ekibimiz size tam destek sağlamaktadır. 
+                On'la Gelsin API entegrasyonu için teknik ekibimiz size tam destek sağlamaktadır. 
                 Entegrasyon sürecinde karşılaşabileceğiniz tüm sorunlarda yanınızdayız. 
                 Detaylı API dokümantasyonu, kod örnekleri ve entegrasyon rehberi için 
                 bizimle iletişime geçebilirsiniz.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                <strong>Not:</strong> API erişimi için öncelikle OnLog ile iş ortaklığı anlaşması 
+                <strong>Not:</strong> API erişimi için öncelikle On'la Gelsin ile iş ortaklığı anlaşması 
                 yapmanız gerekmektedir. Entegrasyon süreci ve API anahtarı talepleri için 
                 aşağıdaki iletişim kanallarını kullanabilirsiniz.
               </p>
@@ -340,10 +340,10 @@ export default function EntegrasyonAPIPage() {
               <Mail className="w-8 h-8 mx-auto mb-3 text-white" />
               <p className="text-primary-100 mb-2">E-posta Gönderin</p>
               <a
-                href="mailto:destek@onlog.com.tr"
+                href="mailto:destek@onlagelsin.com"
                 className="text-white font-bold text-xl hover:text-primary-100 transition-colors"
               >
-                destek@onlog.com.tr
+                destek@onlagelsin.com
               </a>
             </div>
           </div>

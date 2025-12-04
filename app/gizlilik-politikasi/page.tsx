@@ -4,10 +4,10 @@ export default function GizlilikPolitikasi() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="bg-gradient-to-r from-green-600 to-green-700 text-white py-16">
+      <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Gizlilik Politikası</h1>
-          <p className="text-xl text-green-100">
+          <p className="text-xl text-primary-100">
             Son Güncelleme: 28 Ekim 2025
           </p>
         </div>
@@ -21,7 +21,7 @@ export default function GizlilikPolitikasi() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Giriş</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                OnLog olarak kişisel verilerinizin güvenliği bizim için son derece önemlidir. Bu Gizlilik Politikası, kişisel bilgilerinizi nasıl topladığımızı, kullandığımızı, sakladığımızı ve koruduğumuzu açıklamaktadır.
+                On'la Gelsin olarak kişisel verilerinizin güvenliği bizim için son derece önemlidir. Bu Gizlilik Politikası, kişisel bilgilerinizi nasıl topladığımızı, kullandığımızı, sakladığımızı ve koruduğumuzu açıklamaktadır.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 Bu politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve ilgili mevzuat uyarınca hazırlanmıştır.
@@ -92,7 +92,7 @@ export default function GizlilikPolitikasi() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Çerezler (Cookies)</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Web sitemiz, kullanıcı deneyimini iyileştirmek için çerezler kullanmaktadır. Çerezler hakkında detaylı bilgi için <Link href="/cerez-politikasi" className="text-green-600 hover:underline">Çerez Politikamızı</Link> inceleyebilirsiniz.
+                Web sitemiz, kullanıcı deneyimini iyileştirmek için çerezler kullanmaktadır. Çerezler hakkında detaylı bilgi için <Link href="/cerez-politikasi" className="text-primary-600 hover:underline">Çerez Politikamızı</Link> inceleyebilirsiniz.
               </p>
             </div>
 
@@ -128,7 +128,7 @@ export default function GizlilikPolitikasi() {
               </p>
               <div className="bg-gray-50 rounded-lg p-4 space-y-2">
                 <p className="text-gray-700">
-                  <strong>E-posta:</strong> <a href="mailto:kvkk@onlog.com.tr" className="text-green-600 hover:underline">kvkk@onlog.com.tr</a>
+                  <strong>E-posta:</strong> <a href="mailto:kvkk@onlagelsin.com" className="text-primary-600 hover:underline">kvkk@onlagelsin.com</a>
                 </p>
                 <p className="text-gray-700">
                   <strong>Posta:</strong> Bakkalbaşı Mah. Mustafa Kemal Cad. No: 10/A Çumra / KONYA
@@ -148,16 +148,16 @@ export default function GizlilikPolitikasi() {
 
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">11. İletişim</h2>
-              <div className="bg-green-50 rounded-lg p-6">
+              <div className="bg-primary-50 rounded-lg p-6">
                 <p className="text-gray-700 mb-4">
                   Gizlilik politikamız hakkında sorularınız için:
                 </p>
                 <div className="space-y-2">
                   <p className="text-gray-700">
-                    <strong>E-posta:</strong> <a href="mailto:destek@onlog.com.tr" className="text-green-600 hover:underline">destek@onlog.com.tr</a>
+                    <strong>E-posta:</strong> <a href="mailto:destek@onlagelsin.com" className="text-primary-600 hover:underline">destek@onlagelsin.com</a>
                   </p>
                   <p className="text-gray-700">
-                    <strong>Telefon:</strong> <a href="tel:+905342447504" className="text-green-600 hover:underline">+90 534 244 7504</a>
+                    <strong>Telefon:</strong> <a href="tel:+905342447504" className="text-primary-600 hover:underline">+90 534 244 7504</a>
                   </p>
                 </div>
               </div>
@@ -167,7 +167,7 @@ export default function GizlilikPolitikasi() {
 
           {/* Back to Home */}
           <div className="text-center mt-8">
-            <Link href="/" className="text-green-600 hover:underline font-semibold">
+            <Link href="/" className="text-primary-600 hover:underline font-semibold">
               ← Ana Sayfaya Dön
             </Link>
           </div>

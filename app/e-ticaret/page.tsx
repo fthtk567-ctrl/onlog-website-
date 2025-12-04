@@ -90,7 +90,7 @@ export default function EticaretPage() {
               E-Ticaret İşletmeleri İçin
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              E-Ticaret Sitenizi OnLog ile Entegre Edin
+              E-Ticaret Sitenizi On'la Gelsin ile Entegre Edin
             </h1>
             <p className="text-xl md:text-2xl text-primary-50 mb-8">
               Web sitenize entegre olun, gelen siparişlere otomatik kurye atansın
@@ -115,7 +115,7 @@ export default function EticaretPage() {
                   E-Ticaret Siteniz Var Mı?
                 </h2>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  Herhangi bir e-ticaret platformunda web siteniz varsa, OnLog ile iletişime geçerek 
+                  Herhangi bir e-ticaret platformunda web siteniz varsa, On'la Gelsin ile iletişime geçerek 
                   <span className="font-bold text-primary-600"> gelen siparişlerinize otomatik olarak kurye atanacak</span> 
                   {' '}şekilde sisteminizi bize entegre ettirebilirsiniz.
                 </p>
@@ -175,7 +175,7 @@ export default function EticaretPage() {
               E-Ticaret Entegrasyonunun Avantajları
             </h2>
             <p className="text-center text-gray-600 mb-12 text-lg">
-              OnLog API entegrasyonu ile işletmenizi güçlendirin
+              On'la Gelsin API entegrasyonu ile işletmenizi güçlendirin
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -415,10 +415,10 @@ export default function EticaretPage() {
                   <div>
                     <p className="text-gray-600 mb-2">E-posta Gönderin</p>
                     <a
-                      href="mailto:destek@onlog.com.tr"
+                      href="mailto:destek@onlagelsin.com"
                       className="text-primary-600 font-bold text-lg hover:text-primary-700"
                     >
-                      destek@onlog.com.tr
+                      destek@onlagelsin.com
                     </a>
                   </div>
                 </div>

@@ -8,7 +8,7 @@ export default function MobileApp() {
           {/* Left Content */}
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-gray-900">
-              OnLog uygulamasıyla mobilken de teslimatlarınızı yönetebilirsiniz
+              On'la Gelsin uygulamasıyla mobilken de teslimatlarınızı yönetebilirsiniz
             </h2>
             <p className="text-xl text-gray-600">
               Uygulamayı indirmek için QR kodunu tarayın
@@ -17,8 +17,8 @@ export default function MobileApp() {
             {/* QR Code */}
             <div className="flex items-center space-x-6">
               <div className="bg-gray-100 p-4 rounded-xl">
-                <div className="w-32 h-32 bg-white border-4 border-green-600 rounded-lg flex items-center justify-center">
-                  <Scan className="w-16 h-16 text-green-600" />
+                <div className="w-32 h-32 bg-white border-4 border-primary-600 rounded-lg flex items-center justify-center">
+                  <Scan className="w-16 h-16 text-primary-600" />
                 </div>
               </div>
               <div className="space-y-3">
@@ -48,8 +48,8 @@ export default function MobileApp() {
             {/* Features */}
             <div className="grid grid-cols-2 gap-4 pt-6">
               <div className="flex items-start space-x-3">
-                <div className="bg-green-100 rounded-full p-2 mt-1">
-                  <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <div className="bg-primary-100 rounded-full p-2 mt-1">
+                  <svg className="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -59,8 +59,8 @@ export default function MobileApp() {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="bg-green-100 rounded-full p-2 mt-1">
-                  <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <div className="bg-primary-100 rounded-full p-2 mt-1">
+                  <svg className="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -70,8 +70,8 @@ export default function MobileApp() {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="bg-green-100 rounded-full p-2 mt-1">
-                  <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <div className="bg-primary-100 rounded-full p-2 mt-1">
+                  <svg className="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -81,8 +81,8 @@ export default function MobileApp() {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="bg-green-100 rounded-full p-2 mt-1">
-                  <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <div className="bg-primary-100 rounded-full p-2 mt-1">
+                  <svg className="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -99,7 +99,7 @@ export default function MobileApp() {
             <div className="relative mx-auto w-full max-w-sm">
               <img 
                 src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=800&fit=crop" 
-                alt="OnLog mobil uygulama" 
+                alt="On'la Gelsin mobil uygulama" 
                 className="w-full h-auto rounded-3xl shadow-2xl"
               />
             </div>
