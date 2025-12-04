@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold text-primary-400 mb-4">On'la Gelsin</h3>
+            <h3 className="text-2xl font-bold text-primary-400 mb-4">On&apos;la Gelsin</h3>
             <p className="text-gray-400 text-sm mb-4">
               Şehir içi hızlı kurye teslimat hizmetleri ile gün içinde adresinde!
             </p>
@@ -175,7 +175,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 On'la Gelsin. Tüm hakları saklıdır.
+              © 2025 On&apos;la Gelsin. Tüm hakları saklıdır.
             </p>
             <div className="flex space-x-4">
               <a 
