@@ -37,7 +37,7 @@ export default function Header() {
             >
               Restoran Paneli
             </a>
-            <Link href="/entegrasyonlar" className="text-gray-700 hover:text-primary-600 transition">
+            <Link href="/api-entegrasyon" className="text-gray-700 hover:text-primary-600 transition">
               Entegrasyon ve API
             </Link>
             <Link href="/kurye-ol" className="text-gray-700 hover:text-primary-600 transition">
@@ -53,12 +53,6 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link 
-              href="/giris" 
-              className="text-primary-600 hover:text-primary-700 transition font-medium"
-            >
-              Müşteri ol
-            </Link>
             <a 
               href="https://panel.onlagelsin.com/#/login" 
               target="_blank"
@@ -92,7 +86,7 @@ export default function Header() {
             >
               Restoran Paneli
             </a>
-            <Link href="/entegrasyonlar" className="block py-2 text-gray-700 hover:text-primary-600">
+            <Link href="/api-entegrasyon" className="block py-2 text-gray-700 hover:text-primary-600">
               Entegrasyon ve API
             </Link>
             <Link href="/kurye-ol" className="block py-2 text-gray-700 hover:text-primary-600">
@@ -104,13 +98,7 @@ export default function Header() {
             <Link href="/iletisim" className="block py-2 text-gray-700 hover:text-primary-600">
               İletişim
             </Link>
-            <div className="pt-4 space-y-2">
-              <Link 
-                href="/giris" 
-                className="block text-center text-primary-600 font-medium py-2"
-              >
-                Müşteri ol
-              </Link>
+            <div className="pt-4">
               <a 
                 href="https://panel.onlagelsin.com/#/login" 
                 target="_blank"

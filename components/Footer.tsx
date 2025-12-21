@@ -55,18 +55,8 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Hizmetler</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/istanbul" className="text-gray-400 hover:text-white transition">
-                  Istanbul
-                </Link>
-              </li>
-              <li>
-                <Link href="/izmir" className="text-gray-400 hover:text-white transition">
-                  Izmir
-                </Link>
-              </li>
-              <li>
-                <Link href="/ankara" className="text-gray-400 hover:text-white transition">
-                  Ankara
+                <Link href="/konya" className="text-gray-400 hover:text-white transition">
+                  Konya
                 </Link>
               </li>
               <li>
@@ -75,7 +65,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/entegrasyonlar" className="text-gray-400 hover:text-white transition">
+                <Link href="/api-entegrasyon" className="text-gray-400 hover:text-white transition">
                   Entegrasyon ve API
                 </Link>
               </li>
@@ -107,8 +97,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/market" className="text-gray-400 hover:text-white transition">
-                  Marketlere Özel
+                <Link href="/marketlere-ozel" className="text-gray-400 hover:text-white transition">
+                  Marketlere Özellere Özel
                 </Link>
               </li>
             </ul>
@@ -124,8 +114,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/yardim-merkezi" className="text-gray-400 hover:text-white transition">
-                  Yardım Merkezi
+                <Link href="/iletisim" className="text-gray-400 hover:text-white transition">
+                  Yardım & İletişim
                 </Link>
               </li>
               <li>

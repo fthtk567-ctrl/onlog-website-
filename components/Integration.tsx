@@ -14,7 +14,7 @@ export default function Integration() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* API Integration */}
           <Link 
-            href="/entegrasyonlar"
+            href="/api-entegrasyon"
             className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
           >
             <div className="p-8">
@@ -33,8 +33,8 @@ export default function Integration() {
           </Link>
 
           {/* Mobile App */}
-          <Link 
-            href="/mobil-uygulama"
+          <a 
+            href="#"
             className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
           >
             <div className="p-8">
@@ -50,12 +50,12 @@ export default function Integration() {
               </span>
             </div>
             <div className="h-2 bg-gradient-to-r from-primary-500 to-primary-600"></div>
-          </Link>
+          </a>
 
           {/* Modules */}
-          <Link 
-            href="/moduller"
-            className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
+          <a 
+            href="#"
+            className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
           >
             <div className="p-8">
               <div className="bg-primary-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-primary-600 transition">
@@ -70,7 +70,7 @@ export default function Integration() {
               </span>
             </div>
             <div className="h-2 bg-gradient-to-r from-primary-500 to-primary-600"></div>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
