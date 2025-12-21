@@ -325,26 +325,39 @@ export default function EntegrasyonAPIPage() {
             Teknik ekibimiz entegrasyon sürecinde size yardımcı olmaktan mutluluk duyacaktır
           </p>
           
-          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-8">
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
             <div className="bg-white/10 backdrop-blur rounded-xl p-6">
               <Phone className="w-8 h-8 mx-auto mb-3 text-white" />
-              <p className="text-primary-100 mb-2">Bizi Arayın</p>
+              <p className="text-primary-100 mb-2">Müşteri Danışmanı</p>
               <a
                 href="tel:+905342447504"
                 className="text-white font-bold text-xl hover:text-primary-100 transition-colors"
               >
                 +90 534 244 75 04
               </a>
+              <p className="text-primary-200 text-sm mt-2">Entegrasyon & Genel Sorular</p>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-6">
               <Mail className="w-8 h-8 mx-auto mb-3 text-white" />
-              <p className="text-primary-100 mb-2">E-posta Gönderin</p>
+              <p className="text-primary-100 mb-2">E-posta Desteği</p>
               <a
                 href="mailto:destek@onlagelsin.com"
-                className="text-white font-bold text-xl hover:text-primary-100 transition-colors"
+                className="text-white font-bold text-lg hover:text-primary-100 transition-colors break-all"
               >
                 destek@onlagelsin.com
               </a>
+              <p className="text-primary-200 text-sm mt-2">7/24 E-posta Desteği</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+              <Phone className="w-8 h-8 mx-auto mb-3 text-white" />
+              <p className="text-primary-100 mb-2">Muhasebe</p>
+              <a
+                href="tel:+905301398395"
+                className="text-white font-bold text-xl hover:text-primary-100 transition-colors"
+              >
+                +90 530 139 83 95
+              </a>
+              <p className="text-primary-200 text-sm mt-2">Fiyatlandırma & Faturalandırma</p>
             </div>
           </div>
 
