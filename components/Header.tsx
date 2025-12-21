@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 
 export default function Header() {
@@ -13,7 +14,14 @@ export default function Header() {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/logo.svg" alt="On'la Gelsin" className="h-12" />
+            <Image 
+              src="/logo.svg" 
+              alt="On'la Gelsin" 
+              width={200}
+              height={48}
+              priority
+              className="h-10 md:h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
