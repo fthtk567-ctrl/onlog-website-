@@ -75,7 +75,7 @@ export const metadata = {
 
 ### External Integration Points
 - **Ana panel**: https://panel.onlagelsin.com/#/login (ayrı uygulama)
-- **Restoran panel**: https://restoran.onlagelsin.com
+- **Restoran panel**: https://panel.onlagelsin.com (restoran paneli için)
 - **İletişim bilgileri** (Footer.tsx'te hardcoded):
   - Müşteri Danışmanı: +90 534 244 7504
   - Muhasebe: +90 530 139 8395

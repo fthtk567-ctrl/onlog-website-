@@ -30,7 +30,7 @@ export default function Header() {
               Hizmetlerimiz
             </Link>
             <a 
-              href="https://restoran.onlagelsin.com" 
+              href="https://panel.onlagelsin.com" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-primary-600 transition"
@@ -85,7 +85,7 @@ export default function Header() {
               Hizmetlerimiz
             </Link>
             <a 
-              href="https://restoran.onlagelsin.com" 
+              href="https://panel.onlagelsin.com" 
               target="_blank"
               rel="noopener noreferrer"
               className="block py-2 text-gray-700 hover:text-primary-600"

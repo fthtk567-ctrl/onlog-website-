@@ -63,7 +63,7 @@ export default function RestoranPanel() {
               </Link>
               
               <a
-                href="https://restoran.onlagelsin.com"
+                href="https://panel.onlagelsin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-white border-2 border-primary-600 text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-50 transition"

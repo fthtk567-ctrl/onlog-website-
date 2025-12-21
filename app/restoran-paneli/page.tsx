@@ -84,7 +84,7 @@ export default function RestoranPaneliPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://restoran.onlagelsin.com"
+                href="https://panel.onlagelsin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-white text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-50 transition group"
@@ -190,7 +190,7 @@ export default function RestoranPaneliPage() {
               </div>
 
               <a
-                href="https://restoran.onlagelsin.com"
+                href="https://panel.onlagelsin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full bg-primary-600 text-white text-center py-4 rounded-lg font-semibold hover:bg-primary-700 transition"
@@ -212,7 +212,7 @@ export default function RestoranPaneliPage() {
             Bugün başlayın, online siparişlerinizi artırın!
           </p>
           <a
-            href="https://restoran.onlagelsin.com"
+            href="https://panel.onlagelsin.com"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition text-lg"
