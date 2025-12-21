@@ -55,11 +55,6 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Hizmetler</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/konya" className="text-gray-400 hover:text-white transition">
-                  Konya
-                </Link>
-              </li>
-              <li>
                 <Link href="/hizmetlerimiz" className="text-gray-400 hover:text-white transition">
                   Hizmetlerimiz
                 </Link>
