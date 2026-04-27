@@ -355,14 +355,16 @@ export default function KuryeOlPage() {
 
               <div className="mt-8 pt-8 border-t border-gray-200 text-center">
                 <p className="text-gray-600 mb-4">
-                  Sorularınız mı var? Hemen bizi arayın:
+                  Sorularınız mı var? WhatsApp üzerinden bize ulaşın:
                 </p>
                 <a
-                  href="tel:+905342447504"
+                  href="https://wa.me/905454291076"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-primary-600 font-bold text-xl hover:text-primary-700"
                 >
                   <Phone className="w-6 h-6" />
-                  +90 534 244 75 04
+                  +90 545 429 10 76
                 </a>
               </div>
             </div>

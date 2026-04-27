@@ -16,21 +16,23 @@ export default function Footer() {
             {/* Contact Info */}
             <div className="space-y-2 mb-4">
               <p className="text-gray-400 text-sm">
-                <span className="font-semibold text-white">Müşteri Danışmanı:</span><br />
-                <a href="tel:+905342447504" className="hover:text-primary-400 transition">
-                  +90 534 244 7504
+                <span className="font-semibold text-white">Müşteri Hizmetleri:</span><br />
+                <a href="mailto:destek@onlagelsin.com" className="hover:text-primary-400 transition">
+                  destek@onlagelsin.com
                 </a>
               </p>
               <p className="text-gray-400 text-sm">
                 <span className="font-semibold text-white">Muhasebe:</span><br />
-                <a href="tel:+905301398395" className="hover:text-primary-400 transition">
-                  +90 530 139 8395
+                <a href="mailto:muhasebe@onlagelsin.com" className="hover:text-primary-400 transition">
+                  muhasebe@onlagelsin.com
                 </a>
               </p>
-              <p className="text-gray-400 text-sm">
-                <a href="mailto:destek@onlagelsin.com" className="hover:text-primary-400 transition">
-                  destek@onlagelsin.com
-                </a>
+            </div>
+            
+            {/* Company */}
+            <div className="mb-4">
+              <p className="text-gray-400 text-xs">
+                Teketech Technologies iştirakidir
               </p>
             </div>
 
@@ -160,7 +162,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 On&apos;la Gelsin. Tüm hakları saklıdır.
+              © 2025 On&apos;la Gelsin - Teketech Technologies. Tüm hakları saklıdır.
             </p>
             <div className="flex space-x-4">
               <a 

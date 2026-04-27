@@ -16,7 +16,7 @@ export default function Home() {
     image: 'https://onlagelsin.com/logo.svg',
     logo: 'https://onlagelsin.com/logo.svg',
     url: 'https://onlagelsin.com',
-    telephone: '+90-534-244-7504',
+    telephone: '+90-545-429-1076',
     email: 'destek@onlagelsin.com',
     priceRange: '$$',
     address: {

@@ -36,14 +36,10 @@ export default function Iletisim() {
                     <Phone className="w-6 h-6 text-primary-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Telefon</h3>
-                    <p className="text-gray-600 text-sm mb-1">Müşteri Danışmanı:</p>
-                    <a href="tel:+905342447504" className="text-primary-600 hover:underline font-medium">
-                      +90 534 244 7504
-                    </a>
-                    <p className="text-gray-600 text-sm mt-2 mb-1">Muhasebe:</p>
-                    <a href="tel:+905301398395" className="text-primary-600 hover:underline font-medium">
-                      +90 530 139 8395
+                    <h3 className="font-semibold text-gray-900 mb-2">WhatsApp İletişim</h3>
+                    <p className="text-gray-600 text-sm mb-1">Müşteri Hizmetleri:</p>
+                    <a href="https://wa.me/905454291076" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-medium">
+                      +90 545 429 10 76
                     </a>
                   </div>
                 </div>

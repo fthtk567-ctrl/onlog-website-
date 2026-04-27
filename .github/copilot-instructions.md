@@ -76,10 +76,9 @@ export const metadata = {
 ### External Integration Points
 - **Ana panel**: https://panel.onlagelsin.com/#/login (ayrı uygulama)
 - **Restoran panel**: https://panel.onlagelsin.com (restoran paneli için)
-- **İletişim bilgileri** (Footer.tsx'te hardcoded):
-  - Müşteri Danışmanı: +90 534 244 7504
-  - Muhasebe: +90 530 139 8395
-  - Email: destek@onlagelsin.com
+- **İletişim bilgileri**:
+  - WhatsApp İletişim: +90 545 429 10 76
+  - Email: destek@onlagelsin.com, muhasebe@onlagelsin.com
 - **Görseller**: next.config.js'te Tilda CDN domains tanımlı (optim.tildacdn.com, thb.tildacdn.com)
 
 ### İkon ve Asset Kullanımı
