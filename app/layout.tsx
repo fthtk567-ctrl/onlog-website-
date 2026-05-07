@@ -8,9 +8,9 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://onlagelsin.com'),
-  title: "On'la Gelsin - Şehir İçi Hızlı Kurye Teslimat Hizmeti",
-  description: "On'la Gelsin ile gün içinde adresinde! Şehir içi hızlı kurye teslimat hizmetimizle tanışın.",
-  keywords: ['kurye', 'teslimat', 'hızlı kurye', 'şehir içi kurye', 'on\'la gelsin', 'kurye hizmeti', 'paket teslimat'],
+  title: "On'la Gelsin - Yemek Sipariş, Market Alışverişi ve Kurye Teslimat",
+  description: "On'la Gelsin ile yemek sipariş et, market alışverişi yap, kurye çağır! Hızlı teslimat, güvenli hizmet.",
+  keywords: ['yemek sipariş', 'market alışverişi', 'kurye', 'teslimat', 'hızlı kurye', 'restoran', 'on\'la gelsin', 'online sipariş', 'paket teslimat'],
   authors: [{ name: "On'la Gelsin" }],
   creator: "On'la Gelsin",
   publisher: "On'la Gelsin",
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     apple: '/logo.svg',
   },
   openGraph: {
-    title: "On'la Gelsin - Şehir İçi Hızlı Kurye Teslimat Hizmeti",
-    description: "On'la Gelsin ile gün içinde adresinde! Şehir içi hızlı kurye teslimat hizmetimizle tanışın.",
+    title: "On'la Gelsin - Yemek Sipariş, Market Alışverişi ve Kurye Teslimat",
+    description: "On'la Gelsin ile yemek sipariş et, market alışverişi yap, kurye çağır! Hızlı teslimat, güvenli hizmet.",
     url: 'https://onlagelsin.com',
     siteName: "On'la Gelsin",
     images: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: "On'la Gelsin - Kurye Teslimat Hizmeti",
+        alt: "On'la Gelsin - Yemek Sipariş, Market Alışverişi ve Kurye Teslimat",
       },
       {
         url: '/logo.svg',
@@ -46,8 +46,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "On'la Gelsin - Şehir İçi Hızlı Kurye Teslimat Hizmeti",
-    description: "On'la Gelsin ile gün içinde adresinde! Şehir içi hızlı kurye teslimat hizmetimizle tanışın.",
+    title: "On'la Gelsin - Yemek Sipariş, Market Alışverişi ve Kurye Teslimat",
+    description: "On'la Gelsin ile yemek sipariş et, market alışverişi yap, kurye çağır! Hızlı teslimat, güvenli hizmet.",
     images: ['/og-image.png'],
     creator: '@onlagelsin',
   },

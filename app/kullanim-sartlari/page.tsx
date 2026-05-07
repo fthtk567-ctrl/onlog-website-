@@ -21,7 +21,7 @@ export default function KullanimSartlari() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Genel Hükümler</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                İşbu Kullanım Şartları, On'la Gelsin (&quot;Şirket&quot;) tarafından sunulan kurye ve teslimat hizmetlerinin kullanımına ilişkin genel şartları düzenlemektedir. On'la Gelsin platformunu kullanarak bu şartları kabul etmiş sayılırsınız.
+                İşbu Kullanım Şartları, On'la Gelsin (&quot;Şirket&quot;) tarafından sunulan yemek sipariş, market alışverişi ve kurye teslimat hizmetlerinin kullanımına ilişkin genel şartları düzenlemektedir. On'la Gelsin platformunu kullanarak bu şartları kabul etmiş sayılırsınız.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 Şirket, bu şartları önceden haber vermeksizin değiştirme hakkını saklı tutar. Değişiklikler web sitemizde yayınlandığı andan itibaren geçerli olacaktır.
@@ -31,12 +31,13 @@ export default function KullanimSartlari() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Hizmet Kapsamı</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                On'la Gelsin, şehir içi kurye ve teslimat hizmetleri sunmaktadır. Hizmetlerimiz şunları içerir:
+                On'la Gelsin, yemek sipariş, market alışverişi ve kurye teslimat platformu olarak hizmet sunmaktadır. Hizmetlerimiz şunları içerir:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4">
-                <li>Gün içi teslimat hizmetleri</li>
+                <li>Restoran yemek siparişi ve teslimat</li>
+                <li>Market ve süpermarket alışveriş teslimatı</li>
+                <li>Şehir içi kurye ve paket teslimatı</li>
                 <li>Evrak ve belge teslimatı</li>
-                <li>Paket ve kargo teslimatı</li>
                 <li>E-ticaret teslimat çözümleri</li>
                 <li>Kurumsal toplu teslimat hizmetleri</li>
               </ul>

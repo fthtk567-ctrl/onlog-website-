@@ -12,7 +12,7 @@ export default function Hero() {
               On&apos;la Gelsin ile gün içinde adresinde!
             </h1>
             <p className="text-xl text-gray-600">
-              İster bireysel ister kurumsal gönderileriniz için şehir içi hızlı kurye teslimat hizmetimizle tanışın!
+              Yemek siparişi, market alışverişi ve kurye teslimat hizmetleri ile hayatınızı kolaylaştırın!
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">

@@ -51,7 +51,7 @@ export default function HakkimizdaPage() {
               On'la Gelsin Hakkında
             </h1>
             <p className="text-xl text-primary-50">
-              Türkiye&apos;nin en hızlı ve güvenilir kurye hizmeti
+              Yemek sipariş, market alışverişi ve kurye teslimat platformu
             </p>
           </div>
         </div>
@@ -67,14 +67,14 @@ export default function HakkimizdaPage() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  On'la Gelsin, modern şehir hayatının getirdiği hızlı teslimat ve yemek sipariş ihtiyacına 
-                  yenilikçi çözümler sunmak amacıyla hayata geçirildi. Genç ve dinamik ekibimizle, 
-                  teknoloji odaklı lojistik hizmetleri geliştiriyoruz.
+                  On'la Gelsin, modern şehir hayatının getirdiği hızlı yemek sipariş, market alışverişi ve 
+                  teslimat ihtiyacına yenilikçi çözümler sunmak amacıyla hayata geçirildi. Genç ve dinamik 
+                  ekibimizle, kullanıcı dostu bir mobil platform ve teknoloji odaklı lojistik hizmetleri geliştiriyoruz.
                 </p>
                 <p>
-                  Yeni bir girişim olarak yola çıktık ve hedefimiz büyük: Türkiye&apos;nin dört bir yanında 
-                  güvenilir kurye hizmeti ve restoran teslimat çözümleri sunarak, hem bireysel kullanıcıların 
-                  hem de işletmelerin hayatını kolaylaştırmak.
+                  Yeni bir girişim olarak yola çıktık ve hedefimiz büyük: Türkiye&apos;nin dört bir yanında, 
+                  restoranlardan yemek siparişi, marketlerden alışveriş ve güvenilir kurye teslimat çözümleri 
+                  sunarak hem bireysel kullanıcıların hem de işletmelerin hayatını kolaylaştırmak.
                 </p>
                 <p>
                   Şeffaflık ve dürüstlük temel değerlerimizdir. Müşterilerimize gerçekçi vaatler verip, 

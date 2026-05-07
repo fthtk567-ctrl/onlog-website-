@@ -126,6 +126,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/mesafeli-satis-sozlesmesi" className="text-gray-400 hover:text-white transition">
+                  Mesafeli Satış Sözleşmesi
+                </Link>
+              </li>
+              <li>
+                <Link href="/teslimat-ve-iade" className="text-gray-400 hover:text-white transition">
+                  Teslimat ve İade Şartları
+                </Link>
+              </li>
+              <li>
                 <Link href="/gizlilik-politikasi" className="text-gray-400 hover:text-white transition">
                   Gizlilik Politikası
                 </Link>
@@ -158,8 +168,22 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* App Links */}
+        {/* Payment Methods */}
         <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="text-center mb-8">
+            <h4 className="text-sm font-semibold text-gray-400 mb-4">Güvenli Ödeme</h4>
+            <div className="flex items-center justify-center">
+              <img 
+                src="/payments/logo_band_colored.svg" 
+                alt="iyzico, Visa, MasterCard, American Express, Troy ile Güvenli Ödeme" 
+                className="h-8 md:h-10 w-auto max-w-full opacity-90 hover:opacity-100 transition"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* App Links */}
+        <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               © 2025 On&apos;la Gelsin - Teketech Technologies. Tüm hakları saklıdır.
