@@ -1,44 +1,51 @@
-import { Package, Users, Target, Award, TrendingUp, Shield } from 'lucide-react';
+import { Award, HeartHandshake, Smartphone, Store, Target, TrendingUp, Users, UtensilsCrossed } from 'lucide-react';
+
+export const metadata = {
+  title: "On'la Gelsin - Hakkımızda",
+  description: "On'la Gelsin, kullanıcıları yerel restoranlarla buluşturan yerli ve milli yemek sipariş platformudur.",
+}
 
 export default function HakkimizdaPage() {
+  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr'
+
   const values = [
     {
-      icon: Package,
-      title: 'Hızlı Teslimat',
-      description: 'Siparişlerinizi en hızlı şekilde adresinize ulaştırıyoruz.'
+      icon: UtensilsCrossed,
+      title: 'Lezzet Odağı',
+      description: 'Tüm enerjimizi yemek siparişi deneyimini daha sade, erişilebilir ve keyifli hale getirmeye ayırıyoruz.',
+    },
+    {
+      icon: Store,
+      title: 'Yerel Restoranlar',
+      description: 'Mahalle restoranlarının dijitalde daha görünür olmasını ve yeni müşterilere ulaşmasını önemsiyoruz.',
     },
     {
       icon: Users,
-      title: 'Müşteri Memnuniyeti',
-      description: 'Müşterilerimizin memnuniyeti bizim önceliğimizdir.'
+      title: 'Kullanıcı Memnuniyeti',
+      description: 'Sipariş verirken anlaşılır, güven veren ve hızlı ilerleyen bir deneyim sunmayı hedefliyoruz.',
     },
     {
-      icon: Target,
-      title: 'Güvenilirlik',
-      description: 'Teslimatlarınızı güvenle bize emanet edebilirsiniz.'
-    },
-    {
-      icon: Award,
-      title: 'Kalite',
-      description: 'Her teslimatı en yüksek kalite standartlarında gerçekleştiriyoruz.'
+      icon: HeartHandshake,
+      title: 'Adil İş Ortaklığı',
+      description: 'Restoranlarla uzun vadeli, şeffaf ve sürdürülebilir iş birlikleri kurmaya odaklanıyoruz.',
     },
     {
       icon: TrendingUp,
       title: 'Sürekli Gelişim',
-      description: 'Teknoloji ve hizmet kalitemizi sürekli geliştiriyoruz.'
+      description: 'Uygulamamızı ve restoran panelimizi gerçek ihtiyaçlara göre düzenli olarak geliştiriyoruz.',
     },
     {
-      icon: Shield,
-      title: 'Güvenlik',
-      description: 'Gönderi güvenliğiniz için sigortalı teslimat seçeneği sunuyoruz.'
-    }
+      icon: Award,
+      title: 'Yerli Girişim',
+      description: 'Türkiye’den çıkan, yerel ekonomiye ve restoran ekosistemine değer katmayı amaçlayan bir markayız.',
+    },
   ];
 
   const stats = [
     { number: '2024', label: 'Kuruluş Yılı' },
-    { number: 'Türkiye', label: 'Hizmet Alanı' },
-    { number: 'Büyüyor', label: 'Her Gün' },
-    { number: '7/24', label: 'Destek Hizmeti' }
+    { number: 'Yerli', label: 'Girişim' },
+    { number: 'Restoran', label: 'Odaklı' },
+    { number: 'Mobil', label: 'Deneyim' },
   ];
 
   return (
@@ -48,10 +55,10 @@ export default function HakkimizdaPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              On'la Gelsin Hakkında
+              On&apos;la Gelsin Hakkında
             </h1>
             <p className="text-xl text-primary-50">
-              Yemek sipariş, market alışverişi ve kurye teslimat platformu
+              Kullanıcıları sevdikleri restoranlarla buluşturan yerli yemek sipariş platformu
             </p>
           </div>
         </div>
@@ -67,19 +74,17 @@ export default function HakkimizdaPage() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  On'la Gelsin, modern şehir hayatının getirdiği hızlı yemek sipariş, market alışverişi ve 
-                  teslimat ihtiyacına yenilikçi çözümler sunmak amacıyla hayata geçirildi. Genç ve dinamik 
-                  ekibimizle, kullanıcı dostu bir mobil platform ve teknoloji odaklı lojistik hizmetleri geliştiriyoruz.
+                  On&apos;la Gelsin, yemek siparişini daha yerel, daha anlaşılır ve daha erişilebilir hale getirmek
+                  amacıyla hayata geçirildi. Kullanıcıların yaşadığı bölgedeki restoranları keşfedebildiği,
+                  restoranların ise dijitalde daha güçlü yer alabildiği bir pazar yeri kuruyoruz.
                 </p>
                 <p>
-                  Yeni bir girişim olarak yola çıktık ve hedefimiz büyük: Türkiye&apos;nin dört bir yanında, 
-                  restoranlardan yemek siparişi, marketlerden alışveriş ve güvenilir kurye teslimat çözümleri 
-                  sunarak hem bireysel kullanıcıların hem de işletmelerin hayatını kolaylaştırmak.
+                  Bizim odağımız tek: yemek. Farklı iş kollarına dağılmadan, restoranlar ve yemek siparişi
+                  deneyimi için çalışan yerli ve milli bir platform olmayı önemsiyoruz.
                 </p>
                 <p>
-                  Şeffaflık ve dürüstlük temel değerlerimizdir. Müşterilerimize gerçekçi vaatler verip, 
-                  bunları yerine getirerek güven kazanmayı hedefliyoruz. Her gün öğreniyor, gelişiyor ve 
-                  hizmet kalitemizi artırıyoruz.
+                  Şeffaflık, güven ve sürdürülebilir iş ortaklığı temel değerlerimizdir. Her gün kullanıcıların
+                  sipariş deneyimini, restoranların ise panel ve satış akışını iyileştirmek için çalışıyoruz.
                 </p>
               </div>
             </div>
@@ -113,7 +118,7 @@ export default function HakkimizdaPage() {
               Değerlerimiz
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              On'la Gelsin olarak, her gün yaptığımız işin temelinde yatan değerlerimiz
+              On&apos;la Gelsin&apos;in merkezinde lezzet, yerellik ve güçlü restoran iş ortaklığı var.
             </p>
           </div>
 
@@ -144,23 +149,23 @@ export default function HakkimizdaPage() {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white rounded-2xl shadow-lg p-8">
+                <Target className="w-10 h-10 text-primary-600 mb-4" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   Misyonumuz
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Türkiye&apos;de yemek siparişi ve kurye teslimat sektöründe yenilikçi, 
-                  şeffaf ve güvenilir bir platform olmak. Müşterilerimize dürüst hizmet, 
-                  işletmelere ise adil koşullar sunarak sürdürülebilir büyüme sağlamak.
+                  Türkiye&apos;de kullanıcıların sevdikleri restoranlara kolayca ulaşabildiği, restoranların ise
+                  dijital sipariş kanalını güvenle büyütebildiği yerli bir yemek sipariş pazar yeri oluşturmak.
                 </p>
               </div>
               <div className="bg-white rounded-2xl shadow-lg p-8">
+                <Smartphone className="w-10 h-10 text-primary-600 mb-4" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   Vizyonumuz
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Teknoloji ve insan odaklı yaklaşımımızla, Türkiye&apos;nin her yerinde 
-                  erişilebilir, güvenilir ve kullanıcı dostu bir teslimat ekosistemi kurmak. 
-                  Sadece bir platform değil, bir topluluk oluşturmak.
+                  Yerel restoranları teknolojiyle güçlendiren, kullanıcıların günlük yemek alışkanlıklarında
+                  güvenle tercih ettiği, yerli ve milli bir marka haline gelmek.
                 </p>
               </div>
             </div>
@@ -172,23 +177,25 @@ export default function HakkimizdaPage() {
       <section className="py-16 bg-gradient-to-r from-primary-600 to-primary-500">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            On'la Gelsin Ailesine Katılın
+            On&apos;la Gelsin Deneyimine Katılın
           </h2>
           <p className="text-primary-50 mb-8 max-w-2xl mx-auto">
-            Yeni kurulan ailemize katılın, birlikte büyüyelim ve gelişelim
+            Kullanıcıysanız uygulamayı indirin, restoran sahibiyseniz iş ortağımız olun.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/kurye-ol"
+              href={googlePlayUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
             >
-              Kurye Ol
+              Uygulamayı İndir
             </a>
             <a
-              href="/iletisim"
+              href="/is-ortagimiz-ol"
               className="bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-800 transition-colors"
             >
-              İletişime Geç
+              İş Ortağımız Olun
             </a>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Globe, Download, ChartBar, Package, Clock } from 'lucide-react'
+import { BarChart3, Bell, ClipboardList, Download, Globe, UtensilsCrossed } from 'lucide-react'
 
 export default function SellerPanel() {
   return (
@@ -8,10 +8,10 @@ export default function SellerPanel() {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Satıcı Paneli
+            Restoran Paneli
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Siparişlerinizi yönetin, teslimatları takip edin ve işinizi büyütün!
+            Menünüzü yönetin, siparişleri takip edin ve restoranınızı dijitalde büyütün.
           </p>
         </div>
 
@@ -19,29 +19,29 @@ export default function SellerPanel() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="flex items-start space-x-4">
             <div className="bg-primary-100 rounded-full p-3">
-              <ChartBar className="w-6 h-6 text-primary-600" />
+              <BarChart3 className="w-6 h-6 text-primary-600" />
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-1">Detaylı Raporlar</h3>
-              <p className="text-sm text-gray-600">Tüm teslimatlarınızı analiz edin</p>
+              <p className="text-sm text-gray-600">Satış ve menü performansınızı analiz edin</p>
             </div>
           </div>
           <div className="flex items-start space-x-4">
             <div className="bg-primary-100 rounded-full p-3">
-              <Package className="w-6 h-6 text-primary-600" />
+              <ClipboardList className="w-6 h-6 text-primary-600" />
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-1">Sipariş Yönetimi</h3>
-              <p className="text-sm text-gray-600">Tüm siparişleriniz tek ekranda</p>
+              <p className="text-sm text-gray-600">Gelen siparişler tek ekranda</p>
             </div>
           </div>
           <div className="flex items-start space-x-4">
             <div className="bg-primary-100 rounded-full p-3">
-              <Clock className="w-6 h-6 text-primary-600" />
+              <Bell className="w-6 h-6 text-primary-600" />
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-1">Anlık Takip</h3>
-              <p className="text-sm text-gray-600">Kuryenizi canlı izleyin</p>
+              <h3 className="font-semibold text-gray-900 mb-1">Anlık Bildirim</h3>
+              <p className="text-sm text-gray-600">Yeni siparişleri zamanında görün</p>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function SellerPanel() {
               Web Paneli
             </h3>
             <p className="text-gray-600 text-center mb-6">
-              Tarayıcınızdan hemen erişin, kurulum gerektirmez
+              Restoranınızı tarayıcınızdan yönetin, kurulum gerektirmez
             </p>
             <ul className="space-y-2 mb-6">
               <li className="flex items-center text-sm text-gray-600">
@@ -95,14 +95,14 @@ export default function SellerPanel() {
           <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-primary-100 hover:border-primary-300 transition">
             <div className="flex justify-center mb-6">
               <div className="bg-primary-100 rounded-full p-6">
-                <Download className="w-12 h-12 text-primary-600" />
+                <UtensilsCrossed className="w-12 h-12 text-primary-600" />
               </div>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 text-center mb-3">
-              Windows Uygulaması
+              Masaüstü Restoran Uygulaması
             </h3>
             <p className="text-gray-600 text-center mb-6">
-              Masaüstü uygulamasını indirin, daha hızlı çalışın
+              Sipariş yoğunluğunu masaüstünden daha hızlı yönetin
             </p>
             <ul className="space-y-2 mb-6">
               <li className="flex items-center text-sm text-gray-600">
@@ -115,7 +115,7 @@ export default function SellerPanel() {
                 <svg className="w-5 h-5 text-primary-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                Çevrimdışı çalışma
+                Hızlı sipariş ekranı
               </li>
               <li className="flex items-center text-sm text-gray-600">
                 <svg className="w-5 h-5 text-primary-600 mr-2" fill="currentColor" viewBox="0 0 20 20">

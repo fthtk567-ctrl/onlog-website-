@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import { TrendingUp, Clock, Wallet } from 'lucide-react'
+import { ArrowRight, BarChart3, Store, TrendingUp, UtensilsCrossed } from 'lucide-react'
 
-export default function CourierApplication() {
+export default function PartnerApplication() {
   return (
     <section className="py-20 bg-gradient-to-br from-primary-600 to-primary-700 text-white">
       <div className="container mx-auto px-4">
@@ -9,13 +9,13 @@ export default function CourierApplication() {
           {/* Left Content */}
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold">
-              Kuryemiz olun
+              İş ortağımız olun
             </h2>
             <p className="text-xl text-primary-100">
-              On'la Gelsin uygulaması üzerinden sipariş al, teslimat yap ve kazan!
+              Restoranınızı On&apos;la Gelsin&apos;e taşıyın, dijitalde daha görünür olun ve yemek siparişlerinden yeni gelir kanalı oluşturun.
             </p>
             <p className="text-lg text-primary-50">
-              10 dakikada kayıt olun!
+              Başvurunuzu bırakın, ekibimiz restoranınız için en uygun başlangıç adımlarını birlikte planlasın.
             </p>
 
             {/* Benefits */}
@@ -25,55 +25,56 @@ export default function CourierApplication() {
                   <TrendingUp className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-1">Yüksek Kazanç</h3>
-                  <p className="text-primary-100">Kendi çalışma saatlerinizi belirleyin ve daha fazla kazanın</p>
+                  <h3 className="text-xl font-semibold mb-1">Yeni müşterilere ulaşın</h3>
+                  <p className="text-primary-100">Dijital sipariş kanalınızı On&apos;la Gelsin kullanıcılarıyla büyütün.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <div className="bg-white/20 rounded-full p-3 mt-1">
-                  <Clock className="w-6 h-6 text-white" />
+                  <UtensilsCrossed className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-1">Esnek Çalışma</h3>
-                  <p className="text-primary-100">İstediğiniz zaman, istediğiniz kadar çalışın</p>
+                  <h3 className="text-xl font-semibold mb-1">Menünüz hep güncel kalsın</h3>
+                  <p className="text-primary-100">Ürünlerinizi, fiyatlarınızı ve restoran bilgilerinizi kolayca yönetin.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <div className="bg-white/20 rounded-full p-3 mt-1">
-                  <Wallet className="w-6 h-6 text-white" />
+                  <BarChart3 className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-1">Hızlı Ödemeler</h3>
-                  <p className="text-primary-100">Kazancınız hemen hesabınıza</p>
+                  <h3 className="text-xl font-semibold mb-1">Performansınızı görün</h3>
+                  <p className="text-primary-100">Sipariş ve satış verilerinizi restoran panelinden takip edin.</p>
                 </div>
               </div>
             </div>
 
-            <Link 
-              href="/kurye-ol"
-              className="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-50 transition mt-6"
+            <Link
+              href="/is-ortagimiz-ol"
+              className="inline-flex items-center bg-white text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-50 transition group mt-6"
             >
-              Başvur
+              Başvuru Yap
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition" />
             </Link>
           </div>
 
           {/* Right Image */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="/kurye-hero.png" 
-                alt="Kurye ol" 
+              <img
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=700&h=500&fit=crop"
+                alt="On'la Gelsin restoran iş ortaklığı"
                 className="w-full h-auto"
               />
             </div>
             {/* Stats Cards */}
             <div className="absolute -bottom-6 -left-6 bg-white text-gray-900 rounded-lg shadow-lg p-4 max-w-xs">
-              <p className="text-3xl font-bold text-primary-600">🚀</p>
-              <p className="text-sm text-gray-600">Ekibimiz Büyüyor</p>
+              <Store className="w-8 h-8 text-primary-600 mb-2" />
+              <p className="text-sm text-gray-600">Restoranınız dijitalde büyüsün</p>
             </div>
             <div className="absolute -top-6 -right-6 bg-white text-gray-900 rounded-lg shadow-lg p-4 max-w-xs">
-              <p className="text-3xl font-bold text-primary-600">⭐</p>
-              <p className="text-sm text-gray-600">Yeni Fırsatlar</p>
+              <UtensilsCrossed className="w-8 h-8 text-primary-600 mb-2" />
+              <p className="text-sm text-gray-600">Lezzetleriniz daha çok kişiye ulaşsın</p>
             </div>
           </div>
         </div>

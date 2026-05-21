@@ -1,72 +1,72 @@
-import { Store, TrendingUp, Clock, Users, Smartphone, BarChart3, ShoppingCart, CheckCircle, ArrowRight } from 'lucide-react';
+import { ArrowRight, BarChart3, CheckCircle, Clock, Smartphone, Store, TrendingUp, Users, UtensilsCrossed } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: "On'la Gelsin - Restoran Paneli | Online Sipariş Yönetimi",
-  description: 'Restoranınız için güçlü online sipariş yönetim paneli. Menü yönetimi, sipariş takibi, analiz raporları ve daha fazlası.',
+  title: "On'la Gelsin - Restoran Paneli | Online Yemek Siparişi Yönetimi",
+  description: 'Restoranınız için online yemek siparişi yönetim paneli. Menü yönetimi, sipariş takibi, analiz raporları ve daha fazlası.',
 }
 
 export default function RestoranPaneliPage() {
   const features = [
     {
-      icon: ShoppingCart,
-      title: 'Kolay Sipariş Yönetimi',
-      description: 'Gelen siparişleri tek bir panelden yönetin, anlık bildirimler alın'
+      icon: UtensilsCrossed,
+      title: 'Menü Yönetimi',
+      description: 'Ürünlerinizi, kategorilerinizi, fiyatlarınızı ve müsaitlik durumlarını kolayca güncelleyin.',
     },
     {
-      icon: BarChart3,
-      title: 'Detaylı Raporlar',
-      description: 'Satış analizleri, popüler ürünler, gelir raporları'
+      icon: Store,
+      title: 'Restoran Profili',
+      description: 'Çalışma saatleri, görseller, açıklamalar ve restoran bilgilerinizi tek yerden yönetin.',
     },
     {
       icon: Clock,
-      title: 'Hızlı Kurye Entegrasyonu',
-      description: 'Otomatik kurye ataması, teslimat takibi'
+      title: 'Sipariş Akışı',
+      description: 'Gelen siparişleri görün, hazırlık durumunu güncelleyin ve operasyonunuzu düzenli tutun.',
     },
     {
       icon: Smartphone,
       title: 'Mobil Uyumlu',
-      description: 'Her cihazdan erişim, mobil uygulamalar'
+      description: 'Panelinizi farklı cihazlardan takip ederek yoğun saatlerde hızlı aksiyon alın.',
     },
     {
       icon: Users,
-      title: 'Müşteri Yönetimi',
-      description: 'Müşteri profilleri, sipariş geçmişi, sadakat programları'
+      title: 'Müşteri İçgörüsü',
+      description: 'Popüler ürünleri, tekrar eden siparişleri ve müşteri tercihlerini daha iyi anlayın.',
     },
     {
       icon: TrendingUp,
       title: 'Satış Artışı',
-      description: 'Online sipariş ile satışlarınızı %300 artırın'
-    }
+      description: 'Online sipariş kanalıyla restoranınızın dijital görünürlüğünü ve satış hacmini artırın.',
+    },
   ];
 
   const steps = [
     {
       number: '01',
-      title: 'Kayıt Olun',
-      description: 'Hızlı ve kolay kayıt formu ile başlayın'
+      title: 'Başvurun',
+      description: 'Restoran bilgilerinizi paylaşın, ekibimiz sizinle iletişime geçsin.',
     },
     {
       number: '02',
       title: 'Menünüzü Ekleyin',
-      description: 'Ürünlerinizi, kategorilerinizi ve fiyatlarınızı girin'
+      description: 'Ürünlerinizi, kategorilerinizi ve fiyatlarınızı panele tanımlayın.',
     },
     {
       number: '03',
-      title: 'Siparişleri Alın',
-      description: 'Online siparişler gelmeye başlasın!'
-    }
+      title: 'Sipariş Almaya Başlayın',
+      description: "On'la Gelsin kullanıcılarına görünür olun ve online yemek siparişlerinizi yönetin.",
+    },
   ];
 
   const pricingFeatures = [
-    'Sınırsız sipariş',
-    'Menü yönetimi',
-    'Otomatik kurye atama',
-    'Sipariş takibi',
-    'Detaylı raporlar',
-    'Müşteri yönetimi',
-    'Mobil uygulama',
-    '7/24 teknik destek'
+    'Sınırsız menü ürünü',
+    'Kategori ve fiyat yönetimi',
+    'Sipariş ekranı',
+    'Hazırlık durumu güncelleme',
+    'Restoran profil yönetimi',
+    'Satış ve ürün raporları',
+    'Mobil uyumlu panel',
+    'Teknik destek',
   ];
 
   return (
@@ -80,7 +80,7 @@ export default function RestoranPaneliPage() {
               Restoran Paneli
             </h1>
             <p className="text-xl text-primary-50 mb-8">
-              Restoranınızı dijital çağa taşıyın! Online sipariş alın, kurye hizmetimizle teslim edin, satışlarınızı artırın.
+              Restoranınızı dijital çağa taşıyın. Menünüzü yönetin, online yemek siparişleri alın ve satışlarınızı büyütün.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -93,10 +93,10 @@ export default function RestoranPaneliPage() {
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition" />
               </a>
               <Link
-                href="/iletisim"
+                href="/is-ortagimiz-ol"
                 className="inline-flex items-center justify-center bg-primary-700 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-800 transition"
               >
-                Demo Talep Et
+                İş Ortağı Başvurusu
               </Link>
             </div>
           </div>
@@ -108,10 +108,10 @@ export default function RestoranPaneliPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Güçlü Özellikler
+              Restoranınız İçin Güçlü Özellikler
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Restoranınızı yönetmek için ihtiyacınız olan her şey
+              Online yemek siparişlerini yönetmek için ihtiyacınız olan temel araçlar.
             </p>
           </div>
 
@@ -137,10 +137,10 @@ export default function RestoranPaneliPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Nasıl Çalışır?
+              Nasıl Başlanır?
             </h2>
             <p className="text-xl text-gray-600">
-              3 adımda online siparişe başlayın
+              3 adımda On&apos;la Gelsin&apos;de yerinizi alın.
             </p>
           </div>
 
@@ -164,10 +164,10 @@ export default function RestoranPaneliPage() {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Esnek Fiyatlandırma
+                Esnek İş Ortaklığı
               </h2>
               <p className="text-xl text-gray-600">
-                İhtiyacınıza göre paket seçenekleri
+                Restoranınız için sade, anlaşılır ve büyümeye açık yapı.
               </p>
             </div>
 
@@ -177,7 +177,7 @@ export default function RestoranPaneliPage() {
                   %5
                 </div>
                 <p className="text-gray-600">Sipariş başına komisyon</p>
-                <p className="text-sm text-gray-500 mt-2">Kurye ücreti dahil değildir</p>
+                <p className="text-sm text-gray-500 mt-2">Detaylar restoranınızın çalışma modeline göre netleştirilir.</p>
               </div>
 
               <div className="space-y-3 mb-8">
@@ -189,14 +189,12 @@ export default function RestoranPaneliPage() {
                 ))}
               </div>
 
-              <a
-                href="https://panel.onlagelsin.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/is-ortagimiz-ol"
                 className="block w-full bg-primary-600 text-white text-center py-4 rounded-lg font-semibold hover:bg-primary-700 transition"
               >
-                Hemen Başla
-              </a>
+                İş Ortağı Başvurusu Yap
+              </Link>
             </div>
           </div>
         </div>
@@ -209,16 +207,14 @@ export default function RestoranPaneliPage() {
             Restoranınızı Büyütmeye Hazır Mısınız?
           </h2>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Bugün başlayın, online siparişlerinizi artırın!
+            On&apos;la Gelsin&apos;de yerinizi alın, lezzetlerinizi daha fazla kullanıcıyla buluşturun.
           </p>
-          <a
-            href="https://panel.onlagelsin.com"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/is-ortagimiz-ol"
             className="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition text-lg"
           >
-            Ücretsiz Deneyin
-          </a>
+            Başvurunuzu Bırakın
+          </Link>
         </div>
       </section>
     </div>

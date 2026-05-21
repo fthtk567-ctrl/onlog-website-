@@ -1,7 +1,9 @@
 import Link from 'next/link'
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
+import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
 
 export default function Footer() {
+  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr'
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-12">
@@ -10,9 +12,9 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-bold text-primary-400 mb-4">On&apos;la Gelsin</h3>
             <p className="text-gray-400 text-sm mb-4">
-              Şehir içi hızlı kurye teslimat hizmetleri ile gün içinde adresinde!
+              Yerli ve milli yemek sipariş platformu. Kullanıcıları sevdikleri restoranlarla buluşturur.
             </p>
-            
+
             {/* Contact Info */}
             <div className="space-y-2 mb-4">
               <p className="text-gray-400 text-sm">
@@ -28,25 +30,22 @@ export default function Footer() {
                 </a>
               </p>
             </div>
-            
-            {/* Company */}
-            <div className="mb-4">
-              <p className="text-gray-400 text-xs">
-                Teketech Technologies iştirakidir
-              </p>
-            </div>
+
+            <p className="text-gray-400 text-xs mb-4">
+              Teketech Technologies iştirakidir
+            </p>
 
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-400 hover:text-white transition" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-400 hover:text-white transition" aria-label="Twitter">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-400 hover:text-white transition" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-400 hover:text-white transition" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
@@ -54,7 +53,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Hizmetler</h4>
+            <h4 className="text-lg font-semibold mb-4">Yemek Deneyimi</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/hizmetlerimiz" className="text-gray-400 hover:text-white transition">
@@ -62,8 +61,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/api-entegrasyon" className="text-gray-400 hover:text-white transition">
-                  Entegrasyon ve API
+                <Link href="/restoran-paneli" className="text-gray-400 hover:text-white transition">
+                  Restoran Paneli
+                </Link>
+              </li>
+              <li>
+                <Link href="/is-ortagimiz-ol" className="text-gray-400 hover:text-white transition">
+                  İş Ortağımız Olun
                 </Link>
               </li>
             </ul>
@@ -84,18 +88,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/kurye-ol" className="text-gray-400 hover:text-white transition">
-                  Kurye Ol
-                </Link>
-              </li>
-              <li>
-                <Link href="/e-ticaret" className="text-gray-400 hover:text-white transition">
-                  E-ticarete Özel
-                </Link>
-              </li>
-              <li>
-                <Link href="/marketlere-ozel" className="text-gray-400 hover:text-white transition">
-                  Marketlere Özellere Özel
+                <Link href="/iletisim" className="text-gray-400 hover:text-white transition">
+                  İletişim
                 </Link>
               </li>
             </ul>
@@ -108,16 +102,6 @@ export default function Footer() {
               <li>
                 <Link href="/sss" className="text-gray-400 hover:text-white transition">
                   Sık Sorulan Sorular
-                </Link>
-              </li>
-              <li>
-                <Link href="/iletisim" className="text-gray-400 hover:text-white transition">
-                  Yardım & İletişim
-                </Link>
-              </li>
-              <li>
-                <Link href="/iletisim" className="text-gray-400 hover:text-white transition">
-                  Bize Ulaşın
                 </Link>
               </li>
               <li>
@@ -156,7 +140,7 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-            
+
             {/* Address */}
             <div className="mt-6">
               <h5 className="font-semibold mb-2">Adres</h5>
@@ -173,9 +157,9 @@ export default function Footer() {
           <div className="text-center mb-8">
             <h4 className="text-sm font-semibold text-gray-400 mb-4">Güvenli Ödeme</h4>
             <div className="flex items-center justify-center">
-              <img 
-                src="/payments/logo_band_colored.svg" 
-                alt="iyzico, Visa, MasterCard, American Express, Troy ile Güvenli Ödeme" 
+              <img
+                src="/payments/logo_band_colored.svg"
+                alt="iyzico, Visa, MasterCard, American Express, Troy ile Güvenli Ödeme"
                 className="h-8 md:h-10 w-auto max-w-full opacity-90 hover:opacity-100 transition"
               />
             </div>
@@ -186,26 +170,25 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 On&apos;la Gelsin - Teketech Technologies. Tüm hakları saklıdır.
+              © 2026 On&apos;la Gelsin - Teketech Technologies. Tüm hakları saklıdır.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="#" 
-                className="inline-block"
-              >
-                <img 
-                  src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/tr-tr?size=250x83" 
-                  alt="App Store'dan İndir" 
-                  className="h-10"
+              <span className="inline-block" aria-label="App Store yakında">
+                <img
+                  src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/tr-tr?size=250x83"
+                  alt="App Store'dan İndir"
+                  className="h-10 opacity-60"
                 />
-              </a>
-              <a 
-                href="#" 
+              </span>
+              <a
+                href={googlePlayUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block"
               >
-                <img 
-                  src="https://play.google.com/intl/en_us/badges/static/images/badges/tr_badge_web_generic.png" 
-                  alt="Google Play'den İndir" 
+                <img
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/tr_badge_web_generic.png"
+                  alt="Google Play'den İndir"
                   className="h-10"
                 />
               </a>

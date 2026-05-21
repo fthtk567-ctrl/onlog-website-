@@ -1,75 +1,63 @@
 import Link from 'next/link'
 
+export const metadata = {
+  title: "On'la Gelsin - Sık Sorulan Sorular",
+  description: "On'la Gelsin yemek sipariş uygulaması, restoran paneli ve iş ortaklığı hakkında sık sorulan sorular.",
+}
+
 export default function SSS() {
   const faqs = [
     {
-      category: "Genel Sorular",
+      category: 'Genel Sorular',
       questions: [
         {
           q: "On'la Gelsin nedir?",
-          a: "On'la Gelsin, şehir içi hızlı kurye teslimat hizmetleri sunan bir platformdur. Bireysel ve kurumsal müşterilere gün içinde teslimat garantisi sağlıyoruz."
+          a: "On'la Gelsin, kullanıcıları yerel restoranlarla buluşturan yerli ve milli bir yemek sipariş platformudur.",
         },
         {
-          q: "Hangi şehirlerde hizmet veriyorsunuz?",
-          a: "Şu anda İstanbul, Ankara, İzmir ve Konya'da hizmet vermekteyiz. Yakında yeni şehirler eklenecektir."
+          q: 'Hangi hizmeti veriyorsunuz?',
+          a: 'Yalnızca yemek siparişi alanına odaklanıyoruz. Kullanıcılar restoranları keşfeder, menüleri inceler ve uygulama üzerinden yemek siparişi verir.',
         },
         {
-          q: "Teslimat saatleri nedir?",
-          a: "Hafta içi 09:00-22:00, hafta sonu 10:00-20:00 saatleri arasında teslimat yapıyoruz."
-        }
-      ]
+          q: 'Uygulamayı nereden indirebilirim?',
+          a: "Android kullanıcıları On'la Gelsin uygulamasını Google Play üzerinden indirebilir. iOS bağlantısı hazır olduğunda ayrıca yayınlanacaktır.",
+        },
+      ],
     },
     {
-      category: "Fiyatlandırma",
+      category: 'Sipariş ve Ödeme',
       questions: [
         {
-          q: "Kurye ücreti nasıl hesaplanır?",
-          a: "Kurye ücreti mesafeye, ağırlığa ve teslimat hızına göre hesaplanır. Minimum ücret 136.90 TL'den başlamaktadır."
+          q: 'Nasıl sipariş veririm?',
+          a: 'Uygulamayı açıp yakınınızdaki restoranları inceleyebilir, ürünleri sepete ekleyebilir ve ödeme adımını tamamlayarak sipariş oluşturabilirsiniz.',
         },
         {
-          q: "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
-          a: "Kredi kartı, banka kartı, havale/EFT ve kapıda ödeme seçeneklerimiz mevcuttur."
+          q: 'Hangi ödeme yöntemleri var?',
+          a: 'Kartla ödeme altyapısı ve güvenli ödeme deneyimi sunuyoruz. Aktif ödeme seçenekleri uygulama içinde görüntülenir.',
         },
         {
-          q: "Toplu teslimat indirimi var mı?",
-          a: "Evet, kurumsal müşterilerimiz için özel fiyatlandırma ve indirim paketlerimiz bulunmaktadır."
-        }
-      ]
+          q: 'Sipariş durumunu görebilir miyim?',
+          a: 'Evet. Restoran siparişi aldığında ve hazırlık durumu güncellendiğinde süreç uygulama üzerinden takip edilebilir.',
+        },
+      ],
     },
     {
-      category: "Teslimat",
+      category: 'Restoran İş Ortaklığı',
       questions: [
         {
-          q: "Gönderimi nasıl takip edebilirim?",
-          a: "Web sitemiz veya mobil uygulamamız üzerinden gönderi numaranızla canlı takip yapabilirsiniz."
+          q: "Restoranımı On'la Gelsin'e nasıl eklerim?",
+          a: 'İş ortağı başvuru formunu doldurabilirsiniz. Ekibimiz restoran bilgilerinizi değerlendirip sizinle iletişime geçer.',
         },
         {
-          q: "Teslimat yapılamazsa ne olur?",
-          a: "Alıcıya ulaşılamazsa sizinle iletişime geçilir ve yeniden teslimat planlanır veya iade edilir."
+          q: 'Restoran panelinde neler yapabilirim?',
+          a: 'Menünüzü, fiyatlarınızı, restoran bilgilerinizi, gelen siparişleri ve satış raporlarınızı panelden yönetebilirsiniz.',
         },
         {
-          q: "Maksimum gönderi ağırlığı nedir?",
-          a: "Standart gönderiler için 200 kg'ye kadar kabul ediyoruz. Daha ağır gönderiler için özel çözümlerimiz mevcuttur."
-        }
-      ]
+          q: 'Komisyon modeli nedir?',
+          a: 'Restoran paneli sayfasında belirtilen komisyon yapısı başlangıç bilgisidir. Net çalışma modeli restoranınızın ihtiyaçlarına göre görüşülür.',
+        },
+      ],
     },
-    {
-      category: "Kurye Olmak",
-      questions: [
-        {
-          q: "Kurye olmak için neler gerekli?",
-          a: "18 yaş üstü, ehliyet sahibi, temiz sicil kaydına sahip olmak ve kendi aracınız bulunması gerekmektedir."
-        },
-        {
-          q: "Kazanç nasıl hesaplanır?",
-          a: "Tamamladığınız teslimat sayısı ve mesafeye göre kazanç elde edersiniz. Ortalama aylık kazanç 15.000-30.000 TL arasındadır."
-        },
-        {
-          q: "Esnek çalışma saatleri var mı?",
-          a: "Evet, kendi çalışma saatlerinizi belirleyebilir, istediğiniz zaman çalışabilirsiniz."
-        }
-      ]
-    }
   ]
 
   return (
@@ -79,7 +67,7 @@ export default function SSS() {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Sık Sorulan Sorular</h1>
           <p className="text-xl text-primary-100">
-            Merak ettiklerinizin cevaplarını burada bulabilirsiniz
+            Yemek siparişi, uygulama ve restoran iş ortaklığı hakkında merak edilenler
           </p>
         </div>
       </section>
@@ -113,7 +101,7 @@ export default function SSS() {
               Sorunuza cevap bulamadınız mı?
             </h3>
             <p className="text-gray-600 mb-6">
-              Müşteri hizmetleri ekibimiz size yardımcı olmaktan mutluluk duyar.
+              Destek ekibimiz size yardımcı olmaktan mutluluk duyar.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -123,7 +111,7 @@ export default function SSS() {
                 Bize Ulaşın
               </Link>
               <a
-                href="tel:+905342447504"
+                href="tel:+905374291076"
                 className="bg-white text-primary-600 border-2 border-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition"
               >
                 Hemen Ara

@@ -1,6 +1,8 @@
 import { Smartphone, Scan } from 'lucide-react'
 
 export default function MobileApp() {
+  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr'
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -8,10 +10,10 @@ export default function MobileApp() {
           {/* Left Content */}
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-gray-900">
-              On&apos;la Gelsin uygulamasıyla mobilken de teslimatlarınızı yönetebilirsiniz
+              On&apos;la Gelsin uygulamasıyla sevdiğiniz lezzetleri sipariş verin
             </h2>
             <p className="text-xl text-gray-600">
-              Uygulamayı indirmek için QR kodunu tarayın
+              Yerli ve milli yemek sipariş deneyimini cebinize taşıyın. Restoranları keşfedin, sepetinizi hazırlayın ve kolayca sipariş verin.
             </p>
 
             {/* QR Code */}
@@ -22,18 +24,20 @@ export default function MobileApp() {
                 </div>
               </div>
               <div className="space-y-3">
-                <a 
-                  href="#" 
+                <span
                   className="block"
+                  aria-label="App Store yakında"
                 >
                   <img 
                     src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/tr-tr?size=250x83" 
                     alt="App Store'dan İndir" 
-                    className="h-12"
+                    className="h-12 opacity-60"
                   />
-                </a>
+                </span>
                 <a 
-                  href="#" 
+                  href={googlePlayUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block"
                 >
                   <img 
@@ -55,7 +59,7 @@ export default function MobileApp() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Hızlı Sipariş</p>
-                  <p className="text-sm text-gray-600">Birkaç dokunuşla kurye çağırın</p>
+                  <p className="text-sm text-gray-600">Birkaç dokunuşla sepetinizi oluşturun</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
@@ -65,8 +69,8 @@ export default function MobileApp() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Canlı Takip</p>
-                  <p className="text-sm text-gray-600">Gönderinizi anlık izleyin</p>
+                  <p className="font-semibold text-gray-900">Restoran Keşfi</p>
+                  <p className="text-sm text-gray-600">Yakınınızdaki lezzetleri görün</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
@@ -87,8 +91,8 @@ export default function MobileApp() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">7/24 Destek</p>
-                  <p className="text-sm text-gray-600">Her zaman yanınızdayız</p>
+                  <p className="font-semibold text-gray-900">Yerli Platform</p>
+                  <p className="text-sm text-gray-600">Türkiye&apos;den çıkan yemek deneyimi</p>
                 </div>
               </div>
             </div>
@@ -98,7 +102,7 @@ export default function MobileApp() {
           <div className="relative">
             <div className="relative mx-auto w-full max-w-sm">
               <img 
-                src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=800&fit=crop" 
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=800&fit=crop" 
                 alt="On&apos;la Gelsin mobil uygulama" 
                 className="w-full h-auto rounded-3xl shadow-2xl"
               />

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Store, ShoppingCart, BarChart3, ArrowRight } from 'lucide-react';
+import { Store, ShoppingCart, BarChart3, ArrowRight, UtensilsCrossed } from 'lucide-react';
 
 export default function RestoranPanel() {
   return (
@@ -18,7 +18,7 @@ export default function RestoranPanel() {
             </h2>
             
             <p className="text-xl text-gray-600 mb-8">
-              Online sipariş alın, otomatik kurye ataması yapın, dijital satış kanalınızı açın ve gelir fırsatlarınızı artırın!
+              Online yemek siparişi alın, menünüzü kolayca yönetin ve On&apos;la Gelsin kullanıcılarına ulaşarak dijital satış kanalınızı büyütün.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -28,7 +28,7 @@ export default function RestoranPanel() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Kolay Sipariş Yönetimi</h3>
-                  <p className="text-gray-600">Tüm siparişlerinizi tek panelden yönetin</p>
+                  <p className="text-gray-600">Gelen yemek siparişlerini tek panelden takip edin</p>
                 </div>
               </div>
 
@@ -38,17 +38,17 @@ export default function RestoranPanel() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Detaylı Raporlar</h3>
-                  <p className="text-gray-600">Satış analizleri ve gelir raporları</p>
+                  <p className="text-gray-600">Satış, menü performansı ve gelir raporları</p>
                 </div>
               </div>
 
               <div className="flex items-start">
                 <div className="bg-primary-600 rounded-full p-2 mr-4 flex-shrink-0">
-                  <ArrowRight className="w-5 h-5 text-white" />
+                  <UtensilsCrossed className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Hızlı Kurye Entegrasyonu</h3>
-                  <p className="text-gray-600">Otomatik kurye ataması ve teslimat takibi</p>
+                  <h3 className="font-semibold text-gray-900 mb-1">Menü ve Lezzet Yönetimi</h3>
+                  <p className="text-gray-600">Ürünlerinizi, fiyatlarınızı ve hazırlık durumunuzu güncel tutun</p>
                 </div>
               </div>
             </div>
@@ -84,15 +84,15 @@ export default function RestoranPanel() {
               
               <div className="grid grid-cols-3 gap-4">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-600">📈</div>
+                  <div className="text-3xl font-bold text-primary-600">+%</div>
                   <div className="text-sm text-gray-600">Satış Artışı</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-600">⚡</div>
+                  <div className="text-3xl font-bold text-primary-600">24</div>
                   <div className="text-sm text-gray-600">Hızlı Kurulum</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-600">🎯</div>
+                  <div className="text-3xl font-bold text-primary-600">1</div>
                   <div className="text-sm text-gray-600">Kolay Yönetim</div>
                 </div>
               </div>

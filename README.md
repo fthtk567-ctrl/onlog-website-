@@ -1,6 +1,6 @@
-# On'la Gelsin - Şehir İçi Hızlı Kurye Teslimat Hizmeti
+# On'la Gelsin - Yerli Yemek Sipariş Platformu
 
-Modern ve profesyonel kurye teslimat hizmeti web sitesi.
+Yerli yemek sipariş platformu için Next.js web sitesi.
 
 ## 🚀 Özellikler
 
@@ -8,9 +8,9 @@ Modern ve profesyonel kurye teslimat hizmeti web sitesi.
 - 🎨 Tailwind CSS ile modern tasarım
 - 📱 Tam responsive tasarım
 - 🔥 Vercel'e deploy edilmeye hazır
-- 💼 E-ticaret, restoranlar, eczaneler ve daha fazlası için hizmetler
-- 📲 Mobil uygulama entegrasyonu
-- 🔌 API entegrasyon desteği
+- 🍽️ Yemek siparişi odaklı pazaryeri anlatımı
+- 🏪 Restoran paneli ve iş ortaklığı sayfaları
+- 📲 Google Play yönlendirmeli mobil uygulama tanıtımı
 
 ## 📦 Kurulum
 
@@ -37,9 +37,9 @@ On'la Gelsin-website/
 │   ├── Footer.tsx       # Alt bilgi
 │   ├── Hero.tsx         # Ana hero section
 │   ├── Services.tsx     # Hizmetler bölümü
-│   ├── Integration.tsx  # Entegrasyon kartları
+│   ├── Integration.tsx  # Restoran deneyimi kartları
 │   ├── MobileApp.tsx    # Mobil uygulama tanıtımı
-│   ├── CourierApplication.tsx  # Kurye başvuru bölümü
+│   ├── CourierApplication.tsx  # İş ortaklığı bölümü
 │   └── PromoBar.tsx     # Promosyon çubuğu
 ├── public/              # Statik dosyalar
 └── package.json
@@ -86,7 +86,7 @@ colors: {
 
 ## 📱 Mobil Uygulama Linkleri
 
-App Store ve Google Play linklerini güncellemeyi unutmayın:
+Google Play bağlantısı yayındadır; App Store rozeti şimdilik bağlantısızdır:
 - `components/Footer.tsx`
 - `components/MobileApp.tsx`
 

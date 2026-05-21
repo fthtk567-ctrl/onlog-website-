@@ -1,7 +1,14 @@
 import Link from 'next/link'
-import { Mail, Phone, MapPin, Clock } from 'lucide-react'
+import { Clock, Mail, MapPin, Phone } from 'lucide-react'
+
+export const metadata = {
+  title: "On'la Gelsin - İletişim",
+  description: "On'la Gelsin destek, restoran iş ortaklığı ve genel iletişim bilgileri.",
+}
 
 export default function Iletisim() {
+  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr'
+
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -9,7 +16,7 @@ export default function Iletisim() {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Bize Ulaşın</h1>
           <p className="text-xl text-primary-100">
-            Size yardımcı olmaktan mutluluk duyarız!
+            Yemek siparişi deneyimi, destek talepleri ve restoran iş ortaklığı için buradayız.
           </p>
         </div>
       </section>
@@ -18,13 +25,12 @@ export default function Iletisim() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            
             {/* Contact Info */}
             <div className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">İletişim Bilgileri</h2>
                 <p className="text-gray-600 mb-8">
-                  Sorularınız, önerileriniz veya destek talepleriniz için bize ulaşabilirsiniz. Ekibimiz size en kısa sürede dönüş yapacaktır.
+                  Uygulama, restoran paneli veya iş ortaklığı hakkında bize ulaşabilirsiniz. Ekibimiz en kısa sürede dönüş yapacaktır.
                 </p>
               </div>
 
@@ -38,8 +44,12 @@ export default function Iletisim() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">WhatsApp İletişim</h3>
                     <p className="text-gray-600 text-sm mb-1">Müşteri Hizmetleri:</p>
-                    <a href="https://wa.me/905454291076" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-medium">
-                      +90 545 429 10 76
+                    <a href="https://wa.me/905374291076" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-medium">
+                      +90 537 429 1076
+                    </a>
+                    <p className="text-gray-600 text-sm mt-3 mb-1">Genel Merkez:</p>
+                    <a href="tel:+908503030859" className="text-primary-600 hover:underline font-medium">
+                      +90 850 303 0859
                     </a>
                   </div>
                 </div>
@@ -82,7 +92,7 @@ export default function Iletisim() {
                     <Clock className="w-6 h-6 text-primary-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Çalışma Saatleri</h3>
+                    <h3 className="font-semibold text-gray-900 mb-2">Destek Saatleri</h3>
                     <p className="text-gray-600">
                       Hafta İçi: 09:00 - 22:00<br />
                       Hafta Sonu: 10:00 - 20:00
@@ -99,8 +109,8 @@ export default function Iletisim() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-gray-700 font-medium mb-2">Ad Soyad *</label>
-                    <input 
-                      type="text" 
+                    <input
+                      type="text"
                       className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500"
                       placeholder="Adınız Soyadınız"
                       required
@@ -108,8 +118,8 @@ export default function Iletisim() {
                   </div>
                   <div>
                     <label className="block text-gray-700 font-medium mb-2">Telefon *</label>
-                    <input 
-                      type="tel" 
+                    <input
+                      type="tel"
                       className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500"
                       placeholder="+90 5XX XXX XX XX"
                       required
@@ -119,8 +129,8 @@ export default function Iletisim() {
 
                 <div>
                   <label className="block text-gray-700 font-medium mb-2">E-posta *</label>
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500"
                     placeholder="ornek@email.com"
                     required
@@ -130,17 +140,17 @@ export default function Iletisim() {
                 <div>
                   <label className="block text-gray-700 font-medium mb-2">Konu *</label>
                   <select className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500">
-                    <option>Genel Bilgi</option>
-                    <option>Kurumsal İşbirliği</option>
-                    <option>Teknik Destek</option>
-                    <option>Şikayet</option>
+                    <option>Yemek Siparişi Desteği</option>
+                    <option>Restoran İş Ortaklığı</option>
+                    <option>Restoran Paneli</option>
+                    <option>Ödeme ve Fatura</option>
                     <option>Diğer</option>
                   </select>
                 </div>
 
                 <div>
                   <label className="block text-gray-700 font-medium mb-2">Mesajınız *</label>
-                  <textarea 
+                  <textarea
                     rows={6}
                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500"
                     placeholder="Mesajınızı buraya yazın..."
@@ -148,7 +158,7 @@ export default function Iletisim() {
                   ></textarea>
                 </div>
 
-                <button 
+                <button
                   type="submit"
                   className="w-full bg-primary-600 text-white py-4 rounded-lg font-semibold hover:bg-primary-700 transition"
                 >
@@ -156,7 +166,6 @@ export default function Iletisim() {
                 </button>
               </form>
             </div>
-
           </div>
         </div>
       </section>
@@ -174,16 +183,26 @@ export default function Iletisim() {
       {/* CTA Section */}
       <section className="py-16 bg-primary-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Hemen Teslimat Başlatın!</h2>
+          <h2 className="text-3xl font-bold mb-4">On&apos;la Gelsin&apos;e Katılın</h2>
           <p className="text-xl text-primary-100 mb-8">
-            Kurye çağırmak veya fiyat teklifi almak için hemen iletişime geçin
+            Uygulamayı indirin veya restoranınız için iş ortaklığı başvurusu bırakın.
           </p>
-          <Link 
-            href="/kurye-cagir"
-            className="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition"
-          >
-            Kurye Çağır
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={googlePlayUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition"
+            >
+              Uygulamayı İndir
+            </a>
+            <Link
+              href="/is-ortagimiz-ol"
+              className="inline-block bg-primary-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-800 transition"
+            >
+              İş Ortağımız Olun
+            </Link>
+          </div>
         </div>
       </section>
     </main>

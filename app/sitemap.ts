@@ -7,13 +7,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '',
     '/hizmetlerimiz',
-    '/kurye-ol',
+    '/is-ortagimiz-ol',
     '/iletisim',
     '/sss',
-    '/api-entegrasyon',
     '/restoran-paneli',
-    '/e-ticaret',
-    '/marketlere-ozel',
     '/blog',
     '/hakkimizda',
     '/cerez-politikasi',
@@ -28,6 +25,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: route === '' ? 'daily' : 'weekly',
-    priority: route === '' ? 1 : route === '/hizmetlerimiz' || route === '/kurye-ol' ? 0.9 : 0.7,
+    priority: route === '' ? 1 : route === '/hizmetlerimiz' || route === '/is-ortagimiz-ol' ? 0.9 : 0.7,
   }))
 }

@@ -2,47 +2,27 @@ import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import Integration from '@/components/Integration'
 import MobileApp from '@/components/MobileApp'
-import CourierApplication from '@/components/CourierApplication'
+import PartnerApplication from '@/components/CourierApplication'
 import PromoBar from '@/components/PromoBar'
 import SellerPanel from '@/components/SellerPanel'
 import RestoranPanel from '@/components/RestoranPanel'
 
 export default function Home() {
-  const localBusinessSchema = {
+  const websiteSchema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': 'WebSite',
     '@id': 'https://onlagelsin.com',
     name: "On'la Gelsin",
-    image: 'https://onlagelsin.com/logo.svg',
-    logo: 'https://onlagelsin.com/logo.svg',
     url: 'https://onlagelsin.com',
-    telephone: '+90-545-429-1076',
-    email: 'destek@onlagelsin.com',
-    priceRange: '$$',
-    address: {
-      '@type': 'PostalAddress',
-      addressCountry: 'TR',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      addressCountry: 'TR',
-    },
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: [
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday',
-        'Sunday',
-      ],
-      opens: '00:00',
-      closes: '23:59',
+    description: 'Yerli ve milli yemek sipariş platformu.',
+    publisher: {
+      '@type': 'Organization',
+      name: "On'la Gelsin",
+      logo: 'https://onlagelsin.com/logo.svg',
     },
     sameAs: [
       'https://panel.onlagelsin.com',
+      'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr',
     ],
   }
 
@@ -50,17 +30,17 @@ export default function Home() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
       <main>
         <PromoBar />
-        <RestoranPanel />
         <Hero />
         <Services />
+        <RestoranPanel />
         <SellerPanel />
         <Integration />
         <MobileApp />
-        <CourierApplication />
+        <PartnerApplication />
       </main>
     </>
   )

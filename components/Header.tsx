@@ -7,6 +7,7 @@ import { Menu, X } from 'lucide-react'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr'
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -37,11 +38,8 @@ export default function Header() {
             >
               Restoran Paneli
             </a>
-            <Link href="/api-entegrasyon" className="text-gray-700 hover:text-primary-600 transition">
-              Entegrasyon ve API
-            </Link>
-            <Link href="/kurye-ol" className="text-gray-700 hover:text-primary-600 transition">
-              Kurye Ol
+            <Link href="/is-ortagimiz-ol" className="text-gray-700 hover:text-primary-600 transition">
+              İş Ortağımız Olun
             </Link>
             <Link href="/sss" className="text-gray-700 hover:text-primary-600 transition">
               SSS
@@ -54,12 +52,12 @@ export default function Header() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <a 
-              href="https://panel.onlagelsin.com/#/login" 
+              href={googlePlayUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition font-medium"
             >
-              Kurye Çağır
+              Uygulamayı İndir
             </a>
           </div>
 
@@ -86,11 +84,8 @@ export default function Header() {
             >
               Restoran Paneli
             </a>
-            <Link href="/api-entegrasyon" className="block py-2 text-gray-700 hover:text-primary-600">
-              Entegrasyon ve API
-            </Link>
-            <Link href="/kurye-ol" className="block py-2 text-gray-700 hover:text-primary-600">
-              Kurye Ol
+            <Link href="/is-ortagimiz-ol" className="block py-2 text-gray-700 hover:text-primary-600">
+              İş Ortağımız Olun
             </Link>
             <Link href="/sss" className="block py-2 text-gray-700 hover:text-primary-600">
               SSS
@@ -100,12 +95,12 @@ export default function Header() {
             </Link>
             <div className="pt-4">
               <a 
-                href="https://panel.onlagelsin.com/#/login" 
+                href={googlePlayUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-center bg-primary-600 text-white px-6 py-2 rounded-lg font-medium"
               >
-                Kurye Çağır
+                Uygulamayı İndir
               </a>
             </div>
           </nav>

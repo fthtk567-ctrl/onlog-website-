@@ -8,9 +8,9 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://onlagelsin.com'),
-  title: "On'la Gelsin - Yemek Sipariş, Market Alışverişi ve Kurye Teslimat",
-  description: "On'la Gelsin ile yemek sipariş et, market alışverişi yap, kurye çağır! Hızlı teslimat, güvenli hizmet.",
-  keywords: ['yemek sipariş', 'market alışverişi', 'kurye', 'teslimat', 'hızlı kurye', 'restoran', 'on\'la gelsin', 'online sipariş', 'paket teslimat'],
+  title: "On'la Gelsin - Yerli Yemek Sipariş Platformu",
+  description: "On'la Gelsin ile yerel restoranları keşfedin, sevdiğiniz yemekleri kolayca sipariş verin. Yerli ve milli yemek sipariş deneyimi.",
+  keywords: ['yemek sipariş', 'online yemek', 'restoran', 'on\'la gelsin', 'yerli yemek uygulaması', 'restoran paneli', 'online sipariş'],
   authors: [{ name: "On'la Gelsin" }],
   creator: "On'la Gelsin",
   publisher: "On'la Gelsin",
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     apple: '/logo.svg',
   },
   openGraph: {
-    title: "On'la Gelsin - Yemek Sipariş, Market Alışverişi ve Kurye Teslimat",
-    description: "On'la Gelsin ile yemek sipariş et, market alışverişi yap, kurye çağır! Hızlı teslimat, güvenli hizmet.",
+    title: "On'la Gelsin - Yerli Yemek Sipariş Platformu",
+    description: "On'la Gelsin ile yerel restoranları keşfedin, sevdiğiniz yemekleri kolayca sipariş verin.",
     url: 'https://onlagelsin.com',
     siteName: "On'la Gelsin",
     images: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: "On'la Gelsin - Yemek Sipariş, Market Alışverişi ve Kurye Teslimat",
+        alt: "On'la Gelsin - Yerli Yemek Sipariş Platformu",
       },
       {
         url: '/logo.svg',
@@ -46,8 +46,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "On'la Gelsin - Yemek Sipariş, Market Alışverişi ve Kurye Teslimat",
-    description: "On'la Gelsin ile yemek sipariş et, market alışverişi yap, kurye çağır! Hızlı teslimat, güvenli hizmet.",
+    title: "On'la Gelsin - Yerli Yemek Sipariş Platformu",
+    description: "On'la Gelsin ile yerel restoranları keşfedin, sevdiğiniz yemekleri kolayca sipariş verin.",
     images: ['/og-image.png'],
     creator: '@onlagelsin',
   },
@@ -78,16 +78,17 @@ export default function RootLayout({
     name: "On'la Gelsin",
     url: 'https://onlagelsin.com',
     logo: 'https://onlagelsin.com/logo.svg',
-    description: 'Şehir içi hızlı kurye teslimat hizmeti',
+    description: 'Yerli ve milli yemek sipariş platformu',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+90-534-244-7504',
+      telephone: '+90-537-429-1076',
       contactType: 'Müşteri Hizmetleri',
       areaServed: 'TR',
       availableLanguage: 'Turkish',
     },
     sameAs: [
       'https://panel.onlagelsin.com',
+      'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr',
     ],
     address: {
       '@type': 'PostalAddress',

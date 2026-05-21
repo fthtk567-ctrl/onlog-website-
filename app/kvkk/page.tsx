@@ -1,278 +1,80 @@
-import { Shield, Lock, Eye, Users, FileText, Mail } from 'lucide-react';
+export const metadata = {
+  title: "On'la Gelsin - KVKK Aydınlatma Metni",
+  description: "On'la Gelsin yemek sipariş platformu KVKK aydınlatma metni.",
+}
 
 export default function KVKKPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-500 text-white py-20">
+    <main className="min-h-screen bg-gray-50">
+      <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <Shield className="w-16 h-16 mx-auto mb-6" />
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              KVKK Aydınlatma Metni
-            </h1>
-            <p className="text-xl text-primary-50">
-              Kişisel Verilerinizin Korunması ve İşlenmesi Hakkında Bilgilendirme
-            </p>
-          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">KVKK Aydınlatma Metni</h1>
+          <p className="text-xl text-primary-100">
+            Kişisel verilerinizin korunması ve işlenmesi hakkında bilgilendirme.
+          </p>
         </div>
       </section>
 
-      {/* Content */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-              
-              {/* Introduction */}
-              <div className="mb-12">
-                <p className="text-gray-700 leading-relaxed">
-                  On'la Gelsin olarak, 6698 sayılı Kişisel Verilerin Korunması Kanunu (&quot;KVKK&quot;) kapsamında, 
-                  kişisel verilerinizin güvenliğini en üst düzeyde tutmayı ve gizliliğinizi korumayı taahhüt ediyoruz. 
-                  Bu aydınlatma metni, kişisel verilerinizin nasıl toplandığı, işlendiği ve korunduğu hakkında sizi 
-                  bilgilendirmek amacıyla hazırlanmıştır.
-                </p>
-              </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 space-y-8">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Veri Sorumlusu</h2>
+              <p className="text-gray-700 leading-relaxed">
+                On&apos;la Gelsin, 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında kişisel verilerinizin
+                işlenmesine ilişkin sizleri bilgilendirmek amacıyla bu metni yayımlar.
+              </p>
+            </div>
 
-              {/* Veri Sorumlusu */}
-              <div className="mb-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                    <Users className="w-6 h-6 text-primary-600" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900">
-                    1. Veri Sorumlusu
-                  </h2>
-                </div>
-                <div className="ml-15 text-gray-700 space-y-3">
-                  <p>
-                    KVKK kapsamında veri sorumlusu olarak On'la Gelsin, kişisel verilerinizin işleme amaçlarını ve 
-                    vasıtalarını belirler, veri kayıt sisteminin kurulmasından ve yönetilmesinden sorumludur.
-                  </p>
-                  <div className="bg-gray-50 rounded-lg p-4 mt-4">
-                    <p className="font-semibold text-gray-900 mb-2">İletişim Bilgileri:</p>
-                    <p><strong>Adres:</strong> Bakkalbaşı Mah. Mustafa Kemal Cad. No: 10/A Çumra / KONYA</p>
-                    <p><strong>E-posta:</strong> destek@onlagelsin.com</p>
-                    <p><strong>Telefon:</strong> +90 534 244 75 04</p>
-                  </div>
-                </div>
-              </div>
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">2. İşlenen Kişisel Veriler</h2>
+              <ul className="list-disc pl-6 text-gray-700 space-y-2">
+                <li>Kimlik ve iletişim bilgileri.</li>
+                <li>Adres, sipariş, restoran tercihi ve işlem geçmişi bilgileri.</li>
+                <li>Ödeme, fatura ve muhasebe kayıtları.</li>
+                <li>Cihaz, oturum, çerez ve uygulama kullanım bilgileri.</li>
+                <li>Restoran iş ortaklığı başvurularında restoran ve yetkili kişi bilgileri.</li>
+              </ul>
+            </div>
 
-              {/* Toplanan Veriler */}
-              <div className="mb-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                    <FileText className="w-6 h-6 text-primary-600" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900">
-                    2. Toplanan Kişisel Veriler
-                  </h2>
-                </div>
-                <div className="ml-15 text-gray-700 space-y-3">
-                  <p>(On&apos;la Gelsin) olarak, hizmetlerimizi sunabilmek için aşağıdaki kişisel verilerinizi işlemekteyiz:</p>
-                  <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li><strong>Kimlik Bilgileri:</strong> Ad, soyad, T.C. kimlik numarası</li>
-                    <li><strong>İletişim Bilgileri:</strong> Telefon numarası, e-posta adresi, adres</li>
-                    <li><strong>Araç Bilgileri:</strong> Plaka numarası, ruhsat bilgileri, ehliyet bilgileri</li>
-                    <li><strong>Finansal Bilgiler:</strong> Banka hesap bilgileri (ödeme için)</li>
-                    <li><strong>Konum Bilgileri:</strong> Teslimat sırasında GPS konum verileri</li>
-                    <li><strong>İşlem Bilgileri:</strong> Teslimat geçmişi, sipariş detayları</li>
-                  </ul>
-                </div>
-              </div>
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">3. İşleme Amaçları</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Verileriniz sipariş oluşturma, restoranla sipariş bilgisini paylaşma, ödeme ve fatura süreçlerini
+                yürütme, destek sağlama, restoran iş ortaklığı başvurularını değerlendirme, güvenliği sağlama ve
+                platformu geliştirme amaçlarıyla işlenir.
+              </p>
+            </div>
 
-              {/* İşleme Amaçları */}
-              <div className="mb-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                    <Eye className="w-6 h-6 text-primary-600" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900">
-                    3. Kişisel Verilerin İşlenme Amaçları
-                  </h2>
-                </div>
-                <div className="ml-15 text-gray-700 space-y-3">
-                  <p>Kişisel verileriniz aşağıdaki amaçlarla işlenmektedir:</p>
-                  <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li>Kurye hizmetlerinin sunulması ve yönetilmesi</li>
-                    <li>İş başvurularının değerlendirilmesi ve personel alımı</li>
-                    <li>Ödeme işlemlerinin gerçekleştirilmesi</li>
-                    <li>Teslimat süreçlerinin takibi ve koordinasyonu</li>
-                    <li>Müşteri memnuniyeti ve hizmet kalitesinin artırılması</li>
-                    <li>Yasal yükümlülüklerin yerine getirilmesi</li>
-                    <li>İletişim ve bilgilendirme faaliyetleri</li>
-                    <li>Güvenlik ve iş sağlığı tedbirlerinin alınması</li>
-                  </ul>
-                </div>
-              </div>
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Aktarım</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Kişisel verileriniz; siparişin yerine getirilmesi için ilgili restoranlara, ödeme ve teknik altyapı
+                hizmet sağlayıcılarına, yasal zorunluluklar halinde yetkili kurumlara aktarılabilir.
+              </p>
+            </div>
 
-              {/* İşleme Yöntemleri */}
-              <div className="mb-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                    <Lock className="w-6 h-6 text-primary-600" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900">
-                    4. Kişisel Verilerin Toplanma Yöntemi ve Hukuki Sebepleri
-                  </h2>
-                </div>
-                <div className="ml-15 text-gray-700 space-y-3">
-                  <p>
-                    Kişisel verileriniz, web sitemiz, mobil uygulamamız, başvuru formları, e-posta ve telefon 
-                    yoluyla elektronik veya fiziksel ortamda toplanmaktadır.
-                  </p>
-                  <p className="mt-3">
-                    <strong>Hukuki Sebepler:</strong>
-                  </p>
-                  <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li>Açık rızanızın bulunması</li>
-                    <li>Sözleşmenin kurulması ve ifası için gerekli olması</li>
-                    <li>Yasal yükümlülüklerin yerine getirilmesi</li>
-                    <li>Meşru menfaatlerimiz için veri işlemenin zorunlu olması</li>
-                  </ul>
-                </div>
-              </div>
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Haklarınız</h2>
+              <p className="text-gray-700 leading-relaxed">
+                KVKK&apos;nın 11. maddesi kapsamındaki haklarınızı kullanmak için
+                {' '}
+                <a href="mailto:kvkk@onlagelsin.com" className="text-primary-600 hover:underline">
+                  kvkk@onlagelsin.com
+                </a>
+                {' '}
+                adresinden bizimle iletişime geçebilirsiniz.
+              </p>
+            </div>
 
-              {/* Veri Aktarımı */}
-              <div className="mb-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                    <Users className="w-6 h-6 text-primary-600" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900">
-                    5. Kişisel Verilerin Aktarılması
-                  </h2>
-                </div>
-                <div className="ml-15 text-gray-700 space-y-3">
-                  <p>Kişisel verileriniz, yukarıda belirtilen amaçlarla ve KVKK&apos;nın öngördüğü şartlarda:</p>
-                  <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li>İş ortaklarımıza ve tedarikçilerimize</li>
-                    <li>Yasal yükümlülüklerimiz gereği kamu kurum ve kuruluşlarına</li>
-                    <li>Hukuki işlemlerin yürütülmesi için hukuk bürolarına</li>
-                    <li>Ödeme hizmet sağlayıcılara (bankalar, ödeme kuruluşları)</li>
-                  </ul>
-                  <p className="mt-3">aktarılabilir.</p>
-                </div>
-              </div>
-
-              {/* Haklarınız */}
-              <div className="mb-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                    <Shield className="w-6 h-6 text-primary-600" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900">
-                    6. Kişisel Veri Sahibi Olarak Haklarınız
-                  </h2>
-                </div>
-                <div className="ml-15 text-gray-700 space-y-3">
-                  <p>KVKK&apos;nın 11. maddesi uyarınca aşağıdaki haklara sahipsiniz:</p>
-                  <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
-                    <li>İşlenmiş ise buna ilişkin bilgi talep etme</li>
-                    <li>İşlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme</li>
-                    <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme</li>
-                    <li>Eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme</li>
-                    <li>KVKK&apos;nın 7. maddesinde öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme</li>
-                    <li>Düzeltme, silme ve yok edilme işlemlerinin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme</li>
-                    <li>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme</li>
-                    <li>Kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Başvuru Yöntemi */}
-              <div className="mb-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-primary-600" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900">
-                    7. Başvuru Yöntemi
-                  </h2>
-                </div>
-                <div className="ml-15 text-gray-700 space-y-3">
-                  <p>
-                    Yukarıda belirtilen haklarınızı kullanmak için, kimliğinizi tespit edici gerekli bilgiler ile 
-                    hangi konuda başvuruda bulunmak istediğinizi belirterek aşağıdaki yöntemlerle başvurabilirsiniz:
-                  </p>
-                  <div className="bg-primary-50 rounded-lg p-6 mt-4">
-                    <p className="font-semibold text-primary-900 mb-3">Başvuru Kanalları:</p>
-                    <ul className="space-y-2">
-                      <li><strong>E-posta:</strong> destek@onlagelsin.com</li>
-                      <li><strong>Posta Adresi:</strong> Bakkalbaşı Mah. Mustafa Kemal Cad. No: 10/A Çumra / KONYA</li>
-                      <li><strong>Telefon:</strong> +90 534 244 75 04</li>
-                    </ul>
-                  </div>
-                  <p className="mt-4">
-                    Başvurularınız, talebin niteliğine göre en geç 30 gün içinde ücretsiz olarak 
-                    sonuçlandırılacaktır. Ancak, işlemin ayrıca bir maliyeti gerektirmesi hâlinde, 
-                    Kişisel Verileri Koruma Kurulu tarafından belirlenen tarifedeki ücret alınabilir.
-                  </p>
-                </div>
-              </div>
-
-              {/* Güvenlik */}
-              <div className="mb-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                    <Lock className="w-6 h-6 text-primary-600" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900">
-                    8. Veri Güvenliği
-                  </h2>
-                </div>
-                <div className="ml-15 text-gray-700 space-y-3">
-                  <p>
-                    On'la Gelsin olarak, kişisel verilerinizin güvenliğini sağlamak için gerekli tüm teknik ve 
-                    idari tedbirleri almaktayız. Verileriniz, yetkisiz erişime, kaybolmaya, değiştirilmeye 
-                    veya ifşa edilmeye karşı korunmaktadır.
-                  </p>
-                </div>
-              </div>
-
-              {/* Son Bilgiler */}
-              <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-primary-600">
-                <p className="text-sm text-gray-700">
-                  <strong>Not:</strong> Bu aydınlatma metni, yasal düzenlemelerdeki değişiklikler doğrultusunda 
-                  güncellenebilir. Güncel versiyona her zaman web sitemizden ulaşabilirsiniz.
-                </p>
-                <p className="text-sm text-gray-600 mt-3">
-                  Son Güncelleme: Ekim 2025
-                </p>
-              </div>
-
+            <div className="bg-primary-50 border-l-4 border-primary-600 p-4 rounded">
+              <p className="text-gray-700">
+                Bu aydınlatma metni 21 Mayıs 2026 tarihinde güncellenmiştir.
+              </p>
             </div>
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Sorularınız mı var?
-          </h2>
-          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            KVKK kapsamındaki haklarınız veya kişisel verilerinizin işlenmesi hakkında 
-            sorularınız için bizimle iletişime geçebilirsiniz.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/iletisim"
-              className="inline-block bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
-            >
-              İletişime Geç
-            </a>
-            <a
-              href="mailto:destek@onlagelsin.com"
-              className="inline-block bg-gray-100 text-gray-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors"
-            >
-              E-posta Gönder
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
+    </main>
+  )
 }

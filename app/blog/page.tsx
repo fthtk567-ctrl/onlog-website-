@@ -1,63 +1,61 @@
-import { Calendar, User, ArrowRight } from 'lucide-react';
+import { ArrowRight, Calendar, User } from 'lucide-react';
 
 export const metadata = {
-  title: "On'la Gelsin - Blog | Kurye ve Teslimat Haberleri",
-  description: 'E-ticaret, kurye teslimat ve lojistik sektörü hakkında güncel haberler, ipuçları ve rehberler.',
+  title: "On'la Gelsin - Blog | Yemek Siparişi ve Restoran İçgörüleri",
+  description: 'Yemek siparişi, yerel restoranlar ve dijital restoran yönetimi hakkında güncel yazılar.',
 }
 
 export default function BlogPage() {
   const blogPosts = [
     {
       id: 1,
-      title: 'E-Ticaret Siteniz İçin Hızlı Kargo Çözümleri',
-      excerpt: 'E-ticaret işletmeniz için en uygun kargo çözümlerini ve müşteri memnuniyetini artırma yöntemlerini keşfedin.',
+      title: 'Yerel Restoranlar Dijital Siparişle Nasıl Büyür?',
+      excerpt: 'Restoranların online yemek siparişi kanalıyla daha fazla müşteriye ulaşması için temel adımlar.',
       author: "On'la Gelsin Editör",
       date: '15 Ekim 2024',
-      readTime: '5 dk'
+      readTime: '5 dk',
     },
     {
       id: 2,
-      title: 'Aynı Gün Teslimat Neden Bu Kadar Önemli?',
-      excerpt: 'Günümüz tüketicilerinin beklentileri ve aynı gün teslimatın müşteri sadakatine etkisi hakkında bilmeniz gerekenler.',
+      title: 'Yemek Siparişinde Kullanıcı Deneyimi Neden Önemli?',
+      excerpt: 'Sade menü, anlaşılır sepet ve güvenli ödeme akışının müşteri memnuniyetine etkisi.',
       author: "On'la Gelsin Editör",
       date: '10 Ekim 2024',
-      readTime: '4 dk'
+      readTime: '4 dk',
     },
     {
       id: 3,
-      title: "On'la Gelsin Mobil Uygulaması Güncellendi",
-      excerpt: 'Yeni özellikler ve kullanıcı dostu arayüz ile mobil uygulamamız daha da gelişti. Hemen güncelleyin!',
+      title: "On'la Gelsin Mobil Uygulaması Google Play'de",
+      excerpt: 'Yerli ve milli yemek sipariş deneyimini Android cihazınıza indirerek restoranları keşfetmeye başlayın.',
       author: "On'la Gelsin Editör",
       date: '5 Ekim 2024',
-      readTime: '3 dk'
+      readTime: '3 dk',
     },
     {
       id: 4,
-      title: 'Kuryelerin Güvenli Teslimat İçin İpuçları',
-      excerpt: 'Kuryelerimiz için hazırladığımız güvenli teslimat rehberi. Teslimat sürecinde dikkat edilmesi gerekenler.',
+      title: 'Restoran Menüleri Dijitalde Nasıl Daha İyi Sunulur?',
+      excerpt: 'Ürün açıklamaları, görseller, kategori düzeni ve fiyat güncelliği için pratik öneriler.',
       author: "On'la Gelsin Editör",
       date: '1 Ekim 2024',
-      readTime: '6 dk'
+      readTime: '6 dk',
     },
     {
       id: 5,
-      title: "On'la Gelsin API Entegrasyonu Nasıl Yapılır?",
-      excerpt: "E-ticaret sitenize On'la Gelsin API entegrasyonu yaparak otomatik kurye atama sistemini aktif hale getirin.",
+      title: 'Restoran Panelinde Takip Edilmesi Gereken Metrikler',
+      excerpt: 'Popüler ürünler, sipariş yoğunluğu ve satış raporları restoran kararlarını nasıl güçlendirir?',
       author: "On'la Gelsin Editör",
       date: '25 Eylül 2024',
-      readTime: '8 dk'
+      readTime: '7 dk',
     },
     {
       id: 6,
-      title: 'Market Teslimatlarında Yeni Dönem',
-      excerpt: "On'la Gelsin ile market teslimatları artık daha hızlı ve güvenilir. Marketlere özel çözümlerimizi keşfedin.",
+      title: 'Yerli Yemek Sipariş Platformu Kullanmanın Avantajları',
+      excerpt: "On'la Gelsin'in yerel restoran ekosistemine ve kullanıcı deneyimine kattığı değerler.",
       author: "On'la Gelsin Editör",
       date: '20 Eylül 2024',
-      readTime: '5 dk'
-    }
+      readTime: '5 dk',
+    },
   ];
-
-  const allPosts = blogPosts;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -66,10 +64,10 @@ export default function BlogPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              On'la Gelsin Blog
+              On&apos;la Gelsin Blog
             </h1>
             <p className="text-xl text-primary-50">
-              Lojistik, e-ticaret ve teslimat dünyasından haberler, ipuçları ve daha fazlası
+              Yemek siparişi, yerel restoranlar ve dijital restoran yönetimi hakkında yazılar
             </p>
           </div>
         </div>
@@ -83,7 +81,7 @@ export default function BlogPage() {
               Son Yazılar
             </h2>
             <div className="space-y-6">
-              {allPosts.map((post) => (
+              {blogPosts.map((post) => (
                 <article
                   key={post.id}
                   className="bg-white rounded-xl shadow-lg p-6 md:p-8 hover:shadow-xl transition-shadow"

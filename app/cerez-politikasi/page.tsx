@@ -158,7 +158,7 @@ export default function CerezPolitikasi() {
                     <strong>E-posta:</strong> <a href="mailto:destek@onlagelsin.com" className="text-primary-600 hover:underline">destek@onlagelsin.com</a>
                   </p>
                   <p className="text-gray-700">
-                    <strong>Telefon:</strong> <a href="tel:+905342447504" className="text-primary-600 hover:underline">+90 534 244 7504</a>
+                    <strong>Telefon:</strong> <a href="tel:+908503030859" className="text-primary-600 hover:underline">+90 850 303 0859</a>
                   </p>
                   <p className="text-gray-700">
                     <strong>Adres:</strong> Bakkalbaşı Mah. Mustafa Kemal Cad. No: 10/A Çumra / KONYA
