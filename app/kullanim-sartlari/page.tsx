@@ -20,10 +20,13 @@ export default function KullanimSartlari() {
           <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 space-y-8">
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Hizmetin Kapsamı</h2>
+              <p className="text-gray-700 leading-relaxed mb-3">
+                On&apos;la Gelsin; ONLA GELSİN TEKNOLOJİ YAZILIM PERAKENDE LOJİSTİK VE TİCARET LİMİTED ŞİRKETİ
+                tarafından işletilen, kullanıcıların restoranları keşfetmesini, menüleri incelemesini ve yemek siparişi
+                oluşturmasını sağlayan bir pazar yeri platformudur.
+              </p>
               <p className="text-gray-700 leading-relaxed">
-                On&apos;la Gelsin, kullanıcıların restoranları keşfetmesini, menüleri incelemesini ve yemek siparişi
-                oluşturmasını sağlayan bir pazar yeri platformudur. Restoranlar ürün, fiyat, stok ve hazırlık
-                bilgilerini kendi panelinden yönetir.
+                Restoranlar ürün, fiyat, stok ve hazırlık bilgilerini kendi panelinden yönetir.
               </p>
             </div>
 

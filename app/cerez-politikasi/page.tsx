@@ -8,7 +8,7 @@ export default function CerezPolitikasi() {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Çerez Politikası</h1>
           <p className="text-xl text-primary-100">
-            Son Güncelleme: 28 Ekim 2025
+            Son Güncelleme: 21 Mayıs 2026
           </p>
         </div>
       </section>
@@ -154,14 +154,20 @@ export default function CerezPolitikasi() {
                   Çerez politikamız hakkında sorularınız için:
                 </p>
                 <div className="space-y-2">
-                  <p className="text-gray-700">
-                    <strong>E-posta:</strong> <a href="mailto:destek@onlagelsin.com" className="text-primary-600 hover:underline">destek@onlagelsin.com</a>
+                  <p className="text-gray-700 font-medium">
+                    ONLA GELSİN TEKNOLOJİ YAZILIM PERAKENDE LOJİSTİK VE TİCARET LİMİTED ŞİRKETİ
                   </p>
                   <p className="text-gray-700">
-                    <strong>Telefon:</strong> <a href="tel:+908503030859" className="text-primary-600 hover:underline">+90 850 303 0859</a>
+                    <strong>E-posta:</strong>{' '}
+                    <a href="mailto:destek@onlagelsin.com" className="text-primary-600 hover:underline">
+                      destek@onlagelsin.com
+                    </a>
                   </p>
                   <p className="text-gray-700">
-                    <strong>Adres:</strong> Bakkalbaşı Mah. Mustafa Kemal Cad. No: 10/A Çumra / KONYA
+                    <strong>Telefon:</strong>{' '}
+                    <a href="tel:+908503030859" className="text-primary-600 hover:underline">
+                      +90 850 303 0859
+                    </a>
                   </p>
                 </div>
               </div>

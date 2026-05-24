@@ -141,14 +141,6 @@ export default function Footer() {
               </li>
             </ul>
 
-            {/* Address */}
-            <div className="mt-6">
-              <h5 className="font-semibold mb-2">Adres</h5>
-              <p className="text-gray-400 text-sm">
-                Bakkalbaşı Mah. Mustafa Kemal Cad.<br />
-                No: 10/A Çumra / KONYA
-              </p>
-            </div>
           </div>
         </div>
 
@@ -169,9 +161,14 @@ export default function Footer() {
         {/* App Links */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2026 On&apos;la Gelsin - Teketech Technologies. Tüm hakları saklıdır.
-            </p>
+            <div className="mb-4 md:mb-0">
+              <p className="text-gray-400 text-sm">
+                © 2026 On&apos;la Gelsin — Tüm hakları saklıdır.
+              </p>
+              <p className="text-gray-600 text-xs mt-1">
+                ONLA GELSİN TEKNOLOJİ YAZILIM PERAKENDE LOJİSTİK VE TİCARET LİMİTED ŞİRKETİ
+              </p>
+            </div>
             <div className="flex space-x-4">
               <span className="inline-block" aria-label="App Store yakında">
                 <img

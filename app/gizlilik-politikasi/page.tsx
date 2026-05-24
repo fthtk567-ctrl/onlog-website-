@@ -18,6 +18,16 @@ export default function GizlilikPolitikasi() {
       <section className="py-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 space-y-8">
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-sm text-gray-700">
+              <p>
+                Bu gizlilik politikası, veri sorumlusu sıfatıyla{' '}
+                <span className="font-semibold text-gray-900">
+                  ONLA GELSİN TEKNOLOJİ YAZILIM PERAKENDE LOJİSTİK VE TİCARET LİMİTED ŞİRKETİ
+                </span>{' '}
+                tarafından yayımlanmaktadır.
+              </p>
+            </div>
+
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Toplanan Veriler</h2>
               <ul className="list-disc pl-6 text-gray-700 space-y-2">

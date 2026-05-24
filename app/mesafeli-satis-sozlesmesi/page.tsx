@@ -20,10 +20,23 @@ export default function MesafeliSatisSozlesmesi() {
           <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 space-y-8">
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Taraflar</h2>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed mb-4">
                 İşbu metin, On&apos;la Gelsin platformu üzerinden yemek siparişi veren kullanıcı ile siparişi kabul eden
-                restoran arasındaki mesafeli işlem sürecine ilişkin genel bilgilendirme niteliğindedir. On&apos;la Gelsin,
-                kullanıcı ve restoranı bir araya getiren pazar yeri platformudur.
+                restoran arasındaki mesafeli işlem sürecine ilişkin genel bilgilendirme niteliğindedir.
+              </p>
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-4">
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Platform İşleticisi (Aracı Hizmet Sağlayıcı)</p>
+                <div className="text-sm text-gray-800 space-y-1">
+                  <p className="font-semibold">ONLA GELSİN TEKNOLOJİ YAZILIM PERAKENDE LOJİSTİK VE TİCARET LİMİTED ŞİRKETİ</p>
+                  <p>MERSİS No: 0643086768200001</p>
+                  <p>Vergi Kimlik No: 6430867682</p>
+                  <p>Ticaret Sicil No: 003402</p>
+                  <p>Web: onlagelsin.com</p>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                On&apos;la Gelsin, kullanıcı ile restoranı bir araya getiren pazar yeri platformu olup siparişe konu
+                ürünlerin satıcısı ve hazırlayıcısı ilgili restoran işletmesidir.
               </p>
             </div>
 

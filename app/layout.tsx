@@ -76,12 +76,15 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: "On'la Gelsin",
+    legalName:
+      'ONLA GELSİN TEKNOLOJİ YAZILIM PERAKENDE LOJİSTİK VE TİCARET LİMİTED ŞİRKETİ',
     url: 'https://onlagelsin.com',
     logo: 'https://onlagelsin.com/logo.svg',
     description: 'Yerli ve milli yemek sipariş platformu',
+    taxID: '6430867682',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+90-537-429-1076',
+      telephone: '+90-850-303-0859',
       contactType: 'Müşteri Hizmetleri',
       areaServed: 'TR',
       availableLanguage: 'Turkish',
@@ -90,11 +93,6 @@ export default function RootLayout({
       'https://panel.onlagelsin.com',
       'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr',
     ],
-    address: {
-      '@type': 'PostalAddress',
-      addressCountry: 'TR',
-      addressLocality: 'Türkiye',
-    },
   }
 
   return (

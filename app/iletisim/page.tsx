@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Clock, Mail, MapPin, Phone } from 'lucide-react'
+import { Building2, Clock, Mail, Phone } from 'lucide-react'
 
 export const metadata = {
   title: "On'la Gelsin - İletişim",
@@ -72,16 +72,15 @@ export default function Iletisim() {
                   </div>
                 </div>
 
-                {/* Address */}
+                {/* Company Info */}
                 <div className="bg-white rounded-lg shadow-md p-6 flex items-start space-x-4">
                   <div className="bg-primary-100 rounded-full p-3">
-                    <MapPin className="w-6 h-6 text-primary-600" />
+                    <Building2 className="w-6 h-6 text-primary-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Adres</h3>
-                    <p className="text-gray-600">
-                      Bakkalbaşı Mah. Mustafa Kemal Cad.<br />
-                      No: 10/A Çumra / KONYA
+                    <h3 className="font-semibold text-gray-900 mb-2">Şirket Unvanı</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      ONLA GELSİN TEKNOLOJİ YAZILIM PERAKENDE LOJİSTİK VE TİCARET LİMİTED ŞİRKETİ
                     </p>
                   </div>
                 </div>
@@ -166,16 +165,6 @@ export default function Iletisim() {
                 </button>
               </form>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Map Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Bizi Ziyaret Edin</h2>
-          <div className="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
-            <p className="text-gray-600">Harita buraya eklenecek</p>
           </div>
         </div>
       </section>

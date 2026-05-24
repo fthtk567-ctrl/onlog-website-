@@ -20,10 +20,16 @@ export default function KVKKPage() {
           <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 space-y-8">
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Veri Sorumlusu</h2>
-              <p className="text-gray-700 leading-relaxed">
-                On&apos;la Gelsin, 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında kişisel verilerinizin
-                işlenmesine ilişkin sizleri bilgilendirmek amacıyla bu metni yayımlar.
+              <p className="text-gray-700 leading-relaxed mb-4">
+                6698 sayılı Kişisel Verilerin Korunması Kanunu (&quot;KVKK&quot;) kapsamında kişisel verilerinizin
+                veri sorumlusu aşağıda belirtilen şirkettir:
               </p>
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-sm text-gray-800 space-y-1">
+                <p className="font-semibold">ONLA GELSİN TEKNOLOJİ YAZILIM PERAKENDE LOJİSTİK VE TİCARET LİMİTED ŞİRKETİ</p>
+                <p>MERSİS No: 0643086768200001</p>
+                <p>Vergi Kimlik No: 6430867682</p>
+                <p>Ticaret Sicil No: 003402</p>
+              </div>
             </div>
 
             <div>
