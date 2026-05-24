@@ -16,11 +16,12 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image 
-              src="/logo.svg" 
+              src="/logo-header.png" 
               alt="On'la Gelsin" 
-              width={200}
-              height={48}
+              width={328}
+              height={80}
               priority
+              unoptimized
               className="h-10 md:h-12 w-auto"
             />
           </Link>
