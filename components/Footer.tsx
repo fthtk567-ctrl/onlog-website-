@@ -125,6 +125,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/kurye-gizlilik-politikasi" className="text-gray-400 hover:text-white transition">
+                  Kurye Gizlilik Politikası
+                </Link>
+              </li>
+              <li>
                 <Link href="/cerez-politikasi" className="text-gray-400 hover:text-white transition">
                   Çerez Politikası
                 </Link>

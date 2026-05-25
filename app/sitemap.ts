@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/hakkimizda',
     '/cerez-politikasi',
     '/gizlilik-politikasi',
+    '/kurye-gizlilik-politikasi',
     '/kullanim-sartlari',
     '/kvkk',
     '/hesap-silme',
