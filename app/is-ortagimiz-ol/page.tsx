@@ -1,8 +1,8 @@
-import { BarChart3, CheckCircle, Phone, Store, TrendingUp, UtensilsCrossed } from 'lucide-react';
+import { BarChart3, Bike, CheckCircle, Clock, MapPin, PackageCheck, Phone, ShieldCheck, Store, TrendingUp, UtensilsCrossed } from 'lucide-react';
 
 export const metadata = {
-  title: "On'la Gelsin - İş Ortağımız Olun",
-  description: "Restoranınızı On'la Gelsin'e taşıyın, online yemek siparişi kanalınızı büyütün ve yeni müşterilere ulaşın.",
+  title: "On'la Gelsin - İş Ortağımız Olun ve Kurye Olun",
+  description: "Restoranınızı On'la Gelsin'e taşıyın veya yemek siparişlerimizi taşıyacak kurye ağına katılın.",
 }
 
 export default function IsOrtagimizOlPage() {
@@ -41,21 +41,44 @@ export default function IsOrtagimizOlPage() {
     'Yerli platform avantajı',
   ];
 
+  const courierBenefits = [
+    {
+      icon: Bike,
+      title: 'Yemek Siparişlerini Taşıyın',
+      description: "On'la Gelsin restoranlarından çıkan siparişleri müşterilere ulaştıran kurye ağımıza katılın.",
+    },
+    {
+      icon: MapPin,
+      title: 'Bölgenizde Çalışın',
+      description: 'Başvurduğunuz şehir ve ilçeye göre operasyon ekibimiz uygun çalışma alanını değerlendirir.',
+    },
+    {
+      icon: Clock,
+      title: 'Esnek Çalışma Planı',
+      description: 'Müsaitlik durumunuzu ve çalışmak istediğiniz saat aralıklarını başvuru sırasında paylaşabilirsiniz.',
+    },
+    {
+      icon: ShieldCheck,
+      title: 'Operasyon Desteği',
+      description: 'Teslimat sürecinde sipariş, rota ve operasyon takibi için kurye uygulaması kullanılır.',
+    },
+  ];
+
   const steps = [
     {
       number: '1',
       title: 'Başvurunuzu Bırakın',
-      description: 'Restoran bilgilerinizi ve iletişim bilgilerinizi form üzerinden paylaşın.',
+      description: 'Restoran veya kurye başvurunuz için iletişim ve çalışma bilgilerinizi form üzerinden paylaşın.',
     },
     {
       number: '2',
       title: 'Ekibimiz Sizi Arasın',
-      description: 'Çalışma modelini, panel kurulumunu ve restoran ihtiyaçlarınızı birlikte netleştirelim.',
+      description: 'Çalışma modelini, bölge uygunluğunu ve ihtiyaç duyulan kurulum adımlarını birlikte netleştirelim.',
     },
     {
       number: '3',
-      title: 'Menünüzü Yayına Alın',
-      description: "Menünüz ve restoran profiliniz hazırlandığında On'la Gelsin'de sipariş almaya başlayın.",
+      title: 'Operasyona Başlayın',
+      description: "Restoran profiliniz yayına alınsın veya kurye hesabınız hazırlanarak On'la Gelsin operasyonuna katılın.",
     },
   ];
 
@@ -69,10 +92,10 @@ export default function IsOrtagimizOlPage() {
               İş Ortağımız Olun
             </h1>
             <p className="text-2xl text-primary-50 mb-4">
-              Restoranınızı On&apos;la Gelsin&apos;de Büyütün
+              Restoranınızı Büyütün veya Kurye Ağımıza Katılın
             </p>
             <p className="text-xl text-primary-100 mb-8">
-              Yerli yemek sipariş platformumuzda yerinizi alın, lezzetlerinizi daha fazla kullanıcıyla buluşturun.
+              Yerli yemek sipariş platformumuzda yerinizi alın; lezzetleri müşterilerle buluşturan operasyonun parçası olun.
             </p>
             <a
               href="#basvuru"
@@ -92,7 +115,7 @@ export default function IsOrtagimizOlPage() {
               Neden On&apos;la Gelsin İş Ortağı Olmalısınız?
             </h2>
             <p className="text-center text-gray-600 mb-12 text-lg">
-              Restoranlar için sade, ölçülebilir ve yemek siparişine odaklı dijital kanal.
+              Restoranlar ve kurye operasyonu için sade, ölçülebilir ve yemek siparişine odaklı çalışma modeli.
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -137,6 +160,42 @@ export default function IsOrtagimizOlPage() {
         </div>
       </section>
 
+      {/* Courier Opportunity */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-semibold mb-4">
+                <PackageCheck className="w-5 h-5" />
+                Kurye Ol
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Yemek Siparişlerimizi Taşıyacak Kuryeler Arıyoruz
+              </h2>
+              <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+                Motorlu kurye olarak On&apos;la Gelsin operasyonuna katılabilir, restoranlardan çıkan siparişlerin
+                müşterilere zamanında ve güvenli şekilde ulaşmasına destek olabilirsiniz.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {courierBenefits.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-50 border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
+                >
+                  <div className="w-14 h-14 bg-primary-100 rounded-full flex items-center justify-center mb-4">
+                    <item.icon className="w-7 h-7 text-primary-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits */}
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto px-4">
@@ -167,7 +226,7 @@ export default function IsOrtagimizOlPage() {
               Nasıl Başlarsınız?
             </h2>
             <p className="text-center text-primary-100 mb-12 text-lg">
-              3 adımda restoranınızı On&apos;la Gelsin&apos;e taşıyın.
+              3 adımda restoran veya kurye başvurunuzu tamamlayın.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {steps.map((step, index) => (
@@ -190,13 +249,30 @@ export default function IsOrtagimizOlPage() {
           <div className="max-w-2xl mx-auto">
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">
-                Restoran İş Ortaklığı Başvuru Formu
+                Restoran İş Ortaklığı ve Kurye Başvuru Formu
               </h2>
               <p className="text-gray-600 text-center mb-8">
-                Formu doldurun, ekibimiz en kısa sürede sizinle iletişime geçsin.
+                Başvuru türünüzü seçin, ekibimiz en kısa sürede sizinle iletişime geçsin.
               </p>
 
               <form className="space-y-6">
+                <div>
+                  <label className="block text-gray-700 font-medium mb-2">
+                    Başvuru Türü *
+                  </label>
+                  <select
+                    required
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition"
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      Başvuru türünüzü seçin
+                    </option>
+                    <option>Restoran İş Ortağı Olmak İstiyorum</option>
+                    <option>Kurye Olmak İstiyorum</option>
+                  </select>
+                </div>
+
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-gray-700 font-medium mb-2">
@@ -236,13 +312,13 @@ export default function IsOrtagimizOlPage() {
 
                 <div>
                   <label className="block text-gray-700 font-medium mb-2">
-                    Restoran Adı *
+                    Restoran Adı veya Kurye Araç Tipi *
                   </label>
                   <input
                     type="text"
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition"
-                    placeholder="Restoranınızın adı"
+                    placeholder="Örn. Lezzet Lokantası veya motosiklet"
                   />
                 </div>
 
@@ -273,13 +349,13 @@ export default function IsOrtagimizOlPage() {
 
                 <div>
                   <label className="block text-gray-700 font-medium mb-2">
-                    Mutfak Türü *
+                    Mutfak Türü veya Çalışma Tercihi *
                   </label>
                   <input
                     type="text"
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition"
-                    placeholder="Örn. pide, burger, ev yemekleri, tatlı"
+                    placeholder="Örn. pide, burger veya hafta içi akşam saatleri"
                   />
                 </div>
 
@@ -290,7 +366,7 @@ export default function IsOrtagimizOlPage() {
                   <textarea
                     rows={4}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition"
-                    placeholder="Restoranınız hakkında eklemek istediğiniz bilgiler"
+                    placeholder="Restoranınız, araç durumunuz veya çalışma tercihleriniz hakkında eklemek istediğiniz bilgiler"
                   ></textarea>
                 </div>
 
