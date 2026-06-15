@@ -1,8 +1,6 @@
-import { Smartphone, Scan } from 'lucide-react'
+import { appStoreUrl, googlePlayUrl } from '@/lib/appLinks'
 
 export default function MobileApp() {
-  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr'
-
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -18,22 +16,31 @@ export default function MobileApp() {
 
             {/* QR Code */}
             <div className="flex items-center space-x-6">
-              <div className="bg-gray-100 p-4 rounded-xl">
-                <div className="w-32 h-32 bg-white border-4 border-primary-600 rounded-lg flex items-center justify-center">
-                  <Scan className="w-16 h-16 text-primary-600" />
-                </div>
-              </div>
+              <a
+                href="/indir"
+                className="bg-gray-100 p-4 rounded-xl"
+                aria-label="On'la Gelsin uygulama indirme QR kodu"
+              >
+                <img
+                  src="/app-download-qr.svg"
+                  alt="On'la Gelsin uygulamasını indirmek için QR kod"
+                  className="w-32 h-32 bg-white rounded-lg"
+                />
+              </a>
               <div className="space-y-3">
-                <span
+                <a
+                  href={appStoreUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block"
-                  aria-label="App Store yakında"
+                  aria-label="App Store'dan indir"
                 >
                   <img 
                     src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/tr-tr?size=250x83" 
                     alt="App Store'dan İndir" 
-                    className="h-12 opacity-60"
+                    className="h-12"
                   />
-                </span>
+                </a>
                 <a 
                   href={googlePlayUrl}
                   target="_blank"

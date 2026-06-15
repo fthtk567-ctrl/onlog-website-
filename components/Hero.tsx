@@ -1,9 +1,7 @@
-import Link from 'next/link'
-import { ArrowRight, CreditCard, Store, UtensilsCrossed } from 'lucide-react'
+import { ArrowRight, CreditCard, Smartphone, Store, UtensilsCrossed } from 'lucide-react'
+import { appStoreUrl, customerWebUrl } from '@/lib/appLinks'
 
 export default function Hero() {
-  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr'
-
   return (
     <section className="relative bg-gradient-to-br from-primary-50 to-white py-20">
       <div className="container mx-auto px-4">
@@ -19,20 +17,23 @@ export default function Hero() {
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a 
-                href={googlePlayUrl}
+                href={customerWebUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-primary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-700 transition group"
               >
-                Uygulamayı İndir
+                Yemek Siparişi Ver
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition" />
               </a>
-              <Link
-                href="/is-ortagimiz-ol"
+              <a
+                href={appStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-white border-2 border-primary-600 text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-50 transition"
               >
-                İş Ortağımız Olun
-              </Link>
+                <Smartphone className="mr-2 w-5 h-5" />
+                Uygulamayı İndir
+              </a>
             </div>
 
             {/* Features */}

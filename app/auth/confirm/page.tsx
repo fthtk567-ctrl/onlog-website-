@@ -1,15 +1,14 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import AuthConfirmClient from './AuthConfirmClient'
+import { createPageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "E-posta Doğrulama - On'la Gelsin",
   description: "On'la Gelsin Kurye uygulaması için e-posta doğrulama sayfası.",
-  robots: {
-    index: false,
-    follow: false,
-  },
-}
+  path: '/auth/confirm',
+  noIndex: true,
+})
 
 function AuthConfirmFallback() {
   return (

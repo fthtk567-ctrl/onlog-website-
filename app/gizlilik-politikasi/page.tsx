@@ -1,7 +1,10 @@
-export const metadata = {
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
   title: "On'la Gelsin - Gizlilik Politikası",
   description: "On'la Gelsin yemek sipariş platformu gizlilik politikası.",
-}
+  path: '/gizlilik-politikasi',
+})
 
 export default function GizlilikPolitikasi() {
   return (

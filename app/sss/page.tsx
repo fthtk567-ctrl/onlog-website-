@@ -1,9 +1,12 @@
 import Link from 'next/link'
+import { createPageMetadata } from '@/lib/seo'
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "On'la Gelsin - Sık Sorulan Sorular",
   description: "On'la Gelsin yemek sipariş uygulaması, restoran paneli ve iş ortaklığı hakkında sık sorulan sorular.",
-}
+  path: '/sss',
+  keywords: ["on'la gelsin sss", 'yemek siparişi soruları', 'restoran paneli soruları'],
+})
 
 export default function SSS() {
   const faqs = [
@@ -20,7 +23,7 @@ export default function SSS() {
         },
         {
           q: 'Uygulamayı nereden indirebilirim?',
-          a: "Android kullanıcıları On'la Gelsin uygulamasını Google Play üzerinden indirebilir. iOS bağlantısı hazır olduğunda ayrıca yayınlanacaktır.",
+          a: "On'la Gelsin uygulamasını App Store ve Google Play üzerinden indirebilirsiniz.",
         },
       ],
     },

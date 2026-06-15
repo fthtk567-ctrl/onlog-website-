@@ -1,10 +1,12 @@
 import { company } from '@/lib/companyInfo'
+import { createPageMetadata } from '@/lib/seo'
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "On'la Gelsin Kurye - Gizlilik Politikası",
   description:
     "On'la Gelsin Kurye uygulamasında kişisel verilerin ve konum verilerinin işlenmesine ilişkin gizlilik politikası.",
-}
+  path: '/kurye-gizlilik-politikasi',
+})
 
 export default function KuryeGizlilikPolitikasi() {
   return (

@@ -1,7 +1,10 @@
-export const metadata = {
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
   title: "On'la Gelsin - Hesap Silme",
   description: "On'la Gelsin uygulama hesabınızı silme talebi.",
-}
+  path: '/hesap-silme',
+})
 
 export default function HesapSilmePage() {
   return (

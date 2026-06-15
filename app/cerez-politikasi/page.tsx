@@ -1,4 +1,11 @@
 import Link from 'next/link'
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
+  title: "On'la Gelsin - Çerez Politikası",
+  description: "On'la Gelsin web sitesinde kullanılan çerezlere ilişkin bilgilendirme.",
+  path: '/cerez-politikasi',
+})
 
 export default function CerezPolitikasi() {
   return (

@@ -1,10 +1,13 @@
 import { ArrowRight, BarChart3, CheckCircle, Clock, Smartphone, Store, TrendingUp, Users, UtensilsCrossed } from 'lucide-react';
 import Link from 'next/link';
+import { createPageMetadata } from '@/lib/seo';
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "On'la Gelsin - Restoran Paneli | Online Yemek Siparişi Yönetimi",
   description: 'Restoranınız için online yemek siparişi yönetim paneli. Menü yönetimi, sipariş takibi, analiz raporları ve daha fazlası.',
-}
+  path: '/restoran-paneli',
+  keywords: ['restoran paneli', 'online yemek siparişi yönetimi', 'menü yönetimi', 'sipariş takibi'],
+})
 
 export default function RestoranPaneliPage() {
   const features = [

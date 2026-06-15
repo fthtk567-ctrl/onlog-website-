@@ -1,13 +1,15 @@
 import { CheckCircle, CreditCard, HeartHandshake, Search, Smartphone, Store, UtensilsCrossed } from 'lucide-react';
+import { appStoreUrl, customerWebUrl } from '@/lib/appLinks';
+import { createPageMetadata } from '@/lib/seo';
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "On'la Gelsin - Yemek Siparişi Hizmetimiz",
   description: "On'la Gelsin ile yerel restoranları keşfedin, menüleri inceleyin ve sevdiğiniz yemekleri kolayca sipariş verin.",
-}
+  path: '/hizmetlerimiz',
+  keywords: ['yemek siparişi', 'online yemek siparişi', 'yerel restoranlar', "on'la gelsin"],
+})
 
 export default function HizmetlerimizPage() {
-  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr'
-
   const services = [
     {
       icon: Search,
@@ -197,25 +199,27 @@ export default function HizmetlerimizPage() {
       <section className="py-16 bg-gradient-to-r from-primary-600 to-primary-500">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            On&apos;la Gelsin&apos;i Hemen İndirin
+            On&apos;la Gelsin&apos;den Hemen Sipariş Verin
           </h2>
           <p className="text-primary-50 mb-8 max-w-2xl mx-auto">
-            Yerel restoranları keşfetmek ve sevdiğiniz yemekleri sipariş vermek için uygulamayı Google Play&apos;den indirin.
+            Yerel restoranları keşfetmek ve sevdiğiniz yemekleri sipariş vermek için müşteri web sitesine geçin.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={googlePlayUrl}
+              href={customerWebUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
             >
-              Google Play&apos;de Aç
+              Yemek Siparişi Ver
             </a>
             <a
-              href="/is-ortagimiz-ol"
+              href={appStoreUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-800 transition-colors"
             >
-              Restoran İş Ortağı Olun
+              Uygulamayı İndir
             </a>
           </div>
         </div>

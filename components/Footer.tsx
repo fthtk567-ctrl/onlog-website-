@@ -1,9 +1,8 @@
 import Link from 'next/link'
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
+import { appStoreUrl, customerWebUrl, googlePlayUrl } from '@/lib/appLinks'
 
 export default function Footer() {
-  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr'
-
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-12">
@@ -55,6 +54,16 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Yemek Deneyimi</h4>
             <ul className="space-y-2 text-sm">
+              <li>
+                <a
+                  href={customerWebUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition"
+                >
+                  Yemek Siparişi Ver
+                </a>
+              </li>
               <li>
                 <Link href="/hizmetlerimiz" className="text-gray-400 hover:text-white transition">
                   Hizmetlerimiz
@@ -175,13 +184,19 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex space-x-4">
-              <span className="inline-block" aria-label="App Store yakında">
+              <a
+                href={appStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+                aria-label="App Store'dan indir"
+              >
                 <img
                   src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/tr-tr?size=250x83"
                   alt="App Store'dan İndir"
-                  className="h-10 opacity-60"
+                  className="h-10"
                 />
-              </span>
+              </a>
               <a
                 href={googlePlayUrl}
                 target="_blank"

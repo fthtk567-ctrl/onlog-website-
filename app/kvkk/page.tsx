@@ -1,7 +1,10 @@
-export const metadata = {
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
   title: "On'la Gelsin - KVKK Aydınlatma Metni",
   description: "On'la Gelsin yemek sipariş platformu KVKK aydınlatma metni.",
-}
+  path: '/kvkk',
+})
 
 export default function KVKKPage() {
   return (

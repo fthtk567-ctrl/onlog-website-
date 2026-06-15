@@ -1,7 +1,10 @@
-export const metadata = {
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
   title: "On'la Gelsin - Teslimat ve İade Şartları",
   description: "On'la Gelsin yemek siparişleri için teslimat, iptal ve iade bilgilendirmesi.",
-}
+  path: '/teslimat-ve-iade',
+})
 
 export default function TeslimatVeIade() {
   return (

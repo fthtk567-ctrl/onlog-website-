@@ -1,9 +1,12 @@
 import { ArrowRight, Calendar, User } from 'lucide-react';
+import { createPageMetadata } from '@/lib/seo';
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "On'la Gelsin - Blog | Yemek Siparişi ve Restoran İçgörüleri",
   description: 'Yemek siparişi, yerel restoranlar ve dijital restoran yönetimi hakkında güncel yazılar.',
-}
+  path: '/blog',
+  keywords: ['yemek siparişi blog', 'restoran içgörüleri', 'dijital restoran yönetimi'],
+})
 
 export default function BlogPage() {
   const blogPosts = [

@@ -1,7 +1,10 @@
-export const metadata = {
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
   title: "On'la Gelsin - Veri Silme Talebi",
   description: "On'la Gelsin hesabınızla ilişkili kişisel veriler için veri silme talebi.",
-}
+  path: '/veri-silme',
+})
 
 export default function VeriSilmePage() {
   const deletedData = [

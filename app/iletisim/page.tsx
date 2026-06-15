@@ -1,14 +1,16 @@
 import Link from 'next/link'
 import { Building2, Clock, Mail, Phone } from 'lucide-react'
+import { customerWebUrl } from '@/lib/appLinks'
+import { createPageMetadata } from '@/lib/seo'
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "On'la Gelsin - İletişim",
   description: "On'la Gelsin destek, restoran iş ortaklığı ve genel iletişim bilgileri.",
-}
+  path: '/iletisim',
+  keywords: ["on'la gelsin iletişim", 'yemek siparişi destek', 'restoran iş ortaklığı iletişim'],
+})
 
 export default function Iletisim() {
-  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr'
-
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -174,16 +176,16 @@ export default function Iletisim() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">On&apos;la Gelsin&apos;e Katılın</h2>
           <p className="text-xl text-primary-100 mb-8">
-            Uygulamayı indirin veya restoranınız için iş ortaklığı başvurusu bırakın.
+            Webden yemek siparişi verin veya restoranınız için iş ortaklığı başvurusu bırakın.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={googlePlayUrl}
+              href={customerWebUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition"
             >
-              Uygulamayı İndir
+              Yemek Siparişi Ver
             </a>
             <Link
               href="/is-ortagimiz-ol"

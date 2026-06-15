@@ -1,9 +1,12 @@
 import { BarChart3, Bike, CheckCircle, Clock, MapPin, PackageCheck, Phone, ShieldCheck, Store, TrendingUp, UtensilsCrossed } from 'lucide-react';
+import { createPageMetadata } from '@/lib/seo';
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "On'la Gelsin - İş Ortağımız Olun ve Kurye Olun",
   description: "Restoranınızı On'la Gelsin'e taşıyın veya yemek siparişlerimizi taşıyacak kurye ağına katılın.",
-}
+  path: '/is-ortagimiz-ol',
+  keywords: ['restoran iş ortaklığı', 'kurye başvurusu', 'yemek siparişi iş ortaklığı', "on'la gelsin"],
+})
 
 export default function IsOrtagimizOlPage() {
   const benefits = [

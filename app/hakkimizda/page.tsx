@@ -1,13 +1,15 @@
 import { Award, HeartHandshake, Smartphone, Store, Target, TrendingUp, Users, UtensilsCrossed } from 'lucide-react';
+import { customerWebUrl } from '@/lib/appLinks';
+import { createPageMetadata } from '@/lib/seo';
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "On'la Gelsin - Hakkımızda",
   description: "On'la Gelsin, kullanıcıları yerel restoranlarla buluşturan yerli ve milli yemek sipariş platformudur.",
-}
+  path: '/hakkimizda',
+  keywords: ["on'la gelsin hakkında", 'yerli yemek sipariş platformu', 'yerel restoranlar'],
+})
 
 export default function HakkimizdaPage() {
-  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr'
-
   const values = [
     {
       icon: UtensilsCrossed,
@@ -180,16 +182,16 @@ export default function HakkimizdaPage() {
             On&apos;la Gelsin Deneyimine Katılın
           </h2>
           <p className="text-primary-50 mb-8 max-w-2xl mx-auto">
-            Kullanıcıysanız uygulamayı indirin, restoran sahibiyseniz iş ortağımız olun.
+            Kullanıcıysanız webden sipariş verin, restoran sahibiyseniz iş ortağımız olun.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={googlePlayUrl}
+              href={customerWebUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
             >
-              Uygulamayı İndir
+              Yemek Siparişi Ver
             </a>
             <a
               href="/is-ortagimiz-ol"

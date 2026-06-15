@@ -3,11 +3,11 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X } from 'lucide-react'
+import { Menu, UtensilsCrossed, X } from 'lucide-react'
+import { appStoreUrl, customerWebUrl } from '@/lib/appLinks'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr'
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -52,11 +52,20 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <a 
-              href={googlePlayUrl}
+            <a
+              href={customerWebUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition font-medium"
+              className="inline-flex items-center gap-2 bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition font-medium"
+            >
+              <UtensilsCrossed className="h-4 w-4" />
+              Yemek Siparişi Ver
+            </a>
+            <a 
+              href={appStoreUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 hover:text-primary-600 transition font-medium"
             >
               Uygulamayı İndir
             </a>
@@ -95,11 +104,20 @@ export default function Header() {
               İletişim
             </Link>
             <div className="pt-4">
-              <a 
-                href={googlePlayUrl}
+              <a
+                href={customerWebUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-center bg-primary-600 text-white px-6 py-2 rounded-lg font-medium"
+                className="flex items-center justify-center gap-2 bg-primary-600 text-white px-6 py-3 rounded-lg font-medium"
+              >
+                <UtensilsCrossed className="h-4 w-4" />
+                Yemek Siparişi Ver
+              </a>
+              <a 
+                href={appStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center border border-primary-600 text-primary-600 px-6 py-3 rounded-lg font-medium mt-3"
               >
                 Uygulamayı İndir
               </a>

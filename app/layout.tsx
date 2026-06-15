@@ -3,11 +3,14 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { appStoreUrl, customerWebUrl, googlePlayUrl } from '@/lib/appLinks'
+import { defaultOgImage, siteName, siteUrl } from '@/lib/seo'
 
 const inter = Inter({ subsets: ['latin'] })
+const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://onlagelsin.com'),
+  metadataBase: new URL(siteUrl),
   title: "On'la Gelsin - Yerli Yemek Sipariş Platformu",
   description: "On'la Gelsin ile yerel restoranları keşfedin, sevdiğiniz yemekleri kolayca sipariş verin. Yerli ve milli yemek sipariş deneyimi.",
   keywords: ['yemek sipariş', 'online yemek', 'restoran', 'on\'la gelsin', 'yerli yemek uygulaması', 'restoran paneli', 'online sipariş'],
@@ -25,11 +28,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "On'la Gelsin - Yerli Yemek Sipariş Platformu",
     description: "On'la Gelsin ile yerel restoranları keşfedin, sevdiğiniz yemekleri kolayca sipariş verin.",
-    url: 'https://onlagelsin.com',
-    siteName: "On'la Gelsin",
+    url: siteUrl,
+    siteName,
     images: [
       {
-        url: '/og-image.png',
+        url: defaultOgImage,
         width: 1200,
         height: 630,
         alt: "On'la Gelsin - Yerli Yemek Sipariş Platformu",
@@ -48,7 +51,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "On'la Gelsin - Yerli Yemek Sipariş Platformu",
     description: "On'la Gelsin ile yerel restoranları keşfedin, sevdiğiniz yemekleri kolayca sipariş verin.",
-    images: ['/og-image.png'],
+    images: [defaultOgImage],
     creator: '@onlagelsin',
   },
   robots: {
@@ -62,9 +65,13 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'google-site-verification-code',
-  },
+  ...(googleSiteVerification
+    ? {
+        verification: {
+          google: googleSiteVerification,
+        },
+      }
+    : {}),
 }
 
 export default function RootLayout({
@@ -78,8 +85,8 @@ export default function RootLayout({
     name: "On'la Gelsin",
     legalName:
       'ONLA GELSİN TEKNOLOJİ YAZILIM PERAKENDE LOJİSTİK VE TİCARET LİMİTED ŞİRKETİ',
-    url: 'https://onlagelsin.com',
-    logo: 'https://onlagelsin.com/logo.svg',
+    url: siteUrl,
+    logo: `${siteUrl}/logo.svg`,
     description: 'Yerli ve milli yemek sipariş platformu',
     taxID: '6430867682',
     contactPoint: {
@@ -91,7 +98,9 @@ export default function RootLayout({
     },
     sameAs: [
       'https://panel.onlagelsin.com',
-      'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr',
+      customerWebUrl,
+      appStoreUrl,
+      googlePlayUrl,
     ],
   }
 

@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import { CreditCard, HeartHandshake, Store, UtensilsCrossed } from 'lucide-react'
+import { customerWebUrl } from '@/lib/appLinks'
 
 const services = [
   {
     title: 'Yemek Siparişi',
     description: 'Sevdiğiniz restoranlardan ana yemek, tatlı, içecek ve atıştırmalık seçeneklerini kolayca sipariş edin.',
     icon: UtensilsCrossed,
-    link: '/hizmetlerimiz',
+    link: customerWebUrl,
+    external: true,
     image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop',
   },
   {
@@ -52,6 +54,8 @@ export default function Services() {
               <Link
                 key={index}
                 href={service.link}
+                target={service.external ? '_blank' : undefined}
+                rel={service.external ? 'noopener noreferrer' : undefined}
                 className="group block bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
               >
                 <div className="relative h-48 overflow-hidden">

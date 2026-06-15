@@ -1,9 +1,8 @@
 import Link from 'next/link'
 import { Smartphone, Store, UtensilsCrossed } from 'lucide-react'
+import { appStoreUrl } from '@/lib/appLinks'
 
 export default function Integration() {
-  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.teketech.onlagelsin&hl=tr'
-
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-primary-50">
       <div className="container mx-auto px-4">
@@ -56,7 +55,7 @@ export default function Integration() {
           </Link>
 
           <a
-            href={googlePlayUrl}
+            href={appStoreUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"

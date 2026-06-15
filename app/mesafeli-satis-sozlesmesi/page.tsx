@@ -1,7 +1,10 @@
-export const metadata = {
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
   title: "On'la Gelsin - Mesafeli Satış Sözleşmesi",
   description: "On'la Gelsin yemek sipariş platformu mesafeli satış sözleşmesi bilgilendirmesi.",
-}
+  path: '/mesafeli-satis-sozlesmesi',
+})
 
 export default function MesafeliSatisSozlesmesi() {
   return (
