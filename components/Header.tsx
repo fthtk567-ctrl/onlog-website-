@@ -22,12 +22,12 @@ export default function Header() {
               height={80}
               priority
               unoptimized
-              className="h-10 md:h-12 w-auto"
+              className="h-10 xl:h-12 w-auto"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden xl:flex items-center space-x-6">
             <Link href="/hizmetlerimiz" className="text-gray-700 hover:text-primary-600 transition">
               Hizmetlerimiz
             </Link>
@@ -51,7 +51,7 @@ export default function Header() {
           </nav>
 
           {/* CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden xl:flex items-center space-x-4">
             <a
               href={customerWebUrl}
               target="_blank"
@@ -73,7 +73,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="xl:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -82,7 +82,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <nav className="md:hidden pb-4 space-y-2">
+          <nav className="xl:hidden pb-4 space-y-2">
             <Link href="/hizmetlerimiz" className="block py-2 text-gray-700 hover:text-primary-600">
               Hizmetlerimiz
             </Link>
