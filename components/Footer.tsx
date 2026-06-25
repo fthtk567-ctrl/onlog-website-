@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
+import { Facebook, Instagram, Linkedin, X } from 'lucide-react'
 import { appStoreUrl, customerWebUrl, googlePlayUrl } from '@/lib/appLinks'
 
 export default function Footer() {
@@ -35,16 +35,40 @@ export default function Footer() {
             </p>
 
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition" aria-label="Facebook">
+              <a
+                href="https://www.facebook.com/people/Onla-Gelsin/61591547724025/#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition"
+                aria-label="Facebook"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition" aria-label="Twitter">
-                <Twitter className="w-5 h-5" />
+              <a
+                href="https://x.com/onlagelsin"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition"
+                aria-label="X"
+              >
+                <X className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/onlagelsin"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition"
+                aria-label="Instagram"
+              >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition" aria-label="LinkedIn">
+              <a
+                href="https://www.linkedin.com/company/onla-gelsin"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition"
+                aria-label="LinkedIn"
+              >
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
